@@ -1,0 +1,5314 @@
+[
+  {
+    "book": "Yutland1916",
+    "page": 31,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.957,
+    "bbox": [
+      371,
+      360,
+      1383,
+      1366
+    ],
+    "size": [
+      1012,
+      1006
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0031_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "북해",
+      "caption_en": "The North Sea",
+      "subjects": [
+        "유틀란트 해전",
+        "북해",
+        "영국 해군",
+        "독일 해군",
+        "대함대",
+        "대양함대",
+        "제1차 세계 대전"
+      ],
+      "description": "1916년 유틀란트 해전 당시 북해에서의 영국 대함대(Grand Fleet)와 독일 대양함대(High Seas Fleet)의 초기 기동 및 배치 상황을 보여주는 지도입니다. 젤리코(Jellicoe)와 비티(Beatty)가 지휘하는 영국 함대와 셰어(Scheer) 및 히퍼(Hipper)가 이끄는 독일 함대의 예상 이동 경로, 그리고 독일 유보트(U-boat)들의 매복 지점이 상세히 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 42,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.884,
+    "bbox": [
+      540,
+      310,
+      1216,
+      1325
+    ],
+    "size": [
+      676,
+      1015
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0042_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "접적 및 남하 기동",
+      "caption_en": "Contact and the run to the south",
+      "subjects": [
+        "유틀란트 해전",
+        "순양전함 함대",
+        "남하 기동",
+        "제1차 세계대전",
+        "해군 전술"
+      ],
+      "description": "1916년 유틀란트 해전 초기 단계에서 영국 순양전함 함대와 독일 제1정찰함대가 서로를 발견하고 남쪽으로 변침하여 기동하는 과정을 보여주는 전술 지도입니다. 지도에는 각 함대의 주요 군함들의 명칭과 이동 경로, 그리고 풍향 등이 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 62,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.935,
+    "bbox": [
+      1609,
+      311,
+      2384,
+      1323
+    ],
+    "size": [
+      775,
+      1012
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0062_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "남하 기동의 끝",
+      "caption_en": "The end of the run to the south",
+      "subjects": [
+        "유틀란트 해전",
+        "제1차 세계 대전",
+        "남하 기동",
+        "영국 해군",
+        "독일 해군",
+        "전술 지도"
+      ],
+      "description": "1916년 유틀란트 해전 중 '남하 기동(Run to the South)'의 종료 시점을 묘사한 전술 지도로, 영국과 독일 함대의 상대적 위치, 주요 함정의 이름, 기동 경로 및 중앙의 구축함 교전 구역을 상세히 보여줍니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 83,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.925,
+    "bbox": [
+      1677,
+      989,
+      2315,
+      1752
+    ],
+    "size": [
+      638,
+      763
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0083_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "유틀란트 해전의 전술 상황도: 영국 제5전함전대의 북상 기동",
+      "caption_en": "Tactical Map of the Battle of Jutland: The Fifth Battle Squadron's Run to the North",
+      "subjects": [
+        "유틀란트 해전",
+        "제5전함전대",
+        "해전술",
+        "영국 해군",
+        "독일 해군"
+      ],
+      "description": "1916년 유틀란트 해전 중 영국 함대가 독일 고해함대의 주력과 마주친 후 북쪽으로 방향을 틀어 유인하는 '북상 기동' 과정을 보여주는 지도입니다. 지도에는 바함, 밸리언트, 워스파이트, 말라야 등 제5전함전대 소속 전함들의 선회 경로와 독일 함대 함정들의 위치가 상세히 기록되어 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 110,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.941,
+    "bbox": [
+      1602,
+      313,
+      2388,
+      1328
+    ],
+    "size": [
+      786,
+      1015
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0110_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "그랜드 플릿의 도착",
+      "caption_en": "The arrival of the Grand Fleet",
+      "subjects": [
+        "유틀란트 해전",
+        "그랜드 플릿",
+        "해전 지도",
+        "제1차 세계대전"
+      ],
+      "description": "1916년 유틀란트 해전 당시 영국의 그랜드 플릿 함대가 전장에 도착하는 전술적 상황을 묘사한 지도입니다. 영국 함대와 독일 함대 함선들의 상대적인 위치와 기동 방향을 상세히 보여주며 전투의 전개 과정을 시각적으로 설명합니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 121,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.95,
+    "bbox": [
+      1526,
+      312,
+      2462,
+      1325
+    ],
+    "size": [
+      936,
+      1013
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0121_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "젤리코의 전개",
+      "caption_en": "Jellicoe deploys",
+      "subjects": [
+        "유틀란트 해전",
+        "존 젤리코",
+        "해군 전술",
+        "영국 대함대",
+        "독일 대양함대"
+      ],
+      "description": "유틀란트 해전 당시 존 젤리코 제독이 이끄는 영국 대함대가 전투 대형으로 전개하는 상황을 보여주는 작전도입니다. 영국군과 독일군 각 함정의 위치와 이동 경로를 통해 당시의 긴박한 전술적 움직임을 상세히 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 141,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.909,
+    "bbox": [
+      574,
+      752,
+      1181,
+      1748
+    ],
+    "size": [
+      607,
+      996
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0141_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "셰어의 전투 선회",
+      "caption_en": "Scheer's battle turn away",
+      "subjects": [
+        "유틀란트 해전",
+        "독일 대양함대",
+        "영국 해군",
+        "전술 지도",
+        "라인하르트 셰어"
+      ],
+      "description": "1916년 유틀란트 해전 당시 독일 대양함대의 셰어 제독이 영국의 포위망을 벗어나기 위해 감행한 일제 180도 회전 기동을 묘사한 전술 지도입니다. 지도에는 영국과 독일 양측 함대 소속 주요 전함들의 명칭과 이동 궤적이 상세히 표시되어 당시의 긴박한 전술적 상황을 시각적으로 보여줍니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 153,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.958,
+    "bbox": [
+      367,
+      535,
+      1387,
+      1326
+    ],
+    "size": [
+      1020,
+      791
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0153_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "셰어의 두 번째 전투 회피 기동",
+      "caption_en": "Scheer's second battle turn away",
+      "subjects": [
+        "유틀란트 해전",
+        "제1차 세계 대전",
+        "해전 전술",
+        "독일 고해함대",
+        "라인하르트 셰어"
+      ],
+      "description": "1916년 유틀란트 해전 중 독일 고해함대의 셰어 제독이 영국 함대의 압도적인 화력으로부터 벗어나기 위해 감행한 두 번째 일제 회두 기동을 보여주는 지도입니다. 독일 전함들이 동시에 방향을 틀어 후퇴하는 복잡한 기동 경로와 당시 영국 및 독일 군함들의 배치가 상세히 묘사되어 있습니다. 이 지도는 독일 함대가 위기의 순간에 어떻게 포위망을 빠져나갔는지를 시각적으로 설명합니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 168,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.954,
+    "bbox": [
+      1554,
+      640,
+      2443,
+      1652
+    ],
+    "size": [
+      889,
+      1012
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0168_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "밤의 접근",
+      "caption_en": "Night approaches",
+      "subjects": [
+        "유틀란트 해전",
+        "제1차 세계대전",
+        "해군 전술",
+        "영국 해군",
+        "독일 해군"
+      ],
+      "description": "1916년 5월 31일 저녁, 유틀란트 해전 당시 영국 함대와 독일 함대의 대치 상황과 함선들의 기동 경로를 보여주는 전술 지도입니다. 영국과 독일 양측의 주요 전함 및 분함대 위치가 표기되어 있으며, 밤이 깊어지기 전 전개된 해전의 복잡한 움직임을 시각화하고 있습니다. 지도는 각 함대 간의 거리와 함선의 명칭을 포함하여 당시의 전술적 맥락을 상세히 설명합니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 177,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.955,
+    "bbox": [
+      1509,
+      507,
+      2483,
+      1303
+    ],
+    "size": [
+      974,
+      796
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0177_01.png",
+    "annotation": {
+      "type": "map",
+      "caption_ko": "셰어의 탈출",
+      "caption_en": "Scheer escapes",
+      "subjects": [
+        "유틀란트 해전",
+        "라인하르트 셰어",
+        "독일 대양함대",
+        "영국 그랜드 플리트",
+        "혼즈 리프"
+      ],
+      "description": "1916년 유틀란트 해전 당시 독일 대양함대의 사령관 라인하르트 셰어가 영국 그랜드 플리트의 포위망을 뚫고 혼즈 리프(Horns Reef) 방면으로 탈출하는 경로를 보여주는 지도입니다. 새벽 3시경의 양측 함대 위치와 이동 경로, 그리고 인근의 기뢰 구역 등이 상세히 묘사되어 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 269,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.964,
+    "bbox": [
+      1567,
+      363,
+      2411,
+      1745
+    ],
+    "size": [
+      844,
+      1382
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0269_01.png",
+    "annotation": {
+      "type": "table",
+      "caption_ko": "유틀란트 해전 이후 귀환한 독일 함정의 인명 피해 통계",
+      "caption_en": "Casualties in German ships returning to port after the Battle of Jutland",
+      "subjects": [
+        "유틀란트 해전",
+        "독일 해군",
+        "인명 피해",
+        "제1차 세계대전",
+        "군함 통계"
+      ],
+      "description": "1916년 유틀란트 해전에서 침몰하지 않고 항구로 귀환한 독일 함정들의 함종별 사망자 및 부상자 수를 정리한 통계표입니다. 전함, 순양전함, 경순양함, 구축함 등 함급별로 세부 함선 명칭과 함께 구체적인 피해 인원이 기록되어 있으며, 생존 함정에서 발생한 독일 측 총 사상자 수는 863명으로 집계되었습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 269,
+    "seq": 2,
+    "class": "Table",
+    "confidence": 0.923,
+    "bbox": [
+      468,
+      357,
+      1299,
+      1750
+    ],
+    "size": [
+      831,
+      1393
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0269_02.png",
+    "annotation": {
+      "type": "table",
+      "caption_ko": "귀항한 함선의 사상자 비교 (영국 측)",
+      "caption_en": "Comparison of Casualties in Ships Returning to Port (British Side)",
+      "subjects": [
+        "유틀란트 해전",
+        "영국 해군",
+        "함선 사상자",
+        "제1차 세계 대전"
+      ],
+      "description": "유틀란트 해전에서 침몰하지 않고 모항으로 귀환한 영국 해군 함선들의 인명 피해 현황을 정리한 표입니다. 전함, 순양전함, 경순양함, 구축함 등 함종별 개별 함선의 전사자와 부상자 수를 상세히 기록하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 270,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.962,
+    "bbox": [
+      1467,
+      381,
+      2508,
+      1665
+    ],
+    "size": [
+      1041,
+      1284
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0270_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page:\nCOMPARISON OF CASUALTIES IN SHIPS SUNK\n\n2) Korean translation of the caption:\n침몰한 함선들의 사상자 비교\n\n3) Type: \ntable\n\n4) Subjects: \nIndefatigable, Invincible, Queen Mary, Black Prince, Defence, Warrior, Ardent, Fortune, Nestor, Nomad, Shark, Sparrowhawk, Tipperary, Turbulent, Lützow, Pommern, Elbing, Frauenlob, Rostock, Wiesbaden, S35, V4, V27, V29, V48\n\n5) Korean description: \n이 표는 1916년 유틀란트 해전 당시 침몰한 영국군과 독일군 함선의 사상자 수를 비교하여 보여줍니다. 함종별로 사망자, 부상자, 포로의 수를 상세하게 나열하고 있습니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "type": "table",
+      "subjects": [
+        "Indefatigable",
+        "Invincible",
+        "Queen Mary",
+        "Black Prince",
+        "Defence",
+        "Warrior",
+        "Ardent",
+        "Fortune",
+        "Nestor",
+        "Nomad",
+        "Shark",
+        "Sparrowhawk",
+        "Tipperary",
+        "Turbulent",
+        "Lützow",
+        "Pommern",
+        "Elbing",
+        "Frauenlob",
+        "Rostock",
+        "Wiesbaden",
+        "S35",
+        "V4",
+        "V27",
+        "V29",
+        "V48"
+      ],
+      "description": "이 표는 1916년 유틀란트 해전 당시 침몰한 영국군과 독일군 함선의 사상자 수를 비교하여 보여줍니다. 함종별로 사망자, 부상자, 포로의 수를 상세하게 나열하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 270,
+    "seq": 2,
+    "class": "Table",
+    "confidence": 0.957,
+    "bbox": [
+      359,
+      382,
+      1405,
+      1660
+    ],
+    "size": [
+      1046,
+      1278
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0270_02.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page:\nCOMPARISON OF CASUALTIES IN SHIPS SUNK\n\n2) Korean translation of the caption:\n침몰한 함선들의 사상자 비교\n\n3) Type: \ntable\n\n4) Subjects: \nIndefatigable, Invincible, Queen Mary, Black Prince, Defence, Warrior, Ardent, Fortune, Nestor, Nomad, Shark, Sparrowhawk, Tipperary, Turbulent, Lützow, Pommern, Elbing, Frauenlob, Rostock, Wiesbaden, S35, V4, V27, V29, V48\n\n5) Korean description: \n이 표는 1916년 유틀란트 해전 당시 침몰한 영국군과 독일군 함선의 사상자 수를 비교하여 보여줍니다. 함종별로 사망자, 부상자, 포로의 수를 상세하게 나열하고 있습니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "type": "table",
+      "subjects": [
+        "Indefatigable",
+        "Invincible",
+        "Queen Mary",
+        "Black Prince",
+        "Defence",
+        "Warrior",
+        "Ardent",
+        "Fortune",
+        "Nestor",
+        "Nomad",
+        "Shark",
+        "Sparrowhawk",
+        "Tipperary",
+        "Turbulent",
+        "Lützow",
+        "Pommern",
+        "Elbing",
+        "Frauenlob",
+        "Rostock",
+        "Wiesbaden",
+        "S35",
+        "V4",
+        "V27",
+        "V29",
+        "V48"
+      ],
+      "description": "이 표는 1916년 유틀란트 해전 당시 침몰한 영국군과 독일군 함선의 사상자 수를 비교하여 보여줍니다. 함종별로 사망자, 부상자, 포로의 수를 상세하게 나열하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 310,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.945,
+    "bbox": [
+      419,
+      506,
+      1338,
+      1486
+    ],
+    "size": [
+      919,
+      980
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0310_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 1. Jellicoe aboard his flagship *Iron Duke* (IWM Q 55499)\n2) Korean translation: 1. 자신의 기함인 아이언 듀크(Iron Duke)호에 탑승한 젤리코 (IWM Q 55499)\n3) Type: photo\n4) Subjects: Jellicoe, Iron Duke\n5) Korean description: 젤리코 제독이 자신의 기함인 아이언 듀크호의 갑판 위에 서 있는 모습을 담은 흑백 사진입니다. 제복을 입은 제독의 모습과 함께 갑판 위 다른 승조원들의 모습이 배경에 보입니다.",
+      "caption_en": "text: 1. Jellicoe aboard his flagship *Iron Duke* (IWM Q 55499)",
+      "caption_ko": "1. 자신의 기함인 아이언 듀크(Iron Duke)호에 탑승한 젤리코 (IWM Q 55499)",
+      "type": "photo",
+      "subjects": [
+        "Jellicoe",
+        "Iron Duke"
+      ],
+      "description": "젤리코 제독이 자신의 기함인 아이언 듀크호의 갑판 위에 서 있는 모습을 담은 흑백 사진입니다. 제복을 입은 제독의 모습과 함께 갑판 위 다른 승조원들의 모습이 배경에 보입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 311,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.902,
+    "bbox": [
+      580,
+      267,
+      1174,
+      1300
+    ],
+    "size": [
+      594,
+      1033
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0311_01.png",
+    "annotation": {
+      "raw": "1) 2. Beatty in pomp (IWM SP 3129)\n2) 2. 화려한 예복 차림의 비티 (IWM SP 3129)\n3) photo\n4) Beatty\n5) 해군 제복과 정모를 착용한 남성의 흑백 사진입니다. 사진 속 인물은 비티(Beatty)입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 312,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.899,
+    "bbox": [
+      532,
+      266,
+      1224,
+      1296
+    ],
+    "size": [
+      692,
+      1030
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0312_01.png",
+    "annotation": {
+      "raw": "1) 3. Reinhard Scheer (AKG)\n2) 3. 라인하르트 셰어 (AKG)\n3) photo\n4) Reinhard Scheer\n5) 군복을 입고 가슴에 훈장을 단 라인하르트 셰어의 흑백 초상화입니다. 그는 정면을 응시하며 엄숙한 표정을 짓고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 313,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.914,
+    "bbox": [
+      492,
+      268,
+      1263,
+      1410
+    ],
+    "size": [
+      771,
+      1142
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0313_01.png",
+    "annotation": {
+      "raw": "1) 4. Franz Hipper (AKG)\n2) 4. 프란츠 히퍼 (AKG)\n3) photo\n4) Franz Hipper\n5) 이 사진은 독일의 제독 프란츠 히퍼의 초상화입니다. 그는 군복을 입고 정면을 응시하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 314,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.914,
+    "bbox": [
+      365,
+      268,
+      1388,
+      919
+    ],
+    "size": [
+      1023,
+      651
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0314_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 5. The Lützow (IWM HU90054)\n2) Korean translation of the caption: 5. 뤼초 (IWM HU90054)\n3) Type: photo\n4) Subjects: The Lützow\n5) Korean description: 바다 위에 떠 있는 거대한 군함 뤼초의 모습을 담은 흑백 사진입니다. 배의 굴뚝에서 연기가 피어오르고 있으며, 파도가 치는 바다를 항해하고 있습니다.",
+      "caption_en": "text: 5. The Lützow (IWM HU90054)",
+      "caption_ko": "of the caption: 5. 뤼초 (IWM HU90054)",
+      "type": "photo",
+      "subjects": [
+        "The Lützow"
+      ],
+      "description": "바다 위에 떠 있는 거대한 군함 뤼초의 모습을 담은 흑백 사진입니다. 배의 굴뚝에서 연기가 피어오르고 있으며, 파도가 치는 바다를 항해하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 315,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.938,
+    "bbox": [
+      420,
+      270,
+      1338,
+      1012
+    ],
+    "size": [
+      918,
+      742
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0315_01.png",
+    "annotation": {
+      "raw": "1) 6. High Seas Fleet on a North Sea sweep, 1916 (IWM HU 58253)\n2) 6. 1916년 북해를 순찰 중인 고등해군 함대 (IWM HU 58253)\n3) photo\n4) High Seas Fleet, North Sea\n5) 1916년 북해를 순찰 중인 독일 고등해군 함대의 모습을 담은 흑백 사진입니다. 여러 척의 군함들이 일렬로 늘어서서 바다 위를 항해하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 316,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.925,
+    "bbox": [
+      422,
+      266,
+      1338,
+      925
+    ],
+    "size": [
+      916,
+      659
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0316_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 7. Lion followed by the Princess Royal and Queen Mary on the morning of 31 May (IWM HU 69073)\n2) Korean translation: 7. 5월 31일 아침, 프린세스 로열과 퀸 메리가 뒤따르는 라이언 호 (IWM HU 69073)\n3) Type: photo\n4) Subjects: Lion, Princess Royal, Queen Mary\n5) Korean description: 1916년 5월 31일 아침, 바다 위를 항해하는 전함들의 모습을 담은 흑백 사진입니다. 라이언 호가 앞서가고 있으며, 그 뒤를 프린세스 로열 호와 퀸 메리 호가 뒤따르고 있습니다.",
+      "caption_en": "text: 7. Lion followed by the Princess Royal and Queen Mary on the morning of 31 May (IWM HU 69073)",
+      "caption_ko": "7. 5월 31일 아침, 프린세스 로열과 퀸 메리가 뒤따르는 라이언 호 (IWM HU 69073)",
+      "type": "photo",
+      "subjects": [
+        "Lion",
+        "Princess Royal",
+        "Queen Mary"
+      ],
+      "description": "1916년 5월 31일 아침, 바다 위를 항해하는 전함들의 모습을 담은 흑백 사진입니다. 라이언 호가 앞서가고 있으며, 그 뒤를 프린세스 로열 호와 퀸 메리 호가 뒤따르고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 317,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.91,
+    "bbox": [
+      366,
+      268,
+      1389,
+      659
+    ],
+    "size": [
+      1023,
+      391
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0317_01.png",
+    "annotation": {
+      "raw": "1) 8. Seaplane Carrier Engadine (IWM SP 413)\n2) 8. 수상기 모함 엥가딘 (IWM SP 413)\n3) photo\n4) Engadine (Seaplane Carrier), IWM SP 413\n5) 이 사진은 수상기 모함인 엥가딘(Engadine)의 모습을 담은 흑백 사진입니다. 바다 위에 떠 있는 배의 전체적인 외형과 구조를 보여줍니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 318,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.864,
+    "bbox": [
+      364,
+      268,
+      1390,
+      680
+    ],
+    "size": [
+      1026,
+      412
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0318_01.png",
+    "annotation": {
+      "raw": "1) 9. The Warspite (IWM SP 836)\n2) 9. 워스파이트 호 (IWM SP 836)\n3) photo\n4) Warspite\n5) 이 사진은 거대한 전함인 워스파이트 호를 보여줍니다. 배는 잔잔한 물 위에 떠 있으며 배경에는 안개가 끼어 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 319,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.918,
+    "bbox": [
+      420,
+      267,
+      1338,
+      832
+    ],
+    "size": [
+      918,
+      565
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0319_01.png",
+    "annotation": {
+      "raw": "1) 10. The Queen Mary (IWM RP 2222)\n2) 10. 퀸 메리 호 (IWM RP 2222)\n3) photo\n4) The Queen Mary\n5) 이 사진은 영국 해군의 전함인 퀸 메리 호를 보여줍니다. 거대한 선체와 굴뚝이 특징인 전함이 바다 위에 떠 있는 모습입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 320,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.941,
+    "bbox": [
+      419,
+      267,
+      1339,
+      904
+    ],
+    "size": [
+      920,
+      637
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0320_01.png",
+    "annotation": {
+      "raw": "1) 11. A German battlecruiser firing the first salvo, 31 May 1916 (IWM HU 58254)\n2) 11. 1916년 5월 31일, 첫 일제 사격을 가하는 독일 전함 (IWM HU 58254)\n3) photo\n4) German battlecruiser\n5) 독일 전함이 첫 번째 일제 사격을 가하는 순간을 담은 흑백 사진입니다. 포격으로 인해 발생하는 자욱한 연기가 바다 위로 피어오르고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 321,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.94,
+    "bbox": [
+      419,
+      267,
+      1339,
+      888
+    ],
+    "size": [
+      920,
+      621
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0321_01.png",
+    "annotation": {
+      "raw": "1) 12. Seydlitz firing a salvo, 1916 (IWM HU90055)\n2) 12. 1916년 일제 사격을 가하는 제이드리츠함 (IWM HU90055)\n3) photo\n4) Ships: Seydlitz\n5) 1916년 제이드리츠함이 일제 사격을 가하는 순간을 담은 흑백 사진입니다. 거대한 포연이 피어오르는 가운데 함포가 발사되는 모습이 포착되었습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 322,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.911,
+    "bbox": [
+      421,
+      267,
+      1338,
+      874
+    ],
+    "size": [
+      917,
+      607
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0322_01.png",
+    "annotation": {
+      "raw": "1) 13. Last moments of the Indefatigable (IWM Q64302)\n2) 13. 인데페티거블 호의 마지막 순간 (IWM Q64302)\n3) photo\n4) Indefatigable\n5) 이 사진은 폭발과 연기에 휩싸인 인데페티거블 호의 마지막 순간을 보여주는 흑백 사진입니다. 거대한 연기 기둥이 배 주변을 뒤덮고 있어 전투의 긴박함을 묘사하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 323,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.931,
+    "bbox": [
+      420,
+      267,
+      1338,
+      1031
+    ],
+    "size": [
+      918,
+      764
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0323_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 14. Final explosion of the Queen Mary (IWM SP 1708)\n2) Korean translation: 14. 퀸 메리호의 마지막 폭발 (IWM SP 1708)\n3) Type: photo\n4) Subjects: Queen Mary\n5) Korean description: 퀸 메리호가 폭발하며 거대한 연기 기둥이 솟아오르는 장면을 보여주는 사진입니다. 폭발로 인해 발생한 짙은 연기가 하늘을 가득 채우고 있습니다.",
+      "caption_en": "text: 14. Final explosion of the Queen Mary (IWM SP 1708)",
+      "caption_ko": "14. 퀸 메리호의 마지막 폭발 (IWM SP 1708)",
+      "type": "photo",
+      "subjects": [
+        "Queen Mary"
+      ],
+      "description": "퀸 메리호가 폭발하며 거대한 연기 기둥이 솟아오르는 장면을 보여주는 사진입니다. 폭발로 인해 발생한 짙은 연기가 하늘을 가득 채우고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 324,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.926,
+    "bbox": [
+      419,
+      273,
+      1338,
+      1051
+    ],
+    "size": [
+      919,
+      778
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0324_01.png",
+    "annotation": {
+      "raw": "1) 15. German shell spouts around the Birmingham (IWM SP 474)\n2) 15. 버밍엄(Birmingham) 함선 주변으로 튀어 오르는 독일군의 포탄 (IWM SP 474)\n3) photo\n4) Birmingham\n5) 독일군의 포탄이 버밍엄 함선 주변의 바다에 떨어져 거대한 물보라를 일으키고 있습니다. 검은 연기와 함께 솟구치는 물기둥을 보여주는 흑백 사진입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 325,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.836,
+    "bbox": [
+      365,
+      265,
+      1390,
+      700
+    ],
+    "size": [
+      1025,
+      435
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0325_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: 16. *Iron Duke* opens fire (IWM Q 2439)\n2) Korean translation of the caption: 16. 아이언 듀크(Iron Duke)호가 포격을 개시함 (IWM Q 2439)\n3) Type: photo\n4) Subjects: *Iron Duke* (ship)\n5) Korean description: 이 사진은 바다 위에서 포격을 개시하는 아이언 듀크호를 보여줍니다. 배 뒤쪽으로 자욱한 연기가 피어오르고 있습니다.",
+      "caption_en": "text as printed on the page: 16. *Iron Duke* opens fire (IWM Q 2439)",
+      "caption_ko": "of the caption: 16. 아이언 듀크(Iron Duke)호가 포격을 개시함 (IWM Q 2439)",
+      "type": "photo",
+      "subjects": [
+        "Iron Duke* (ship)"
+      ],
+      "description": "이 사진은 바다 위에서 포격을 개시하는 아이언 듀크호를 보여줍니다. 배 뒤쪽으로 자욱한 연기가 피어오르고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 326,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.939,
+    "bbox": [
+      420,
+      266,
+      1337,
+      898
+    ],
+    "size": [
+      917,
+      632
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0326_01.png",
+    "annotation": {
+      "raw": "1) 17. Forecastle of the Iron Duke (IWM Q 55500)\n2) 17. 아이언 듀크호의 선수 갑판 (IWM Q 55500)\n3) photo\n4) Iron Duke\n5) 이 사진은 아이언 듀크호의 선수 갑판을 보여주는 흑백 사진입니다. 거친 파도가 배의 옆면을 치고 있는 모습이 담겨 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 327,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.893,
+    "bbox": [
+      492,
+      269,
+      1260,
+      1393
+    ],
+    "size": [
+      768,
+      1124
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0327_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: 18. Jack Cornwell VC (IWM Q 20883)\n2) Korean translation of the caption: 18. 잭 콘웰 VC (IWM Q 20883)\n3) Type: photo\n4) Subjects: Jack Cornwell\n5) Korean description: 해군 제복을 입고 모자를 쓴 한 남성의 흑백 사진입니다. 사진 속 인물은 잭 콘웰(Jack Cornwell)입니다.",
+      "caption_en": "text as printed on the page: 18. Jack Cornwell VC (IWM Q 20883)",
+      "caption_ko": "of the caption: 18. 잭 콘웰 VC (IWM Q 20883)",
+      "type": "photo",
+      "subjects": [
+        "Jack Cornwell"
+      ],
+      "description": "해군 제복을 입고 모자를 쓴 한 남성의 흑백 사진입니다. 사진 속 인물은 잭 콘웰(Jack Cornwell)입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 328,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.927,
+    "bbox": [
+      419,
+      269,
+      1336,
+      958
+    ],
+    "size": [
+      917,
+      689
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0328_01.png",
+    "annotation": {
+      "raw": "1) 19. Forecastle gun of Chester at which Jack Cornwell won his Victoria Cross (IWM SP 191)\n2) 19. 잭 콘웰이 빅토리아 십자 훈장을 받은 체스터호의 선수포 (IWM SP 191)\n3) photo\n4) People: Jack Cornwell; Ships: Chester\n5) 이 사진은 군함의 갑판 위에 설치된 커다란 포를 보여주는 흑백 역사 사진입니다. 잭 콘웰이 용맹함을 인정받아 훈장을 받은 역사적인 장소를 보여줍니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 329,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.889,
+    "bbox": [
+      365,
+      266,
+      1390,
+      913
+    ],
+    "size": [
+      1025,
+      647
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0329_01.png",
+    "annotation": {
+      "raw": "1) 20. The Warrior (IWM SP 3102)\n2) 20. 워리어 호 (IWM SP 3102)\n3) photo\n4) The Warrior\n5) 이 사진은 바다 위에 떠 있는 전함 '워리어' 호의 모습을 보여주는 흑백 사진입니다. 전함의 측면 모습이 상세하게 담겨 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 330,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.877,
+    "bbox": [
+      420,
+      267,
+      1338,
+      907
+    ],
+    "size": [
+      918,
+      640
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0330_01.png",
+    "annotation": {
+      "raw": "1) 21. The Tipperary (IWM SP 45)\n2) 21. 티퍼리 호 (IWM SP 45)\n3) photo\n4) The Tipperary\n5) 이 사진은 바다 위를 항해하고 있는 티퍼리 호라는 이름의 군함을 보여줍니다. 흑백 사진으로 촬영되어 역사적인 분위기를 자아냅니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 331,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.917,
+    "bbox": [
+      561,
+      265,
+      1196,
+      1292
+    ],
+    "size": [
+      635,
+      1027
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0331_01.png",
+    "annotation": {
+      "raw": "1) 22. Men on the deck of the damaged Chester (IWM SP 1592)\n2) 22. 손상된 체스터호의 갑판 위에 있는 대원들 (IWM SP 1592)\n3) photo\n4) Men, Chester\n5) 손상된 체스터호의 갑판 위에 여러 명의 대원들이 있는 모습을 보여주는 흑백 사진입니다. 사진 속 대원들은 갑판 위에서 무언가 작업을 하거나 상황을 점검하고 있는 듯한 모습입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 332,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.869,
+    "bbox": [
+      420,
+      266,
+      1343,
+      895
+    ],
+    "size": [
+      923,
+      629
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0332_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 23. Explosion of the Invincible taken from the Indomitable (IWM SP 2469)\n2) Korean translation: 23. Indomitable호에서 촬영된 Invincible호의 폭발 (IWM SP 2469)\n3) Type: photo\n4) Subjects: Invincible, Indomitable\n5) Korean description: Indomitable호에서 촬영된 Invincible호의 폭발 장면을 보여주는 흑백 사진입니다. 거대한 연기 기둥이 솟아오르는 폭발의 순간을 포착하고 있습니다.",
+      "caption_en": "text: 23. Explosion of the Invincible taken from the Indomitable (IWM SP 2469)",
+      "caption_ko": "23. Indomitable호에서 촬영된 Invincible호의 폭발 (IWM SP 2469)",
+      "type": "photo",
+      "subjects": [
+        "Invincible",
+        "Indomitable"
+      ],
+      "description": "Indomitable호에서 촬영된 Invincible호의 폭발 장면을 보여주는 흑백 사진입니다. 거대한 연기 기둥이 솟아오르는 폭발의 순간을 포착하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 333,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.917,
+    "bbox": [
+      420,
+      265,
+      1338,
+      862
+    ],
+    "size": [
+      918,
+      597
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0333_01.png",
+    "annotation": {
+      "raw": "1) 24. Explosion of the *Invincible* (IWM SP 2468)\n2) 24. 인빈시블(Invincible)호의 폭발 (IWM SP 2468)\n3) photo\n4) *Invincible* (ship)\n5) 바다 위에서 전함이 폭발하는 순간을 담은 흑백 사진입니다. 자욱한 연기와 함께 해상에 떠 있는 군함의 모습을 보여줍니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 334,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.914,
+    "bbox": [
+      420,
+      267,
+      1338,
+      862
+    ],
+    "size": [
+      918,
+      595
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0334_01.png",
+    "annotation": {
+      "raw": "1) 25. Wreck of the *Invincible* (IWM SP 2470)\n2) 25. 인빈시블 호의 잔해 (IWM SP 2470)\n3) photo\n4) *Invincible*\n5) 바다 위에 떠 있는 인빈시블 호의 잔해를 보여주는 흑백 사진입니다. 파도가 치는 바다 한가운데에 배의 일부가 보입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 335,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.933,
+    "bbox": [
+      366,
+      270,
+      1390,
+      872
+    ],
+    "size": [
+      1024,
+      602
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0335_01.png",
+    "annotation": {
+      "raw": "1) 26. Seydlitz down by the bows as she limped back to port (IWM SP 2157)\n2) 26. 항구로 절뚝거리며 돌아가는 동안 선수 부분이 침수된 자이드리츠호 (IWM SP 2157)\n3) photo\n4) Seydlitz (ship)\n5) 전쟁 중 손상을 입은 독일의 전함 자이드리츠호가 항구로 복귀하는 모습을 담은 흑백 사진입니다. 배의 앞부분이 물에 잠긴 채 연기를 내뿜으며 이동하고 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 336,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.923,
+    "bbox": [
+      365,
+      267,
+      1390,
+      847
+    ],
+    "size": [
+      1025,
+      580
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0336_01.png",
+    "annotation": {
+      "raw": "1) 27. Stern view of the battered Seydlitz (IWM SP 2158)\n2) 27. 피격된 자이드리츠(Seydlitz)함의 선미 모습 (IWM SP 2158)\n3) photo\n4) Ships: Seydlitz\n5) 이 사진은 전투로 인해 손상을 입은 자이드리츠(Seydlitz)함의 뒷모습을 보여줍니다. 배 주변에는 검은 연기가 자욱하게 피어오르고 있어 전투의 치열함을 짐작하게 합니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 337,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.938,
+    "bbox": [
+      419,
+      266,
+      1338,
+      978
+    ],
+    "size": [
+      919,
+      712
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0337_01.png",
+    "annotation": {
+      "raw": "1) 28. Shell damage aboard Seydlitz (IWM HU 90056)\n2) 28. 자이들리츠(Seydlitz) 호의 포탄 피해 (IWM HU 90056)\n3) photo\n4) Seydlitz\n5) 이 사진은 독일 전함 자이들리츠(Seydlitz) 호가 포탄에 의해 입은 피해를 보여주는 흑백 사진입니다. 선체 내부의 파손된 부위와 그 주변에 있는 승조원들의 모습이 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 338,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.918,
+    "bbox": [
+      365,
+      269,
+      1392,
+      856
+    ],
+    "size": [
+      1027,
+      587
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0338_01.png",
+    "annotation": {
+      "raw": "1) 29. Badly burned sailors aboard Plassy (IWM Q 83512)\n2) 29. Plassy 호에 탑승한 심한 화상을 입은 수병들 (IWM Q 83512)\n3) photo\n4) sailors, Plassy\n5) 심한 화상을 입은 수병들이 Plassy 호에 모여 있는 모습을 담은 흑백 사진입니다. 사진 속 수병들의 얼굴과 몸에는 화상으로 인한 상처가 선명하게 보입니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 339,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.905,
+    "bbox": [
+      493,
+      267,
+      1262,
+      1338
+    ],
+    "size": [
+      769,
+      1071
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0339_01.png",
+    "annotation": {
+      "raw": "1) 30. Hole made by German shell in Q Turret of the Tiger (IWM HU 69071)\n2) 30. Tiger호의 Q 포탑에 독일 포탄이 만든 구멍 (IWM HU 69071)\n3) photo\n4) Tiger\n5) 독일군의 포탄 공격으로 인해 발생한 영국 전함 Tiger호의 Q 포탑 구멍을 보여주는 사진입니다. 구멍 사이로 사람들이 밖을 내다보고 있는 모습이 담겨 있습니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 340,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.936,
+    "bbox": [
+      365,
+      267,
+      1391,
+      875
+    ],
+    "size": [
+      1026,
+      608
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0340_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: 31. The Lion after the battle (IWM Q 70605)\n2) Korean translation: 31. 전투 후의 라이언 호 (IWM Q 70605)\n3) Type: photo\n4) Subjects: The Lion (ship)\n5) Korean description: 전투가 끝난 후 손상된 상태의 라이언 호를 보여주는 흑백 사진입니다. 배 주변으로 자욱한 연기가 피어오르고 있어 치열했던 전투의 흔적을 짐작하게 합니다.",
+      "caption_en": "text: 31. The Lion after the battle (IWM Q 70605)",
+      "caption_ko": "31. 전투 후의 라이언 호 (IWM Q 70605)",
+      "type": "photo",
+      "subjects": [
+        "The Lion (ship)"
+      ],
+      "description": "전투가 끝난 후 손상된 상태의 라이언 호를 보여주는 흑백 사진입니다. 배 주변으로 자욱한 연기가 피어오르고 있어 치열했던 전투의 흔적을 짐작하게 합니다."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 341,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.675,
+    "bbox": [
+      881,
+      237,
+      1079,
+      458
+    ],
+    "size": [
+      198,
+      221
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0341_01.png",
+    "annotation": {
+      "raw": "I'm sorry, but I cannot fulfill this request because there is no figure (photo, map, diagram, or table) with a caption on the provided page. The image shows a book information page from the Kindle app, which includes the book title, authors, and author biographies, but does not contain any figures with captions."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 342,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.439,
+    "bbox": [
+      393,
+      253,
+      2514,
+      1677
+    ],
+    "size": [
+      2121,
+      1424
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0342_01.png",
+    "annotation": {
+      "raw": "There is no figure (photo, map, diagram, or table) on the provided page. The page contains only text listing other books by the authors."
+    }
+  },
+  {
+    "book": "Yutland1916",
+    "page": 344,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.512,
+    "bbox": [
+      749,
+      535,
+      1263,
+      789
+    ],
+    "size": [
+      514,
+      254
+    ],
+    "file": "wiki/assets/extracted/Yutland1916/yutland1916_0344_01.png",
+    "annotation": {
+      "raw": "There is no figure (photo, map, diagram, or table) on this page. The page contains an advertisement for the \"W&N blog and newsletter.\""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 5,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.95,
+    "bbox": [
+      1477,
+      700,
+      2522,
+      1367
+    ],
+    "size": [
+      1045,
+      667
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0005_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 7,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.94,
+    "bbox": [
+      355,
+      310,
+      1402,
+      1094
+    ],
+    "size": [
+      1047,
+      784
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0007_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Advance of the High Sea Fleet in the Hoofden 5/6 March 1916\n\n2) **Korean translation of the caption**: 1916년 3월 5~6일, 후프덴(Hoofden) 지역에서의 독일 고등해군 함대 전진\n\n3) **Type**: map\n\n4) **Subjects**: High Sea Fleet, England, Denmark, Germany, Hoofden, Skagerrak, Dogger Bank\n\n5) **Korean description**: 이 지도는 1916년 3월 5일과 6일 사이 독일 고등해군 함대가 후프덴 지역으로 이동한 경로를 보여줍니다. 영국, 덴마크, 독일 인근 해역의 지리적 위치를 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: Advance of the High Sea Fleet in the Hoofden 5/6 March 1916",
+      "caption_ko": "of the caption**: 1916년 3월 5~6일, 후프덴(Hoofden) 지역에서의 독일 고등해군 함대 전진",
+      "subjects": [
+        ": High Sea Fleet",
+        "England",
+        "Denmark",
+        "Germany",
+        "Hoofden",
+        "Skagerrak",
+        "Dogger Bank"
+      ],
+      "description": ": 이 지도는 1916년 3월 5일과 6일 사이 독일 고등해군 함대가 후프덴 지역으로 이동한 경로를 보여줍니다. 영국, 덴마크, 독일 인근 해역의 지리적 위치를 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 15,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.939,
+    "bbox": [
+      1470,
+      893,
+      2526,
+      1552
+    ],
+    "size": [
+      1056,
+      659
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0015_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 16,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.946,
+    "bbox": [
+      1475,
+      942,
+      2525,
+      1731
+    ],
+    "size": [
+      1050,
+      789
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0016_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: Movement of Lowestoft and Yarmouth on 25th April 1916\n2) Korean translation of the caption: 1916년 4월 25일 로우스토프트와 야머스의 이동\n3) Type: map\n4) Subjects: Lowestoft, Yarmouth, England, Germany\n5) Korean description: 이 지도는 1916년 4월 25일 영국 로우스토프트와 야머스 지역 인근의 해상 움직임을 나타냅니다. 영국과 독일 해안 사이의 북해 지역 지형을 보여줍니다.",
+      "caption_en": "text as printed on the page: Movement of Lowestoft and Yarmouth on 25th April 1916",
+      "caption_ko": "of the caption: 1916년 4월 25일 로우스토프트와 야머스의 이동",
+      "type": "map",
+      "subjects": [
+        "Lowestoft",
+        "Yarmouth",
+        "England",
+        "Germany"
+      ],
+      "description": "이 지도는 1916년 4월 25일 영국 로우스토프트와 야머스 지역 인근의 해상 움직임을 나타냅니다. 영국과 독일 해안 사이의 북해 지역 지형을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 19,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.963,
+    "bbox": [
+      354,
+      406,
+      1401,
+      1578
+    ],
+    "size": [
+      1047,
+      1172
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0019_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**:\nBombardment of Lowestoft and Great Yarmouth on 29 April 1916\n\n2) **Korean translation of the caption**:\n1916년 4월 29일 로스토프트와 그레이트 야머스의 포격\n\n3) **Type**: map\n\n4) **Subjects**: \n*   **Places**: Lowestoft, Great Yarmouth, Smiths Knoll, Strandbarr\n*   **Ships/Units**: UB29, UB18, U10, U12, U15, U37, U38, U40, U45, U50, U51, U52, U53, U54, U55, U56, U57, U58, U61, U65, Destroyers, L Class\n\n5) **Korean description**: \n이 지도는 1916년 4월 29일 영국 로스토프트와 그레이트 야머스 해안에 가해진 포격 상황을 보여줍니다. 지도에는 당시 작전에 참여한 독일의 U보트들과 영국의 구축함들의 위치 및 이동 경로가 상세히 표시되어 있습니다.",
+      "caption_en": "text as printed on the page**:",
+      "caption_ko": "of the caption**:",
+      "subjects": [
+        ":",
+        "**Places**: Lowestoft",
+        "Great Yarmouth",
+        "Smiths Knoll",
+        "Strandbarr",
+        "**Ships/Units**: UB29",
+        "UB18",
+        "U10",
+        "U12",
+        "U15",
+        "U37",
+        "U38",
+        "U40",
+        "U45",
+        "U50",
+        "U51",
+        "U52",
+        "U53",
+        "U54",
+        "U55",
+        "U56",
+        "U57",
+        "U58",
+        "U61",
+        "U65",
+        "Destroyers",
+        "L Class"
+      ],
+      "description": ": \n이 지도는 1916년 4월 29일 영국 로스토프트와 그레이트 야머스 해안에 가해진 포격 상황을 보여줍니다. 지도에는 당시 작전에 참여한 독일의 U보트들과 영국의 구축함들의 위치 및 이동 경로가 상세히 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 22,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.946,
+    "bbox": [
+      406,
+      312,
+      1350,
+      1757
+    ],
+    "size": [
+      944,
+      1445
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0022_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text:** OPERATION OF GRAND FLEET 2 to 5 MAY 1916\n2) **Korean translation of the caption:** 1916년 5월 2일~5일 그랜드 플릿 작전\n3) **Type:** map\n4) **Subjects:** GRAND FLEET, BATTLE CRUISER FLEET, SUBMARINES, NORWAY, JUTLAND, GERMANY\n5) **Korean description:** 이 지도는 1916년 5월 2일부터 5일까지 진행된 그랜드 플릿의 작전 경로와 함대 배치를 보여줍니다. 노르웨이, 유틀란트, 독일 인근 해역에서 함대들의 움직임을 나타내고 있습니다.",
+      "caption_en": "text:** OPERATION OF GRAND FLEET 2 to 5 MAY 1916",
+      "caption_ko": "of the caption:** 1916년 5월 2일~5일 그랜드 플릿 작전",
+      "subjects": [
+        "GRAND FLEET",
+        "BATTLE CRUISER FLEET",
+        "SUBMARINES",
+        "NORWAY",
+        "JUTLAND",
+        "GERMANY"
+      ],
+      "description": "이 지도는 1916년 5월 2일부터 5일까지 진행된 그랜드 플릿의 작전 경로와 함대 배치를 보여줍니다. 노르웨이, 유틀란트, 독일 인근 해역에서 함대들의 움직임을 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 28,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.958,
+    "bbox": [
+      353,
+      494,
+      1404,
+      1734
+    ],
+    "size": [
+      1051,
+      1240
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0028_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text:** High Sea Fleet conduct FT traffic in the German Bight via III Entrance Wilhelmshaven.\n\n2) **Korean translation:** 고해상 함대가 빌헬름스하벤의 3번 입구를 통해 독일 만에서 FT 통신을 수행함.\n\n3) **Type:** map\n\n4) **Subjects:** \n* **Places:** UTTERLEY ISLANDS, SCOTLAND, England, Dover, Holland, Germany, Skagerrak, German Bight, Wilhelmshaven.\n* **Ships/Units:** Advance of U-Boote, Grand Fleet, 1st Battle Squadron, 2nd Battle Squadron, 3rd Battle Squadron, 1st Cruiser Squadron, 2nd/3rd Cruiser Squadron, 1st-11th Destroyer Squadrons.\n\n5) **Korean description:** 이 지도는 1916년 5월 31일 당시 독일 해군의 이동과 함대 배치를 나타냅니다. 스코틀랜드와 독일 사이의 북해 지역을 배경으로 주요 함대 부대와 유보트의 전진 경로를 보여줍니다.",
+      "caption_en": "text:** High Sea Fleet conduct FT traffic in the German Bight via III Entrance Wilhelmshaven.",
+      "caption_ko": "고해상 함대가 빌헬름스하벤의 3번 입구를 통해 독일 만에서 FT 통신을 수행함.",
+      "subjects": [
+        "",
+        "**Places:** UTTERLEY ISLANDS",
+        "SCOTLAND",
+        "England",
+        "Dover",
+        "Holland",
+        "Germany",
+        "Skagerrak",
+        "German Bight",
+        "Wilhelmshaven.",
+        "**Ships/Units:** Advance of U-Boote",
+        "Grand Fleet",
+        "1st Battle Squadron",
+        "2nd Battle Squadron",
+        "3rd Battle Squadron",
+        "1st Cruiser Squadron",
+        "2nd/3rd Cruiser Squadron",
+        "1st-11th Destroyer Squadrons."
+      ],
+      "description": "이 지도는 1916년 5월 31일 당시 독일 해군의 이동과 함대 배치를 나타냅니다. 스코틀랜드와 독일 사이의 북해 지역을 배경으로 주요 함대 부대와 유보트의 전진 경로를 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 29,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.961,
+    "bbox": [
+      1474,
+      648,
+      2525,
+      1523
+    ],
+    "size": [
+      1051,
+      875
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0029_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Attack by U66 on 2 Battle Squadron 31.5.1916\n\n2) **Korean translation of the caption**: 1916년 5월 31일, 제2전투함대에 대한 U66의 공격\n\n3) **Type**: diagram\n\n4) **Subjects**: U66, 2 Battle Squadron, Light cruiser, Destroyer screen\n\n5) **Korean description**: 이 도표는 1916년 5월 31일 U66이 제2전투함대를 공격하는 경로를 화살표로 나타낸 것입니다. 경순양함과 구축함 초계선이 포함된 함대의 움직임을 시각적으로 보여줍니다.",
+      "caption_en": "text as printed on the page**: Attack by U66 on 2 Battle Squadron 31.5.1916",
+      "caption_ko": "of the caption**: 1916년 5월 31일, 제2전투함대에 대한 U66의 공격",
+      "subjects": [
+        ": U66",
+        "2 Battle Squadron",
+        "Light cruiser",
+        "Destroyer screen"
+      ],
+      "description": ": 이 도표는 1916년 5월 31일 U66이 제2전투함대를 공격하는 경로를 화살표로 나타낸 것입니다. 경순양함과 구축함 초계선이 포함된 함대의 움직임을 시각적으로 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 30,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.932,
+    "bbox": [
+      1471,
+      599,
+      2525,
+      1231
+    ],
+    "size": [
+      1054,
+      632
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0030_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Order of march Reconnaissance Forces 31 May 1916\n\n2) **Korean translation of the caption**: 1916년 5월 31일 정찰 부대의 행군 순서\n\n3) **Type**: Diagram\n\n4) **Subjects**: \n* **Ships**: Frankfurt, Wiesbaden, Pillau, Elbing, Lützow, Derfflinger, Seydlitz, Moltke, von der Tann, IX Torpedoots, VI Torpedoote\n\n5) **Korean description**: 이 도표는 1916년 5월 31일 독일 정찰 부대의 함선 배치와 행군 순서를 보여줍니다. 각 함선의 명칭과 위치가 도식적으로 나타나 있습니다.",
+      "caption_en": "text as printed on the page**: Order of march Reconnaissance Forces 31 May 1916",
+      "caption_ko": "of the caption**: 1916년 5월 31일 정찰 부대의 행군 순서",
+      "subjects": [
+        ":",
+        "**Ships**: Frankfurt",
+        "Wiesbaden",
+        "Pillau",
+        "Elbing",
+        "Lützow",
+        "Derfflinger",
+        "Seydlitz",
+        "Moltke",
+        "von der Tann",
+        "IX Torpedoots",
+        "VI Torpedoote"
+      ],
+      "description": ": 이 도표는 1916년 5월 31일 독일 정찰 부대의 함선 배치와 행군 순서를 보여줍니다. 각 함선의 명칭과 위치가 도식적으로 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 31,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.923,
+    "bbox": [
+      1565,
+      309,
+      2433,
+      1756
+    ],
+    "size": [
+      868,
+      1447
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0031_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text**: High Seas Fleet order of march 31 May 1916\n\n2) **Korean translation of the caption**: 1916년 5월 31일 고등해군 함대의 행군 대형\n\n3) **Type**: diagram\n\n4) **Subjects**: V45, Stettin, S53, Rostock, S54, München, V73, Hamburg, G42, Frauenlob, V71, Stuttgart, Hannover, König, Großer Kurfürst, Markgraf, Kronprinz, Kaiser, Prinzregent Luitpold, Kaiserin, Friedrich der Große, Ostfriesland, Thüringen, Helgoland, Posen, Rheinland, Nassau, Deutschland, Pommern, Schlesien, Schleswig-Holstein, Hessen\n\n5) **Korean description**: 이 도표는 1916년 5월 31일 당시 독일 고등해군 함대의 행군 순서를 보여줍니다. 각 함선의 명칭과 식별 번호가 수직적인 대형으로 나열되어 있습니다.",
+      "caption_en": "text**: High Seas Fleet order of march 31 May 1916",
+      "caption_ko": "of the caption**: 1916년 5월 31일 고등해군 함대의 행군 대형",
+      "subjects": [
+        ": V45",
+        "Stettin",
+        "S53",
+        "Rostock",
+        "S54",
+        "München",
+        "V73",
+        "Hamburg",
+        "G42",
+        "Frauenlob",
+        "V71",
+        "Stuttgart",
+        "Hannover",
+        "König",
+        "Großer Kurfürst",
+        "Markgraf",
+        "Kronprinz",
+        "Kaiser",
+        "Prinzregent Luitpold",
+        "Kaiserin",
+        "Friedrich der Große",
+        "Ostfriesland",
+        "Thüringen",
+        "Helgoland",
+        "Posen",
+        "Rheinland",
+        "Nassau",
+        "Deutschland",
+        "Pommern",
+        "Schlesien",
+        "Schleswig-Holstein",
+        "Hessen"
+      ],
+      "description": ": 이 도표는 1916년 5월 31일 당시 독일 고등해군 함대의 행군 순서를 보여줍니다. 각 함선의 명칭과 식별 번호가 수직적인 대형으로 나열되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 32,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.963,
+    "bbox": [
+      1473,
+      648,
+      2525,
+      1661
+    ],
+    "size": [
+      1052,
+      1013
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0032_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 33,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.962,
+    "bbox": [
+      1472,
+      308,
+      2525,
+      1247
+    ],
+    "size": [
+      1053,
+      939
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0033_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 36,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.914,
+    "bbox": [
+      352,
+      407,
+      1406,
+      1246
+    ],
+    "size": [
+      1054,
+      839
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0036_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 37,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.848,
+    "bbox": [
+      348,
+      320,
+      1411,
+      1406
+    ],
+    "size": [
+      1063,
+      1086
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0037_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text:** Battle Cruiser Fleet movements 1515 to 1545hrs\n2) **Korean translation of the caption:** 전함 순양함 함대 이동 (15:15 ~ 15:45)\n3) **Type:** Diagram\n4) **Subjects:** 5 Battle Squadron, 1 Destroyer Flotilla, 2 Battle Cruiser Squadron, 9 and 10 Destroyer Flotilla, Tyr, Queen Elizabeth, Princess Royal, Champion, Falmouth, England, Northumberland, Duisburg, Frankfurt\n5) **Korean description:** 이 도표는 15시 15분부터 15시 45분까지 전함 순양함 함대의 이동 경로를 보여줍니다. 각 함대와 군함들의 위치 변화를 시간대별로 나타낸 전술 도표입니다.",
+      "caption_en": "text:** Battle Cruiser Fleet movements 1515 to 1545hrs",
+      "caption_ko": "of the caption:** 전함 순양함 함대 이동 (15:15 ~ 15:45)",
+      "subjects": [
+        "5 Battle Squadron",
+        "1 Destroyer Flotilla",
+        "2 Battle Cruiser Squadron",
+        "9 and 10 Destroyer Flotilla",
+        "Tyr",
+        "Queen Elizabeth",
+        "Princess Royal",
+        "Champion",
+        "Falmouth",
+        "England",
+        "Northumberland",
+        "Duisburg",
+        "Frankfurt"
+      ],
+      "description": "이 도표는 15시 15분부터 15시 45분까지 전함 순양함 함대의 이동 경로를 보여줍니다. 각 함대와 군함들의 위치 변화를 시간대별로 나타낸 전술 도표입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 41,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.683,
+    "bbox": [
+      354,
+      292,
+      1407,
+      1024
+    ],
+    "size": [
+      1053,
+      732
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0041_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Skagerrak Battle 15.45ks to 16.48ks\n2) **Korean translation of the caption**: 스카게라크 해전 15.45ks ~ 16.48ks\n3) **Type**: diagram\n4) **Subjects**: Skagerrak (place)\n5) **Korean description**: 이 도표는 스카게라크 해전 당시의 움직임을 나타내는 선과 속도 범위를 보여줍니다. 15.45ks에서 16.48ks 사이의 속도 수치가 명시되어 있습니다.",
+      "caption_en": "text as printed on the page**: Skagerrak Battle 15.45ks to 16.48ks",
+      "caption_ko": "of the caption**: 스카게라크 해전 15.45ks ~ 16.48ks",
+      "subjects": [
+        ": Skagerrak (place)"
+      ],
+      "description": ": 이 도표는 스카게라크 해전 당시의 움직임을 나타내는 선과 속도 범위를 보여줍니다. 15.45ks에서 16.48ks 사이의 속도 수치가 명시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 43,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.934,
+    "bbox": [
+      1717,
+      931,
+      2281,
+      1758
+    ],
+    "size": [
+      564,
+      827
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0043_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Fire distribution 1440 to 1720hrs\n\n2) **Korean translation of the caption**: 14:40부터 17:20까지의 사격 분포\n\n3) **Type**: diagram\n\n4) **Subjects**: Seydlitz, Moltke, New Zealand, Derfflinger, Lützow, Princess Royal, Queen Mary, Warspite, Barham, Lion\n\n5) **Korean description**: 이 도표는 14시 40분부터 17시 20분 사이 주요 전함들의 사격 분포를 보여줍니다. 각 함선의 위치와 시간에 따른 사격 범위를 시각적으로 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: Fire distribution 1440 to 1720hrs",
+      "caption_ko": "of the caption**: 14:40부터 17:20까지의 사격 분포",
+      "subjects": [
+        ": Seydlitz",
+        "Moltke",
+        "New Zealand",
+        "Derfflinger",
+        "Lützow",
+        "Princess Royal",
+        "Queen Mary",
+        "Warspite",
+        "Barham",
+        "Lion"
+      ],
+      "description": ": 이 도표는 14시 40분부터 17시 20분 사이 주요 전함들의 사격 분포를 보여줍니다. 각 함선의 위치와 시간에 따른 사격 범위를 시각적으로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 48,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.696,
+    "bbox": [
+      1467,
+      398,
+      2525,
+      1568
+    ],
+    "size": [
+      1058,
+      1170
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0048_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Skagerrak 1600 to 1730hrs the battle of the british cruisers\n\n2) **Korean translation of the caption**: 스카게라크 16:00~17:30, 영국 순양함들의 전투\n\n3) **Type**: Map\n\n4) **Subjects**: Skagerrak, British cruisers\n\n5) **Korean description**: 이 지도는 16:00부터 17:30 사이 스카게라크 해역에서 벌어진 영국 순양함들의 전투 경로를 보여줍니다. 선들의 움직임을 통해 당시 해전의 전개 양상을 시각적으로 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: Skagerrak 1600 to 1730hrs the battle of the british cruisers",
+      "caption_ko": "of the caption**: 스카게라크 16:00~17:30, 영국 순양함들의 전투",
+      "subjects": [
+        ": Skagerrak",
+        "British cruisers"
+      ],
+      "description": ": 이 지도는 16:00부터 17:30 사이 스카게라크 해역에서 벌어진 영국 순양함들의 전투 경로를 보여줍니다. 선들의 움직임을 통해 당시 해전의 전개 양상을 시각적으로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 57,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.414,
+    "bbox": [
+      427,
+      284,
+      1367,
+      1668
+    ],
+    "size": [
+      940,
+      1384
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0057_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 63,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.804,
+    "bbox": [
+      1475,
+      305,
+      2532,
+      1660
+    ],
+    "size": [
+      1057,
+      1355
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0063_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**:\nFire Distribution at 17.46hrs with the order to 'Open Fire.'\n\n2) **Korean translation of the caption**:\n17시 46분 '사격 개시' 명령에 따른 사격 분포\n\n3) **Type**: \nDiagram\n\n4) **Subjects**: \n**Ships**: Lion, Princess Royal, Tiger, New Zealand, Barham, Valiant, Warspite, Malaya, Southampton, Dublin, Birmingham, Nottingham, Lützow, Derfflinger, Seydlitz, Moltke, von der Tann, König, Großer Kurfrust, Markgraf, Kronprinz, Kaiser, Prinzregent Luitpold, Kaiserin, Friedrich der Große, Ostfriesland, Thüringen, Helgoland, Oldenburg, Posen, Rheinland, Nassau, Westfalen.\n\n5) **Korean description**: \n이 도표는 17시 46분 '사격 개시' 명령이 내려졌을 때 각 군함의 사격 분포를 보여줍니다. 선들을 통해 영국 함선들과 독일 함선들 사이의 공격 대상 관계를 시각적으로 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**:",
+      "caption_ko": "of the caption**:",
+      "subjects": [
+        ":",
+        "Ships**: Lion",
+        "Princess Royal",
+        "Tiger",
+        "New Zealand",
+        "Barham",
+        "Valiant",
+        "Warspite",
+        "Malaya",
+        "Southampton",
+        "Dublin",
+        "Birmingham",
+        "Nottingham",
+        "Lützow",
+        "Derfflinger",
+        "Seydlitz",
+        "Moltke",
+        "von der Tann",
+        "König",
+        "Großer Kurfrust",
+        "Markgraf",
+        "Kronprinz",
+        "Kaiser",
+        "Prinzregent Luitpold",
+        "Kaiserin",
+        "Friedrich der Große",
+        "Ostfriesland",
+        "Thüringen",
+        "Helgoland",
+        "Oldenburg",
+        "Posen",
+        "Rheinland",
+        "Nassau",
+        "Westfalen."
+      ],
+      "description": ": \n이 도표는 17시 46분 '사격 개시' 명령이 내려졌을 때 각 군함의 사격 분포를 보여줍니다. 선들을 통해 영국 함선들과 독일 함선들 사이의 공격 대상 관계를 시각적으로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 68,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.467,
+    "bbox": [
+      1474,
+      276,
+      2532,
+      1439
+    ],
+    "size": [
+      1058,
+      1163
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0068_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 74,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.785,
+    "bbox": [
+      407,
+      449,
+      1359,
+      1762
+    ],
+    "size": [
+      952,
+      1313
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0074_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text:** Skagerrak Battle 1810 to 1855hrs\n\n2) **Korean translation of the caption:** 스카게라크 해전 18:10 ~ 18:55\n\n3) **Type:** Map/Diagram\n\n4) **Subjects:** \n* **Places:** Skagerrak\n* **Ships:** HMS Marlborough, HMS Malaya, SMS König, SMS Friedrich der Grosse, HMS Calliope, HMS Boadicea, HMS Centurion, HMS Agincourt, HMS Warspite (and various other unnamed or partially legible vessels indicated by lines)\n\n5) **Korean description:** 이 도표는 18:10부터 18:55 사이 스카게라크 해전 당시 함대의 움직임을 보여줍니다. 다양한 영국과 독일 전함들의 위치와 이동 경로가 선과 텍스트로 상세히 표시되어 있습니다.",
+      "caption_en": "text:** Skagerrak Battle 1810 to 1855hrs",
+      "caption_ko": "of the caption:** 스카게라크 해전 18:10 ~ 18:55",
+      "subjects": [
+        "",
+        "**Places:** Skagerrak",
+        "**Ships:** HMS Marlborough",
+        "HMS Malaya",
+        "SMS König",
+        "SMS Friedrich der Grosse",
+        "HMS Calliope",
+        "HMS Boadicea",
+        "HMS Centurion",
+        "HMS Agincourt",
+        "HMS Warspite (and various other unnamed or partially legible vessels indicated by lines)"
+      ],
+      "description": "이 도표는 18:10부터 18:55 사이 스카게라크 해전 당시 함대의 움직임을 보여줍니다. 다양한 영국과 독일 전함들의 위치와 이동 경로가 선과 텍스트로 상세히 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 80,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.923,
+    "bbox": [
+      1470,
+      687,
+      2529,
+      1394
+    ],
+    "size": [
+      1059,
+      707
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0080_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 96,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.965,
+    "bbox": [
+      352,
+      309,
+      1402,
+      1087
+    ],
+    "size": [
+      1050,
+      778
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0096_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: SKAGERRAK: THE BATTLE OF JUTLAND THROUGH GERMAN EYES\n2) Korean translation of the caption: 스카게라크: 독일인의 시선으로 본 유틀란트 해전\n3) Type: table\n4) Subjects: Marlborough, Revenge, Agincourt, Hercules, Swiftsure, Thunderer, Royal Oak, Iron Duke, Renown, Bellerophon, Conqueror, Orion, Vanguard, Collingwood, Monmouth, Seyfert, Temeraire, Neptune, Canada, Wiesbaden, Kaiser, I AG, Markgraf, Skagerrak, Jutland\n5) Korean description: 이 표는 유틀란트 해전 당시 독일군의 시각에서 기록된 함포 사격 기록을 보여줍니다. 시간, 발사한 함선, 사거리, 발사 횟수 및 목표물을 상세히 나열하고 있습니다.",
+      "caption_en": "text as printed on the page: SKAGERRAK: THE BATTLE OF JUTLAND THROUGH GERMAN EYES",
+      "caption_ko": "of the caption: 스카게라크: 독일인의 시선으로 본 유틀란트 해전",
+      "type": "table",
+      "subjects": [
+        "Marlborough",
+        "Revenge",
+        "Agincourt",
+        "Hercules",
+        "Swiftsure",
+        "Thunderer",
+        "Royal Oak",
+        "Iron Duke",
+        "Renown",
+        "Bellerophon",
+        "Conqueror",
+        "Orion",
+        "Vanguard",
+        "Collingwood",
+        "Monmouth",
+        "Seyfert",
+        "Temeraire",
+        "Neptune",
+        "Canada",
+        "Wiesbaden",
+        "Kaiser",
+        "I AG",
+        "Markgraf",
+        "Skagerrak",
+        "Jutland"
+      ],
+      "description": "이 표는 유틀란트 해전 당시 독일군의 시각에서 기록된 함포 사격 기록을 보여줍니다. 시간, 발사한 함선, 사거리, 발사 횟수 및 목표물을 상세히 나열하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 97,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.813,
+    "bbox": [
+      353,
+      305,
+      1404,
+      1394
+    ],
+    "size": [
+      1051,
+      1089
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0097_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Skagerrak Battle 19.20hrs to 19.30hrs\n2) **Korean translation of the caption**: 스카게라크 해전 19:20 ~ 19:30\n3) **Type**: diagram\n4) **Subjects**: \n   - Places: Skagerrak\n   - Ships: Lützow, Derfflinger, Seydlitz, Moltke, König, Friedrich der Grosse, SMS Prinz Heinrich, SMS Von der Tann\n5) **Korean description**: 이 다이어그램은 19:20부터 19:30 사이 스카게라크 해전 당시 독일 함선들의 위치와 이동 경로를 보여줍니다. 각 선의 궤적은 특정 시간대 동안 각 군함이 이동한 경로를 나타냅니다.",
+      "caption_en": "text as printed on the page**: Skagerrak Battle 19.20hrs to 19.30hrs",
+      "caption_ko": "of the caption**: 스카게라크 해전 19:20 ~ 19:30",
+      "subjects": [
+        ":",
+        "Places: Skagerrak",
+        "Ships: Lützow",
+        "Derfflinger",
+        "Seydlitz",
+        "Moltke",
+        "König",
+        "Friedrich der Grosse",
+        "SMS Prinz Heinrich",
+        "SMS Von der Tann"
+      ],
+      "description": ": 이 다이어그램은 19:20부터 19:30 사이 스카게라크 해전 당시 독일 함선들의 위치와 이동 경로를 보여줍니다. 각 선의 궤적은 특정 시간대 동안 각 군함이 이동한 경로를 나타냅니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 106,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.853,
+    "bbox": [
+      355,
+      300,
+      1407,
+      1551
+    ],
+    "size": [
+      1052,
+      1251
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0106_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 109,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.801,
+    "bbox": [
+      351,
+      303,
+      1410,
+      1038
+    ],
+    "size": [
+      1059,
+      735
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0109_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 113,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.944,
+    "bbox": [
+      1471,
+      309,
+      2510,
+      1305
+    ],
+    "size": [
+      1039,
+      996
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0113_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 119,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.94,
+    "bbox": [
+      1471,
+      312,
+      2503,
+      1073
+    ],
+    "size": [
+      1032,
+      761
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0119_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Skagerrak Battle 20.10 to 20.20hrs\n\n2) **Korean translation of the caption**: 스카게라크 해전 20:10 ~ 20:20\n\n3) **Type**: diagram\n\n4) **Subjects**: Skagerrak, 1st Battle Squadron, 2nd Battle Squadron, 3rd Battle Squadron, 1st Battlecruiser Squadron, 2nd Battlecruiser Squadron\n\n5) **Korean description**: 이 도표는 스카게라크 해전 중 20시 10분부터 20시 20분 사이의 함대 이동 경로를 보여줍니다. 각 전함 부대와 순양전함 부대의 위치와 움직임을 선과 기호로 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: Skagerrak Battle 20.10 to 20.20hrs",
+      "caption_ko": "of the caption**: 스카게라크 해전 20:10 ~ 20:20",
+      "subjects": [
+        ": Skagerrak",
+        "1st Battle Squadron",
+        "2nd Battle Squadron",
+        "3rd Battle Squadron",
+        "1st Battlecruiser Squadron",
+        "2nd Battlecruiser Squadron"
+      ],
+      "description": ": 이 도표는 스카게라크 해전 중 20시 10분부터 20시 20분 사이의 함대 이동 경로를 보여줍니다. 각 전함 부대와 순양전함 부대의 위치와 움직임을 선과 기호로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 128,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.936,
+    "bbox": [
+      355,
+      553,
+      1389,
+      1255
+    ],
+    "size": [
+      1034,
+      702
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0128_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 134,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.945,
+    "bbox": [
+      1473,
+      309,
+      2526,
+      1577
+    ],
+    "size": [
+      1053,
+      1268
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0134_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 144,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.958,
+    "bbox": [
+      1475,
+      455,
+      2527,
+      1587
+    ],
+    "size": [
+      1052,
+      1132
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0144_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: Sectors assigned to Torpedoboote\n2) Korean translation of the caption: 어뢰정에게 할당된 구역\n3) Type: diagram\n4) Subjects: Torpedoboote, II Flottille, V Flottille, VII Flot.\n5) Korean description: 이 도표는 어뢰정 부대에 할당된 방위 구역을 보여줍니다. 각 구역은 방위각과 함께 제2, 제5, 제7 어뢰정 전대로 나누어 표시되어 있습니다.",
+      "caption_en": "text as printed on the page: Sectors assigned to Torpedoboote",
+      "caption_ko": "of the caption: 어뢰정에게 할당된 구역",
+      "type": "diagram",
+      "subjects": [
+        "Torpedoboote",
+        "II Flottille",
+        "V Flottille",
+        "VII Flot."
+      ],
+      "description": "이 도표는 어뢰정 부대에 할당된 방위 구역을 보여줍니다. 각 구역은 방위각과 함께 제2, 제5, 제7 어뢰정 전대로 나누어 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 152,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.712,
+    "bbox": [
+      354,
+      300,
+      1405,
+      1400
+    ],
+    "size": [
+      1051,
+      1100
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0152_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 160,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.955,
+    "bbox": [
+      353,
+      698,
+      1402,
+      1510
+    ],
+    "size": [
+      1049,
+      812
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0160_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nSkagerrak Battle\nFirst Battle with 4 Flotilla\n00.30hrs 1 Jun 1916\n\n2) **Korean translation of the caption**\n스카게라크 해전\n제4구축함대와의 첫 전투\n1916년 6월 1일 00:30\n\n3) **Type**\nDiagram (Tactical map)\n\n4) **Subjects**\nSkagerrak Battle, 4 Flotilla, 12 Destroyer Flotilla, 13 Destroyer Flotilla, 9 and 10 Flotilla, 4 Destroyer Flotilla, 5 Battle Squadron, 6 Division, Nassau, Westfalen, Rheinland.\n\n5) **Korean description**\n이 도표는 1916년 6월 1일 스카게라크 해전 당시 독일 함대의 전술적 배치와 이동 경로를 보여줍니다. 다양한 구축함대와 전함들의 위치가 선과 함께 표시되어 당시의 해상 상황을 나타냅니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "Skagerrak Battle",
+        "4 Flotilla",
+        "12 Destroyer Flotilla",
+        "13 Destroyer Flotilla",
+        "9 and 10 Flotilla",
+        "4 Destroyer Flotilla",
+        "5 Battle Squadron",
+        "6 Division",
+        "Nassau",
+        "Westfalen",
+        "Rheinland."
+      ],
+      "description": "이 도표는 1916년 6월 1일 스카게라크 해전 당시 독일 함대의 전술적 배치와 이동 경로를 보여줍니다. 다양한 구축함대와 전함들의 위치가 선과 함께 표시되어 당시의 해상 상황을 나타냅니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 161,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.962,
+    "bbox": [
+      353,
+      600,
+      1403,
+      1276
+    ],
+    "size": [
+      1050,
+      676
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0161_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 163,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.954,
+    "bbox": [
+      1471,
+      308,
+      2525,
+      1223
+    ],
+    "size": [
+      1054,
+      915
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0163_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nSkagerrak Battle\nThird Battle with 4 Flotilla\n01.0hrs 1 June 1916\n\n2) **Korean translation of the caption**\n스카게라크 해전\n제4구축함대와의 세 번째 전투\n1916년 6월 1일 01:00시\n\n3) **Type**\nDiagram\n\n4) **Subjects**\nSkagerrak, 1st Destroyer Flotilla, 4 Destroyer Flotilla, 6 Division, 2 Torpedoboat, Baden, SMS Konig, SMS Magdeburg, SMS Seydlitz, SMS Friedrich der Grosse, SMS Moltke, SMS Von der Tann, SMS Spree, SMS Frankfurt, SMS Pommern, SMS Spandau, SMS Marlborough, SMS Agamemnon.\n\n5) **Korean description**\n이 도표는 1916년 6월 1일 스카게라크 해전 당시 독일 함대와 구축함대들의 전술적 배치를 나타냅니다. 각 함선과 부대의 위치를 선과 명칭으로 표시하여 당시의 해상 상황을 시각적 도식으로 보여줍니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "Skagerrak",
+        "1st Destroyer Flotilla",
+        "4 Destroyer Flotilla",
+        "6 Division",
+        "2 Torpedoboat",
+        "Baden",
+        "SMS Konig",
+        "SMS Magdeburg",
+        "SMS Seydlitz",
+        "SMS Friedrich der Grosse",
+        "SMS Moltke",
+        "SMS Von der Tann",
+        "SMS Spree",
+        "SMS Frankfurt",
+        "SMS Pommern",
+        "SMS Spandau",
+        "SMS Marlborough",
+        "SMS Agamemnon."
+      ],
+      "description": "이 도표는 1916년 6월 1일 스카게라크 해전 당시 독일 함대와 구축함대들의 전술적 배치를 나타냅니다. 각 함선과 부대의 위치를 선과 명칭으로 표시하여 당시의 해상 상황을 시각적 도식으로 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 167,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.964,
+    "bbox": [
+      1474,
+      649,
+      2525,
+      1720
+    ],
+    "size": [
+      1051,
+      1071
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0167_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nSkagerrak Battle\nDestruction of Black Prince\nand Orion 01.10 to 01.20s\n1 June 1916\n\n2) **Korean translation of the caption**\n스카게라크 해전\n블랙 프린스호와 오리온호의 파괴\n1916년 6월 1일 01:10 ~ 01:20\n\n3) **Type**\ndiagram\n\n4) **Subjects**\n*   **Ships:** Black Prince, Orion, Rodin, Bulwark\n*   **Places:** Skagerrak\n\n5) **Korean description**\n이 도표는 1916년 6월 1일 스카게라크 해전 당시 영국 함대의 배치와 움직임을 보여줍니다. 특히 블랙 프린스호와 오리온호가 파괴된 특정 시간대의 전술적 상황을 묘사하고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Black Prince",
+        "Orion",
+        "Rodin",
+        "Bulwark",
+        "**Places:** Skagerrak"
+      ],
+      "description": "이 도표는 1916년 6월 1일 스카게라크 해전 당시 영국 함대의 배치와 움직임을 보여줍니다. 특히 블랙 프린스호와 오리온호가 파괴된 특정 시간대의 전술적 상황을 묘사하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 170,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.917,
+    "bbox": [
+      1519,
+      407,
+      2482,
+      1643
+    ],
+    "size": [
+      963,
+      1236
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0170_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nBreaking through the destroyers of the 4, 9, 10 and 13 Flotillas 0145 to 02hrs 1 June 1916\n\n2) **Korean translation of the caption**\n제4, 9, 10, 13번 구축함대 돌파 (1916년 6월 1일 01:45 ~ 02:00)\n\n3) **Type**\ndiagram\n\n4) **Subjects**\n* **Ships:** Kaiser, Prinzregent Luitpold, Friedrich der Grosse, Nassau, Helgoland, Ostfriesland, Turbulent, Pearl, Penelope, Pelican, Nicaragua, Unity, Marne, Meteor, Liberty, Lynx, Lyra, MacBorough\n* **Units/Squadrons:** 4, 9, 10 and 13 Flotillas, 5 Battle Squadron, 6 Division\n* **Time/Date:** 0145 to 02hrs, 1 June 1916\n\n5) **Korean description**\n이 도표는 1916년 6월 1일 새벽, 독일 함대가 영국 구축함대 진영을 돌파하는 전술적 움직임을 나타냅니다. 다양한 독일 전함과 구축함들의 위치와 이동 경로가 선과 텍스트로 상세히 표시되어 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Kaiser",
+        "Prinzregent Luitpold",
+        "Friedrich der Grosse",
+        "Nassau",
+        "Helgoland",
+        "Ostfriesland",
+        "Turbulent",
+        "Pearl",
+        "Penelope",
+        "Pelican",
+        "Nicaragua",
+        "Unity",
+        "Marne",
+        "Meteor",
+        "Liberty",
+        "Lynx",
+        "Lyra",
+        "MacBorough",
+        "**Units/Squadrons:** 4",
+        "9",
+        "10 and 13 Flotillas",
+        "5 Battle Squadron",
+        "6 Division",
+        "**Time/Date:** 0145 to 02hrs",
+        "1 June 1916"
+      ],
+      "description": "이 도표는 1916년 6월 1일 새벽, 독일 함대가 영국 구축함대 진영을 돌파하는 전술적 움직임을 나타냅니다. 다양한 독일 전함과 구축함들의 위치와 이동 경로가 선과 텍스트로 상세히 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 177,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.961,
+    "bbox": [
+      1474,
+      309,
+      2526,
+      1147
+    ],
+    "size": [
+      1052,
+      838
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0177_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nSkagerrak Battle\n03.10hrs\n1 June 1916\n\n2) **Korean translation of the caption**\n스카게라크 해전\n03시 10분\n1916년 6월 1일\n\n3) **Type**\nDiagram\n\n4) **Subjects**\n*   **Ships:** Hannover, Pommern, Deutschland, Gneisenau, König, Moltke, Schleswig-Holstein, Schlesien, Friedrich der Grosse, Seydlitz, Lützow, Derfflinger\n*   **Places:** Skagerrak\n\n5) **Korean description**\n이 도표는 1916년 6월 1일 오전 3시 10분경 스카게라크 해전 당시 독일 함선들의 위치와 이동 경로를 보여주는 전술 도표입니다. 화살표를 통해 각 군함이 이동한 방향과 함대 간의 상대적인 위치 관계를 나타내고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Hannover",
+        "Pommern",
+        "Deutschland",
+        "Gneisenau",
+        "König",
+        "Moltke",
+        "Schleswig-Holstein",
+        "Schlesien",
+        "Friedrich der Grosse",
+        "Seydlitz",
+        "Lützow",
+        "Derfflinger",
+        "**Places:** Skagerrak"
+      ],
+      "description": "이 도표는 1916년 6월 1일 오전 3시 10분경 스카게라크 해전 당시 독일 함선들의 위치와 이동 경로를 보여주는 전술 도표입니다. 화살표를 통해 각 군함이 이동한 방향과 함대 간의 상대적인 위치 관계를 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 180,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.954,
+    "bbox": [
+      394,
+      746,
+      1363,
+      1621
+    ],
+    "size": [
+      969,
+      875
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0180_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text:**\nSkagerrak Battle\nNight March of the Fleets\n31 May - 1 June 1916\n\n2) **Korean translation of the caption:**\n스카게라크 해전: 함대의 야간 행군 (1916년 5월 31일 - 6월 1일)\n\n3) **Type:**\nDiagram\n\n4) **Subjects:**\n*   **Places:** Skagerrak\n*   **Ships:** Warspite, Marlborough, Iron Duke, Queen Elizabeth, Barham, Valiant, Malaya, Revenge, Hercules, Agincourt\n\n5) **Korean description:**\n이 도표는 1916년 스카게라크 해전 당시 영국과 독일 함대의 야간 이동 경로를 보여줍니다. 각 함선의 위치와 이동 시간대를 선으로 표시하여 해상에서의 복잡한 함대 움직임을 시각화하고 있습니다.",
+      "caption_en": "text:",
+      "caption_ko": "of the caption:",
+      "subjects": [
+        "",
+        "**Places:** Skagerrak",
+        "**Ships:** Warspite",
+        "Marlborough",
+        "Iron Duke",
+        "Queen Elizabeth",
+        "Barham",
+        "Valiant",
+        "Malaya",
+        "Revenge",
+        "Hercules",
+        "Agincourt"
+      ],
+      "description": "이 도표는 1916년 스카게라크 해전 당시 영국과 독일 함대의 야간 이동 경로를 보여줍니다. 각 함선의 위치와 이동 시간대를 선으로 표시하여 해상에서의 복잡한 함대 움직임을 시각화하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 194,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.94,
+    "bbox": [
+      489,
+      701,
+      1274,
+      1762
+    ],
+    "size": [
+      785,
+      1061
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0194_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Return of Fleets 1 June 1916\n2) **Korean translation of the caption**: 1916년 6월 1일 함대의 귀환\n3) **Type**: map\n4) **Subjects**: \n*   **Places**: Skagerrak, Norway, Jutland, Holland, Germany\n*   **Ships/Units**: L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17, L18, L19, L20\n5) **Korean description**: 이 지도는 1916년 6월 1일 유틀란트 해전 이후 함대들의 이동 경로를 보여줍니다. 스카게라크 해협, 노르웨이, 유틀란트, 독일, 네덜란드 주변 해역의 함대 위치와 움직임이 표시되어 있습니다.",
+      "caption_en": "text as printed on the page**: Return of Fleets 1 June 1916",
+      "caption_ko": "of the caption**: 1916년 6월 1일 함대의 귀환",
+      "subjects": [
+        ":",
+        "**Places**: Skagerrak",
+        "Norway",
+        "Jutland",
+        "Holland",
+        "Germany",
+        "**Ships/Units**: L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "L14",
+        "L15",
+        "L16",
+        "L17",
+        "L18",
+        "L19",
+        "L20"
+      ],
+      "description": ": 이 지도는 1916년 6월 1일 유틀란트 해전 이후 함대들의 이동 경로를 보여줍니다. 스카게라크 해협, 노르웨이, 유틀란트, 독일, 네덜란드 주변 해역의 함대 위치와 움직임이 표시되어 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 208,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.583,
+    "bbox": [
+      887,
+      235,
+      1081,
+      456
+    ],
+    "size": [
+      194,
+      221
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0208_01.png",
+    "annotation": {
+      "raw": "I cannot fulfill this request because there is no figure (photo, map, diagram, or table) or figure caption present on the provided page. The page contains only a list of text entries under the heading \"Chapter 1.\""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 208,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.482,
+    "bbox": [
+      803,
+      236,
+      1082,
+      457
+    ],
+    "size": [
+      279,
+      221
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0208_02.png",
+    "annotation": {
+      "raw": "I cannot fulfill this request because there is no figure (photo, map, diagram, or table) or figure caption present on the provided page. The page contains only a list of text entries under the heading \"Chapter 1.\""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 218,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.927,
+    "bbox": [
+      1464,
+      435,
+      2284,
+      897
+    ],
+    "size": [
+      820,
+      462
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0218_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 218,
+    "seq": 2,
+    "class": "Table",
+    "confidence": 0.912,
+    "bbox": [
+      1464,
+      1139,
+      2278,
+      1450
+    ],
+    "size": [
+      814,
+      311
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0218_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 219,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.931,
+    "bbox": [
+      595,
+      632,
+      1416,
+      1046
+    ],
+    "size": [
+      821,
+      414
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0219_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 219,
+    "seq": 2,
+    "class": "Table",
+    "confidence": 0.912,
+    "bbox": [
+      1465,
+      508,
+      2276,
+      761
+    ],
+    "size": [
+      811,
+      253
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0219_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 219,
+    "seq": 3,
+    "class": "Table",
+    "confidence": 0.887,
+    "bbox": [
+      1464,
+      955,
+      2278,
+      1189
+    ],
+    "size": [
+      814,
+      234
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0219_03.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 220,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.82,
+    "bbox": [
+      593,
+      433,
+      1411,
+      694
+    ],
+    "size": [
+      818,
+      261
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0220_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 222,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.541,
+    "bbox": [
+      596,
+      1263,
+      1410,
+      1526
+    ],
+    "size": [
+      814,
+      263
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0222_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 227,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.694,
+    "bbox": [
+      1465,
+      438,
+      2282,
+      980
+    ],
+    "size": [
+      817,
+      542
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0227_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 227,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.628,
+    "bbox": [
+      595,
+      698,
+      1412,
+      1193
+    ],
+    "size": [
+      817,
+      495
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0227_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 228,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.804,
+    "bbox": [
+      595,
+      438,
+      1412,
+      917
+    ],
+    "size": [
+      817,
+      479
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0228_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n* German torpedoboates during the battle, whilst a small cruiser can be seen in the middle background, probably Regensburg.\n* German torpedoboates in the lee of the I AG.\n\n2) **Korean translation of the caption**\n* 전투 중의 독일 어뢰정들, 배경 중간에는 아마도 레겐스부르크(Regensburg)로 추정되는 소형 순양함이 보임.\n* 제1함대(I AG)의 후방에 있는 독일 어뢰정들.\n\n3) **Type**: photo\n\n4) **Subjects**: German torpedoboates, small cruiser (Regensburg), I AG\n\n5) **Korean description**: \n이 사진들은 유틀란트 해전 당시 독일 어뢰정들의 모습을 보여줍니다. 왼쪽 사진에는 배경에 소형 순양함이 보이며, 오른쪽 사진에는 제1함대 뒤편에 위치한 어뢰정들이 나타나 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        ": German torpedoboates",
+        "small cruiser (Regensburg)",
+        "I AG"
+      ],
+      "description": ": \n이 사진들은 유틀란트 해전 당시 독일 어뢰정들의 모습을 보여줍니다. 왼쪽 사진에는 배경에 소형 순양함이 보이며, 오른쪽 사진에는 제1함대 뒤편에 위치한 어뢰정들이 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 228,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.778,
+    "bbox": [
+      1465,
+      439,
+      2283,
+      1034
+    ],
+    "size": [
+      818,
+      595
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0228_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n* German torpedoboates during the battle, whilst a small cruiser can be seen in the middle background, probably Regensburg.\n* German torpedoboates in the lee of the I AG.\n\n2) **Korean translation of the caption**\n* 전투 중의 독일 어뢰정들, 배경 중간에는 아마도 레겐스부르크(Regensburg)로 추정되는 소형 순양함이 보임.\n* 제1함대(I AG)의 후방에 있는 독일 어뢰정들.\n\n3) **Type**: photo\n\n4) **Subjects**: German torpedoboates, small cruiser (Regensburg), I AG\n\n5) **Korean description**: \n이 사진들은 유틀란트 해전 당시 독일 어뢰정들의 모습을 보여줍니다. 왼쪽 사진에는 배경에 소형 순양함이 보이며, 오른쪽 사진에는 제1함대 뒤편에 위치한 어뢰정들이 나타나 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        ": German torpedoboates",
+        "small cruiser (Regensburg)",
+        "I AG"
+      ],
+      "description": ": \n이 사진들은 유틀란트 해전 당시 독일 어뢰정들의 모습을 보여줍니다. 왼쪽 사진에는 배경에 소형 순양함이 보이며, 오른쪽 사진에는 제1함대 뒤편에 위치한 어뢰정들이 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 229,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.9,
+    "bbox": [
+      595,
+      1022,
+      1412,
+      1356
+    ],
+    "size": [
+      817,
+      334
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0229_01.png",
+    "annotation": {
+      "raw": "There are three figures (paintings) on this page. Here is the extracted information for each:\n\n**Figure 1**\n1) **Exact English caption text:** The small cruiser *Wiesbaden* before she was disabled.\n2) **Korean translation:** 무력화되기 전의",
+      "caption_en": "text:** The small cruiser *Wiesbaden* before she was disabled.",
+      "caption_ko": "무력화되기 전의"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 229,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.898,
+    "bbox": [
+      1466,
+      435,
+      2283,
+      833
+    ],
+    "size": [
+      817,
+      398
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0229_02.png",
+    "annotation": {
+      "raw": "There are three figures (paintings) on this page. Here is the extracted information for each:\n\n**Figure 1**\n1) **Exact English caption text:** The small cruiser *Wiesbaden* before she was disabled.\n2) **Korean translation:** 무력화되기 전의",
+      "caption_en": "text:** The small cruiser *Wiesbaden* before she was disabled.",
+      "caption_ko": "무력화되기 전의"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 229,
+    "seq": 3,
+    "class": "Picture",
+    "confidence": 0.846,
+    "bbox": [
+      596,
+      437,
+      1412,
+      931
+    ],
+    "size": [
+      816,
+      494
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0229_03.png",
+    "annotation": {
+      "raw": "There are three figures (paintings) on this page. Here is the extracted information for each:\n\n**Figure 1**\n1) **Exact English caption text:** The small cruiser *Wiesbaden* before she was disabled.\n2) **Korean translation:** 무력화되기 전의",
+      "caption_en": "text:** The small cruiser *Wiesbaden* before she was disabled.",
+      "caption_ko": "무력화되기 전의"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 230,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.826,
+    "bbox": [
+      1463,
+      438,
+      2282,
+      961
+    ],
+    "size": [
+      819,
+      523
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0230_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nThe Panzerkreuzer Moltke returning home after the battle.\nA view of Moltke after the battle. It is evident that she is down by the stern with approximately 1000 tonnes of water in the ship.\n\n2) **Korean translation of the caption**\n전투 후 귀환 중인 전함 몰트케.\n전투 후 몰트케의 모습. 선미 쪽에 약 1,000톤의 물이 유입되어 배가 가라앉아 있음이 분명하다.\n\n3) **Type:** photo\n\n4) **Subjects:** Panzerkreuzer Moltke (Moltke)\n\n5) **Korean description:**\n전투를 마치고 귀환하는 전함 몰트케의 모습과 전투 후 손상을 입은 상태를 보여주는 두 장의 사진입니다. 오른쪽 사진에서는 선미 쪽에 약 1,000톤의 물이 유입되어 배가 기울어진 모습을 확인할 수 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "Panzerkreuzer Moltke (Moltke)"
+      ],
+      "description": "전투를 마치고 귀환하는 전함 몰트케의 모습과 전투 후 손상을 입은 상태를 보여주는 두 장의 사진입니다. 오른쪽 사진에서는 선미 쪽에 약 1,000톤의 물이 유입되어 배가 기울어진 모습을 확인할 수 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 230,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.795,
+    "bbox": [
+      597,
+      437,
+      1409,
+      979
+    ],
+    "size": [
+      812,
+      542
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0230_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nThe Panzerkreuzer Moltke returning home after the battle.\nA view of Moltke after the battle. It is evident that she is down by the stern with approximately 1000 tonnes of water in the ship.\n\n2) **Korean translation of the caption**\n전투 후 귀환 중인 전함 몰트케.\n전투 후 몰트케의 모습. 선미 쪽에 약 1,000톤의 물이 유입되어 배가 가라앉아 있음이 분명하다.\n\n3) **Type:** photo\n\n4) **Subjects:** Panzerkreuzer Moltke (Moltke)\n\n5) **Korean description:**\n전투를 마치고 귀환하는 전함 몰트케의 모습과 전투 후 손상을 입은 상태를 보여주는 두 장의 사진입니다. 오른쪽 사진에서는 선미 쪽에 약 1,000톤의 물이 유입되어 배가 기울어진 모습을 확인할 수 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "Panzerkreuzer Moltke (Moltke)"
+      ],
+      "description": "전투를 마치고 귀환하는 전함 몰트케의 모습과 전투 후 손상을 입은 상태를 보여주는 두 장의 사진입니다. 오른쪽 사진에서는 선미 쪽에 약 1,000톤의 물이 유입되어 배가 기울어진 모습을 확인할 수 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 231,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.732,
+    "bbox": [
+      1465,
+      439,
+      2282,
+      965
+    ],
+    "size": [
+      817,
+      526
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0231_01.png",
+    "annotation": {
+      "raw": "1) A photograph of von Tann after the battle. Turret A is jammed on a bearing of 120° after being struck by a shell. The small cruiser Frankfurt during trials.\n2) 전투 후 von Tann의 사진. 포탄을 맞은 후 방위 120도에서 A포탑이 끼어 있음. 시험 항해 중인 소형 순양함 Frankfurt.\n3) photo\n4) von Tann, Frankfurt\n5) 이 사진은 전투 후 포탄을 맞아 포탑이 고정된 von Tann 함선과 시험 항해 중인 소형 순양함 Frankfurt를 보여줍니다. 두 흑백 사진은 각각 함선의 손상된 상태와 운항 중인 모습을 담고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 231,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.63,
+    "bbox": [
+      598,
+      443,
+      1406,
+      932
+    ],
+    "size": [
+      808,
+      489
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0231_02.png",
+    "annotation": {
+      "raw": "1) A photograph of von Tann after the battle. Turret A is jammed on a bearing of 120° after being struck by a shell. The small cruiser Frankfurt during trials.\n2) 전투 후 von Tann의 사진. 포탄을 맞은 후 방위 120도에서 A포탑이 끼어 있음. 시험 항해 중인 소형 순양함 Frankfurt.\n3) photo\n4) von Tann, Frankfurt\n5) 이 사진은 전투 후 포탄을 맞아 포탑이 고정된 von Tann 함선과 시험 항해 중인 소형 순양함 Frankfurt를 보여줍니다. 두 흑백 사진은 각각 함선의 손상된 상태와 운항 중인 모습을 담고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 232,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.529,
+    "bbox": [
+      597,
+      437,
+      1413,
+      1044
+    ],
+    "size": [
+      816,
+      607
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0232_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page:**\n* A view of damage to the aft superstructure of Frankfurt.\n* Damage to the aft superstructure of Frankfurt after the Skagerrak Battle.\n\n2) **Korean translation of the caption:**\n* 프랑크푸르트(Frankfurt)함의 후방 상부 구조물 손상 모습.\n* 스카게라크 해전(Skagerrak Battle) 이후 프랑크푸르트(Frankfurt)함의 후방 상부 구조물 손상 모습.\n\n3) **Type:** photo\n\n4) **Subjects:** \n* Ships: Frankfurt\n* Places: Skagerrak\n\n5) **Korean description:**\n이 사진들은 스카게라크 해전 이후 독일 전함 프랑크푸르트함의 후방 상부 구조물이 파손된 모습을 보여줍니다. 흑백 사진을 통해 선체 구조물의 구체적인 손상 상태를 확인할 수 있습니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "subjects": [
+        "",
+        "Ships: Frankfurt",
+        "Places: Skagerrak"
+      ],
+      "description": "이 사진들은 스카게라크 해전 이후 독일 전함 프랑크푸르트함의 후방 상부 구조물이 파손된 모습을 보여줍니다. 흑백 사진을 통해 선체 구조물의 구체적인 손상 상태를 확인할 수 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 233,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.373,
+    "bbox": [
+      577,
+      244,
+      2750,
+      1659
+    ],
+    "size": [
+      2173,
+      1415
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0233_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text: The entry hole of a shell which struck the small cruiser Frankfurt.\n2) Korean translation: 소형 순양함 프랑크푸르트(Frankfurt)호에 명중한 포탄의 진입 구멍.\n3) Type: photo\n4) Subjects: small cruiser Frankfurt\n5) Korean description: 이 사진은 독일의 소형 순양함 프랑크푸르트호에 포탄이 박힌 흔적을 보여줍니다. 포탄이 선체에 구멍을 내며 들어간 모습을 근접 촬영한 흑백 사진입니다.",
+      "caption_en": "text: The entry hole of a shell which struck the small cruiser Frankfurt.",
+      "caption_ko": "소형 순양함 프랑크푸르트(Frankfurt)호에 명중한 포탄의 진입 구멍.",
+      "type": "photo",
+      "subjects": [
+        "small cruiser Frankfurt"
+      ],
+      "description": "이 사진은 독일의 소형 순양함 프랑크푸르트호에 포탄이 박힌 흔적을 보여줍니다. 포탄이 선체에 구멍을 내며 들어간 모습을 근접 촬영한 흑백 사진입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 234,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.701,
+    "bbox": [
+      1465,
+      470,
+      2283,
+      974
+    ],
+    "size": [
+      818,
+      504
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0234_01.png",
+    "annotation": {
+      "raw": "There are two figures on this page. Here is the extracted information for both:\n\n**Figure 1 (Left)**\n1) **Exact English caption text:** The small cruiser Pillau was hit by a 12 inch shell from the 3 Battle Cruiser Squadron, which destroyed the starboard side of the bridge.\n2) **Korean translation:** 소형 순양함 필라우(Pillau)호는 제3전함 순양함 전대의 12인치 포탄에 맞아 함교의 우현이 파괴되었습니다.\n3) **Type:** photo\n4) **Subjects:** Pillau, 3 Battle Cruiser Squadron\n5) **Korean description:** 포탄에 의해 파괴된 함선의 구조물을 보여주는 사진입니다. 함교의 우현 부분이 손상된 모습을 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** A fine study of the small cruiser Wiesbaden.\n2) **Korean translation:** 소형 순양함 비스바덴(Wiesbaden)호의 훌륭한 연구 사진입니다.\n3) **Type:** photo\n4) **Subjects:** Wiesbaden\n5) **Korean description:** 바다 위에 떠 있는 소형 순양함 비스바덴호를 촬영한 사진입니다. 배의 전체적인 모습이 잘 나타나 있습니다.",
+      "caption_en": "text:** The small cruiser Pillau was hit by a 12 inch shell from the 3 Battle Cruiser Squadron, which destroyed the starboard side of the bridge.",
+      "caption_ko": "소형 순양함 필라우(Pillau)호는 제3전함 순양함 전대의 12인치 포탄에 맞아 함교의 우현이 파괴되었습니다.",
+      "subjects": [
+        "Pillau",
+        "3 Battle Cruiser Squadron"
+      ],
+      "description": "포탄에 의해 파괴된 함선의 구조물을 보여주는 사진입니다. 함교의 우현 부분이 손상된 모습을 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** A fine study of the small cruiser Wiesbaden.\n2) **Korean translation:** 소형 순양함 비스바덴(Wiesbaden)호의 훌륭한 연구 사진입니다.\n3) **Type:** photo\n4) **Subjects:** Wiesbaden\n5) **Korean description:** 바다 위에 떠 있는 소형 순양함 비스바덴호를 촬영한 사진입니다. 배의 전체적인 모습이 잘 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 234,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.686,
+    "bbox": [
+      596,
+      511,
+      1413,
+      1530
+    ],
+    "size": [
+      817,
+      1019
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0234_02.png",
+    "annotation": {
+      "raw": "There are two figures on this page. Here is the extracted information for both:\n\n**Figure 1 (Left)**\n1) **Exact English caption text:** The small cruiser Pillau was hit by a 12 inch shell from the 3 Battle Cruiser Squadron, which destroyed the starboard side of the bridge.\n2) **Korean translation:** 소형 순양함 필라우(Pillau)호는 제3전함 순양함 전대의 12인치 포탄에 맞아 함교의 우현이 파괴되었습니다.\n3) **Type:** photo\n4) **Subjects:** Pillau, 3 Battle Cruiser Squadron\n5) **Korean description:** 포탄에 의해 파괴된 함선의 구조물을 보여주는 사진입니다. 함교의 우현 부분이 손상된 모습을 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** A fine study of the small cruiser Wiesbaden.\n2) **Korean translation:** 소형 순양함 비스바덴(Wiesbaden)호의 훌륭한 연구 사진입니다.\n3) **Type:** photo\n4) **Subjects:** Wiesbaden\n5) **Korean description:** 바다 위에 떠 있는 소형 순양함 비스바덴호를 촬영한 사진입니다. 배의 전체적인 모습이 잘 나타나 있습니다.",
+      "caption_en": "text:** The small cruiser Pillau was hit by a 12 inch shell from the 3 Battle Cruiser Squadron, which destroyed the starboard side of the bridge.",
+      "caption_ko": "소형 순양함 필라우(Pillau)호는 제3전함 순양함 전대의 12인치 포탄에 맞아 함교의 우현이 파괴되었습니다.",
+      "subjects": [
+        "Pillau",
+        "3 Battle Cruiser Squadron"
+      ],
+      "description": "포탄에 의해 파괴된 함선의 구조물을 보여주는 사진입니다. 함교의 우현 부분이 손상된 모습을 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** A fine study of the small cruiser Wiesbaden.\n2) **Korean translation:** 소형 순양함 비스바덴(Wiesbaden)호의 훌륭한 연구 사진입니다.\n3) **Type:** photo\n4) **Subjects:** Wiesbaden\n5) **Korean description:** 바다 위에 떠 있는 소형 순양함 비스바덴호를 촬영한 사진입니다. 배의 전체적인 모습이 잘 나타나 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 235,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.874,
+    "bbox": [
+      1465,
+      437,
+      2283,
+      962
+    ],
+    "size": [
+      818,
+      525
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0235_01.png",
+    "annotation": {
+      "raw": "Since there are two distinct figures on this page, I have provided the extracted information for both.\n\n**Figure 1**\n1) **Exact English caption text:** The small cruiser *Elbing*, originally ordered by the Russian Navy and taken over German service.\n2) **Korean translation:** 러시아 해군이 주문했으나 독일군이 인수하여 운용하게 된 소형 순양함 엘빙(Elbing)호.\n3) **Type:** photo\n4) **Subjects:** Elbing, Russian Navy, German service\n5) **Korean description:** 독일 해군이 운용했던 소형 순양함 엘빙호의 모습을 보여주는 사진입니다. 원래는 러시아 해군을 위해 주문되었던 함선입니다.\n\n**Figure 2**\n1) **Exact English caption text:** The Panzerkreuzer *Derfflinger* returning to harbour after the battle. A hit has sheared off the III 15 cm cannon, and various other hits can be seen.\n2) **Korean translation:** 전투 후 항구로 귀환 중인 장갑순양함 데르플링어(Derfflinger)호. 3번 15cm 포가 피격으로 인해 떨어져 나갔으며, 그 외 여러 곳에 피격 흔적이 보입니다.\n3) **Type:** photo\n4) **Subjects:** Derfflinger\n5)",
+      "caption_en": "text:** The small cruiser *Elbing*, originally ordered by the Russian Navy and taken over German service.",
+      "caption_ko": "러시아 해군이 주문했으나 독일군이 인수하여 운용하게 된 소형 순양함 엘빙(Elbing)호.",
+      "subjects": [
+        "Elbing",
+        "Russian Navy",
+        "German service"
+      ],
+      "description": "독일 해군이 운용했던 소형 순양함 엘빙호의 모습을 보여주는 사진입니다. 원래는 러시아 해군을 위해 주문되었던 함선입니다.\n\n**Figure 2**\n1) **Exact English caption text:** The Panzerkreuzer *Derfflinger* returning to harbour after the battle. A hit has sheared off the III 15 cm cannon, and various other hits can be seen.\n2) **Korean translation:** 전투 후 항구로 귀환 중인 장갑순양함 데르플링어(Derfflinger)호. 3번 15cm 포가 피격으로 인해 떨어져 나갔으며, 그 외 여러 곳에 피격 흔적이 보입니다.\n3) **Type:** photo\n4) **Subjects:** Derfflinger\n5)"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 235,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.819,
+    "bbox": [
+      596,
+      435,
+      1414,
+      939
+    ],
+    "size": [
+      818,
+      504
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0235_02.png",
+    "annotation": {
+      "raw": "Since there are two distinct figures on this page, I have provided the extracted information for both.\n\n**Figure 1**\n1) **Exact English caption text:** The small cruiser *Elbing*, originally ordered by the Russian Navy and taken over German service.\n2) **Korean translation:** 러시아 해군이 주문했으나 독일군이 인수하여 운용하게 된 소형 순양함 엘빙(Elbing)호.\n3) **Type:** photo\n4) **Subjects:** Elbing, Russian Navy, German service\n5) **Korean description:** 독일 해군이 운용했던 소형 순양함 엘빙호의 모습을 보여주는 사진입니다. 원래는 러시아 해군을 위해 주문되었던 함선입니다.\n\n**Figure 2**\n1) **Exact English caption text:** The Panzerkreuzer *Derfflinger* returning to harbour after the battle. A hit has sheared off the III 15 cm cannon, and various other hits can be seen.\n2) **Korean translation:** 전투 후 항구로 귀환 중인 장갑순양함 데르플링어(Derfflinger)호. 3번 15cm 포가 피격으로 인해 떨어져 나갔으며, 그 외 여러 곳에 피격 흔적이 보입니다.\n3) **Type:** photo\n4) **Subjects:** Derfflinger\n5)",
+      "caption_en": "text:** The small cruiser *Elbing*, originally ordered by the Russian Navy and taken over German service.",
+      "caption_ko": "러시아 해군이 주문했으나 독일군이 인수하여 운용하게 된 소형 순양함 엘빙(Elbing)호.",
+      "subjects": [
+        "Elbing",
+        "Russian Navy",
+        "German service"
+      ],
+      "description": "독일 해군이 운용했던 소형 순양함 엘빙호의 모습을 보여주는 사진입니다. 원래는 러시아 해군을 위해 주문되었던 함선입니다.\n\n**Figure 2**\n1) **Exact English caption text:** The Panzerkreuzer *Derfflinger* returning to harbour after the battle. A hit has sheared off the III 15 cm cannon, and various other hits can be seen.\n2) **Korean translation:** 전투 후 항구로 귀환 중인 장갑순양함 데르플링어(Derfflinger)호. 3번 15cm 포가 피격으로 인해 떨어져 나갔으며, 그 외 여러 곳에 피격 흔적이 보입니다.\n3) **Type:** photo\n4) **Subjects:** Derfflinger\n5)"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 236,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.891,
+    "bbox": [
+      1464,
+      438,
+      2283,
+      978
+    ],
+    "size": [
+      819,
+      540
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0236_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n* Derfflinger showing the starboard side. Interestingly all the hits on Derfflinger were on the port side or astern.\n* Offiziere enjoying breakfast on the quarterdeck of Seydlitz on the morning of 1 June 1916. Fenger has his head bandaged, and behind him sitting on the skylight is Doctor Robert Amelung.\n\n2) **Korean translation of the caption**\n* 우현을 보여주는 데르플링어(Derfflinger)호. 흥미롭게도 데르플링어호에 가해진 모든 피격은 좌현 또는 선미 쪽에서 발생했습니다.\n* 1916년 6월 1일 아침, 제들리츠(Seydlitz)호의 후갑판에서 아침 식사를 즐기고 있는 장교들. 텡거(Fenger)는 머리에 붕대를 감고 있으며, 그 뒤 스카이라이트(천창)에 앉아 있는 사람은 로버트 아멜룽(Robert Amelung) 박사입니다.\n\n3) **Type**\nphoto\n\n4) **Subjects**\n* **Ships:** Derfflinger, Seydlitz\n* **People:** Fenger, Doctor Robert Amelung, Offiziere (Officers)\n\n5) **Korean description**\n이 페이지에는 유틀란트 해전 당시의 역사적인 순간을 담은 두 장의 흑백 사진이 포함되어 있습니다. 왼쪽 사진은 데르플링어함의 우현 모습을 보여주며, 오른쪽 사진은 제들리츠함의 갑판에서 식사 중인 장교들의 모습을 보여줍니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Derfflinger",
+        "Seydlitz",
+        "**People:** Fenger",
+        "Doctor Robert Amelung",
+        "Offiziere (Officers)"
+      ],
+      "description": "이 페이지에는 유틀란트 해전 당시의 역사적인 순간을 담은 두 장의 흑백 사진이 포함되어 있습니다. 왼쪽 사진은 데르플링어함의 우현 모습을 보여주며, 오른쪽 사진은 제들리츠함의 갑판에서 식사 중인 장교들의 모습을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 236,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.806,
+    "bbox": [
+      595,
+      438,
+      1413,
+      953
+    ],
+    "size": [
+      818,
+      515
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0236_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n* Derfflinger showing the starboard side. Interestingly all the hits on Derfflinger were on the port side or astern.\n* Offiziere enjoying breakfast on the quarterdeck of Seydlitz on the morning of 1 June 1916. Fenger has his head bandaged, and behind him sitting on the skylight is Doctor Robert Amelung.\n\n2) **Korean translation of the caption**\n* 우현을 보여주는 데르플링어(Derfflinger)호. 흥미롭게도 데르플링어호에 가해진 모든 피격은 좌현 또는 선미 쪽에서 발생했습니다.\n* 1916년 6월 1일 아침, 제들리츠(Seydlitz)호의 후갑판에서 아침 식사를 즐기고 있는 장교들. 텡거(Fenger)는 머리에 붕대를 감고 있으며, 그 뒤 스카이라이트(천창)에 앉아 있는 사람은 로버트 아멜룽(Robert Amelung) 박사입니다.\n\n3) **Type**\nphoto\n\n4) **Subjects**\n* **Ships:** Derfflinger, Seydlitz\n* **People:** Fenger, Doctor Robert Amelung, Offiziere (Officers)\n\n5) **Korean description**\n이 페이지에는 유틀란트 해전 당시의 역사적인 순간을 담은 두 장의 흑백 사진이 포함되어 있습니다. 왼쪽 사진은 데르플링어함의 우현 모습을 보여주며, 오른쪽 사진은 제들리츠함의 갑판에서 식사 중인 장교들의 모습을 보여줍니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Derfflinger",
+        "Seydlitz",
+        "**People:** Fenger",
+        "Doctor Robert Amelung",
+        "Offiziere (Officers)"
+      ],
+      "description": "이 페이지에는 유틀란트 해전 당시의 역사적인 순간을 담은 두 장의 흑백 사진이 포함되어 있습니다. 왼쪽 사진은 데르플링어함의 우현 모습을 보여주며, 오른쪽 사진은 제들리츠함의 갑판에서 식사 중인 장교들의 모습을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 237,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.85,
+    "bbox": [
+      1464,
+      433,
+      2282,
+      1068
+    ],
+    "size": [
+      818,
+      635
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0237_01.png",
+    "annotation": {
+      "raw": "There are two figures (photos) on this page. Here is the extracted information for each:\n\n**Figure 1 (Left)**\n1) **Exact English caption text:** A view of the casemate where Paster Fenger was wounded when a shell detonated inside. He was the sole survivor of the casemate crew.\n2) **Korean translation:** 포탄이 내부에서 폭발했을 때 펜거(Fenger) 하사가 부상을 입었던 포실의 모습입니다. 그는 이 포실 승조원 중 유일한 생존자였습니다.\n3) **Type:** photo\n4) **Subjects:** Paster Fenger\n5) **Korean description:** 포탄 폭발로 인해 부상을 입은 펜거 하사의 포실 내부 모습을 보여주는 사진입니다. 이 공간에서 유일하게 살아남은 생존자의 이야기를 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** Hit number 13 on the port side of Seydlitz failed to penetrate the thick belt armour.\n2) **Korean translation:** 자이들리츠(Seydlitz)함의 좌현에 발생한 13번째 피격은 두꺼운 벨트 장갑을 관통하지 못했습니다.\n3) **Type:** photo\n4) **Subjects:** Seydlitz\n5) **Korean description:** 자이들리츠함의 좌현 장갑 부위에 발생한 피격 흔적을 보여주는 사진입니다. 두꺼운 장갑 덕분에 포탄이 내부로 관통되지 않았음을 보여줍니다.",
+      "caption_en": "text:** A view of the casemate where Paster Fenger was wounded when a shell detonated inside. He was the sole survivor of the casemate crew.",
+      "caption_ko": "포탄이 내부에서 폭발했을 때 펜거(Fenger) 하사가 부상을 입었던 포실의 모습입니다. 그는 이 포실 승조원 중 유일한 생존자였습니다.",
+      "subjects": [
+        "Paster Fenger"
+      ],
+      "description": "포탄 폭발로 인해 부상을 입은 펜거 하사의 포실 내부 모습을 보여주는 사진입니다. 이 공간에서 유일하게 살아남은 생존자의 이야기를 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** Hit number 13 on the port side of Seydlitz failed to penetrate the thick belt armour.\n2) **Korean translation:** 자이들리츠(Seydlitz)함의 좌현에 발생한 13번째 피격은 두꺼운 벨트 장갑을 관통하지 못했습니다.\n3) **Type:** photo\n4) **Subjects:** Seydlitz\n5) **Korean description:** 자이들리츠함의 좌현 장갑 부위에 발생한 피격 흔적을 보여주는 사진입니다. 두꺼운 장갑 덕분에 포탄이 내부로 관통되지 않았음을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 237,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.801,
+    "bbox": [
+      596,
+      435,
+      1411,
+      1001
+    ],
+    "size": [
+      815,
+      566
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0237_02.png",
+    "annotation": {
+      "raw": "There are two figures (photos) on this page. Here is the extracted information for each:\n\n**Figure 1 (Left)**\n1) **Exact English caption text:** A view of the casemate where Paster Fenger was wounded when a shell detonated inside. He was the sole survivor of the casemate crew.\n2) **Korean translation:** 포탄이 내부에서 폭발했을 때 펜거(Fenger) 하사가 부상을 입었던 포실의 모습입니다. 그는 이 포실 승조원 중 유일한 생존자였습니다.\n3) **Type:** photo\n4) **Subjects:** Paster Fenger\n5) **Korean description:** 포탄 폭발로 인해 부상을 입은 펜거 하사의 포실 내부 모습을 보여주는 사진입니다. 이 공간에서 유일하게 살아남은 생존자의 이야기를 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** Hit number 13 on the port side of Seydlitz failed to penetrate the thick belt armour.\n2) **Korean translation:** 자이들리츠(Seydlitz)함의 좌현에 발생한 13번째 피격은 두꺼운 벨트 장갑을 관통하지 못했습니다.\n3) **Type:** photo\n4) **Subjects:** Seydlitz\n5) **Korean description:** 자이들리츠함의 좌현 장갑 부위에 발생한 피격 흔적을 보여주는 사진입니다. 두꺼운 장갑 덕분에 포탄이 내부로 관통되지 않았음을 보여줍니다.",
+      "caption_en": "text:** A view of the casemate where Paster Fenger was wounded when a shell detonated inside. He was the sole survivor of the casemate crew.",
+      "caption_ko": "포탄이 내부에서 폭발했을 때 펜거(Fenger) 하사가 부상을 입었던 포실의 모습입니다. 그는 이 포실 승조원 중 유일한 생존자였습니다.",
+      "subjects": [
+        "Paster Fenger"
+      ],
+      "description": "포탄 폭발로 인해 부상을 입은 펜거 하사의 포실 내부 모습을 보여주는 사진입니다. 이 공간에서 유일하게 살아남은 생존자의 이야기를 담고 있습니다.\n\n**Figure 2 (Right)**\n1) **Exact English caption text:** Hit number 13 on the port side of Seydlitz failed to penetrate the thick belt armour.\n2) **Korean translation:** 자이들리츠(Seydlitz)함의 좌현에 발생한 13번째 피격은 두꺼운 벨트 장갑을 관통하지 못했습니다.\n3) **Type:** photo\n4) **Subjects:** Seydlitz\n5) **Korean description:** 자이들리츠함의 좌현 장갑 부위에 발생한 피격 흔적을 보여주는 사진입니다. 두꺼운 장갑 덕분에 포탄이 내부로 관통되지 않았음을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 238,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.852,
+    "bbox": [
+      1465,
+      511,
+      2285,
+      1111
+    ],
+    "size": [
+      820,
+      600
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0238_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text**: A view of the bridge and conning tower of Seydlitz after the battle. A so called 'leak mat' covers the entrance hole of hit 7.\n2) **Korean translation**: 전투 후 세이들리츠(Seydlitz)호의 함교와 지휘탑의 모습. 이른바 '누수 방지 매트(leak mat)'가 7번 피격 구멍을 덮고 있다.\n3) **Type**: photo\n4) **Subjects**: Seydlitz (ship)\n5) **Korean description**: 전투가 끝난 후 손상된 세이들리츠함의 함교와 지휘탑 모습을 보여주는 사진입니다. 피격된 구멍을 막기 위해 매트가 설치되어 있는 것을 확인할 수 있습니다.",
+      "caption_en": "text**: A view of the bridge and conning tower of Seydlitz after the battle. A so called 'leak mat' covers the entrance hole of hit 7.",
+      "caption_ko": ": 전투 후 세이들리츠(Seydlitz)호의 함교와 지휘탑의 모습. 이른바 '누수 방지 매트(leak mat)'가 7번 피격 구멍을 덮고 있다.",
+      "subjects": [
+        ": Seydlitz (ship)"
+      ],
+      "description": ": 전투가 끝난 후 손상된 세이들리츠함의 함교와 지휘탑 모습을 보여주는 사진입니다. 피격된 구멍을 막기 위해 매트가 설치되어 있는 것을 확인할 수 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 238,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.385,
+    "bbox": [
+      598,
+      437,
+      1416,
+      1501
+    ],
+    "size": [
+      818,
+      1064
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0238_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text**: A view of the bridge and conning tower of Seydlitz after the battle. A so called 'leak mat' covers the entrance hole of hit 7.\n2) **Korean translation**: 전투 후 세이들리츠(Seydlitz)호의 함교와 지휘탑의 모습. 이른바 '누수 방지 매트(leak mat)'가 7번 피격 구멍을 덮고 있다.\n3) **Type**: photo\n4) **Subjects**: Seydlitz (ship)\n5) **Korean description**: 전투가 끝난 후 손상된 세이들리츠함의 함교와 지휘탑 모습을 보여주는 사진입니다. 피격된 구멍을 막기 위해 매트가 설치되어 있는 것을 확인할 수 있습니다.",
+      "caption_en": "text**: A view of the bridge and conning tower of Seydlitz after the battle. A so called 'leak mat' covers the entrance hole of hit 7.",
+      "caption_ko": ": 전투 후 세이들리츠(Seydlitz)호의 함교와 지휘탑의 모습. 이른바 '누수 방지 매트(leak mat)'가 7번 피격 구멍을 덮고 있다.",
+      "subjects": [
+        ": Seydlitz (ship)"
+      ],
+      "description": ": 전투가 끝난 후 손상된 세이들리츠함의 함교와 지휘탑 모습을 보여주는 사진입니다. 피격된 구멍을 막기 위해 매트가 설치되어 있는 것을 확인할 수 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 239,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.782,
+    "bbox": [
+      1463,
+      434,
+      2281,
+      1067
+    ],
+    "size": [
+      818,
+      633
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0239_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n*   **Caption 1:** A hit to the port casemate of Seydlitz. All serving crew of the 15cm cannon perished, apart from five wounded and the gun was put out of action. The lower hit did not penetrate the thick belt armour.\n*   **Caption 2:** Hit number 2 to Moltke. Although the armoured plate has not been penetrated the outer skin below the belt armour had been damaged and allowed flooding in the wing passage.\n\n2) **Korean translation of the caption**\n*   **캡션 1:** 자이들리츠(Seydlitz)호의 좌현 포탑 피격. 5명의 부상자를 제외한 15cm 포의 모든 승조원이 전사했으며, 해당 포는 무력화되었다. 하단 피격은 두꺼운 벨트 장갑을 관통하지 못했다.\n*   **캡션 2:** 몰트케(Moltke)호에 가해진 두 번째 피격. 장갑판이 관통되지는 않았으나, 벨트 장갑 아래의 외피가 손상되어 날개 통로(wing passage)로 침수가 발생했다.\n\n3) **Type:** photo\n\n4) **Subjects:** \n*   **Ships:** Seydlitz, Moltke\n\n5) **Korean description:** \n이 페이지에는 제1차 세계 대전 유틀란트 해전 당시 독일 전함인 자이들리츠와 몰트케가 피격된 모습을 보여주는 두 장의 흑백 사진이 있습니다. 사진 아래의 캡션은 각 전함의 장갑 손상 상태와 그로 인한 인명 및 침수 피해를 상세히 설명하고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Seydlitz",
+        "Moltke"
+      ],
+      "description": "이 페이지에는 제1차 세계 대전 유틀란트 해전 당시 독일 전함인 자이들리츠와 몰트케가 피격된 모습을 보여주는 두 장의 흑백 사진이 있습니다. 사진 아래의 캡션은 각 전함의 장갑 손상 상태와 그로 인한 인명 및 침수 피해를 상세히 설명하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 239,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.655,
+    "bbox": [
+      597,
+      438,
+      1412,
+      1068
+    ],
+    "size": [
+      815,
+      630
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0239_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\n*   **Caption 1:** A hit to the port casemate of Seydlitz. All serving crew of the 15cm cannon perished, apart from five wounded and the gun was put out of action. The lower hit did not penetrate the thick belt armour.\n*   **Caption 2:** Hit number 2 to Moltke. Although the armoured plate has not been penetrated the outer skin below the belt armour had been damaged and allowed flooding in the wing passage.\n\n2) **Korean translation of the caption**\n*   **캡션 1:** 자이들리츠(Seydlitz)호의 좌현 포탑 피격. 5명의 부상자를 제외한 15cm 포의 모든 승조원이 전사했으며, 해당 포는 무력화되었다. 하단 피격은 두꺼운 벨트 장갑을 관통하지 못했다.\n*   **캡션 2:** 몰트케(Moltke)호에 가해진 두 번째 피격. 장갑판이 관통되지는 않았으나, 벨트 장갑 아래의 외피가 손상되어 날개 통로(wing passage)로 침수가 발생했다.\n\n3) **Type:** photo\n\n4) **Subjects:** \n*   **Ships:** Seydlitz, Moltke\n\n5) **Korean description:** \n이 페이지에는 제1차 세계 대전 유틀란트 해전 당시 독일 전함인 자이들리츠와 몰트케가 피격된 모습을 보여주는 두 장의 흑백 사진이 있습니다. 사진 아래의 캡션은 각 전함의 장갑 손상 상태와 그로 인한 인명 및 침수 피해를 상세히 설명하고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**Ships:** Seydlitz",
+        "Moltke"
+      ],
+      "description": "이 페이지에는 제1차 세계 대전 유틀란트 해전 당시 독일 전함인 자이들리츠와 몰트케가 피격된 모습을 보여주는 두 장의 흑백 사진이 있습니다. 사진 아래의 캡션은 각 전함의 장갑 손상 상태와 그로 인한 인명 및 침수 피해를 상세히 설명하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 240,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.871,
+    "bbox": [
+      1465,
+      436,
+      2284,
+      1029
+    ],
+    "size": [
+      819,
+      593
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0240_01.png",
+    "annotation": {
+      "raw": "Since there are two distinct photographs with their own captions on this page, I have provided the information for both.\n\n**Figure 1**\n1) **Exact English caption text:** A view of the rubble left after a heavy shell struck the rear of the aft conning tower of von der Tann.\n2) **Korean translation:** von der Tann 함의 후방 지휘탑 뒷부분에 중포탄이 명중한 후 남겨진 잔해의 모습.\n3) **Type:** photo\n4) **Subjects:** von der Tann\n5) **Korean description:** von der Tann 함의 지휘탑 뒷부분이 포탄에 맞아 파괴된 잔해를 보여주는 사진입니다.\n\n**Figure 2**\n1) **Exact English caption text:** Hit number 6 on the battleship Grosser Kurfürst left a calibre sized hole in the casemate armour and killed six men of the serving crew of the II 15cm gun.\n2) **Korean translation:** 전함 Grosser Kurfürst에 가해진 6번째 피격은 포탑 장갑에 구경 크기의 구멍을 남겼으며, II 15cm 포의 승조원 6명을 사망케 했다.\n3) **Type:** photo\n4) **Subjects:** Grosser Kurfürst, II",
+      "caption_en": "text:** A view of the rubble left after a heavy shell struck the rear of the aft conning tower of von der Tann.",
+      "caption_ko": "von der Tann 함의 후방 지휘탑 뒷부분에 중포탄이 명중한 후 남겨진 잔해의 모습.",
+      "subjects": [
+        "von der Tann"
+      ],
+      "description": "von der Tann 함의 지휘탑 뒷부분이 포탄에 맞아 파괴된 잔해를 보여주는 사진입니다.\n\n**Figure 2**\n1) **Exact English caption text:** Hit number 6 on the battleship Grosser Kurfürst left a calibre sized hole in the casemate armour and killed six men of the serving crew of the II 15cm gun.\n2) **Korean translation:** 전함 Grosser Kurfürst에 가해진 6번째 피격은 포탑 장갑에 구경 크기의 구멍을 남겼으며, II 15cm 포의 승조원 6명을 사망케 했다.\n3) **Type:** photo\n4) **Subjects:** Grosser Kurfürst, II"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 240,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.828,
+    "bbox": [
+      596,
+      437,
+      1411,
+      1024
+    ],
+    "size": [
+      815,
+      587
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0240_02.png",
+    "annotation": {
+      "raw": "Since there are two distinct photographs with their own captions on this page, I have provided the information for both.\n\n**Figure 1**\n1) **Exact English caption text:** A view of the rubble left after a heavy shell struck the rear of the aft conning tower of von der Tann.\n2) **Korean translation:** von der Tann 함의 후방 지휘탑 뒷부분에 중포탄이 명중한 후 남겨진 잔해의 모습.\n3) **Type:** photo\n4) **Subjects:** von der Tann\n5) **Korean description:** von der Tann 함의 지휘탑 뒷부분이 포탄에 맞아 파괴된 잔해를 보여주는 사진입니다.\n\n**Figure 2**\n1) **Exact English caption text:** Hit number 6 on the battleship Grosser Kurfürst left a calibre sized hole in the casemate armour and killed six men of the serving crew of the II 15cm gun.\n2) **Korean translation:** 전함 Grosser Kurfürst에 가해진 6번째 피격은 포탑 장갑에 구경 크기의 구멍을 남겼으며, II 15cm 포의 승조원 6명을 사망케 했다.\n3) **Type:** photo\n4) **Subjects:** Grosser Kurfürst, II",
+      "caption_en": "text:** A view of the rubble left after a heavy shell struck the rear of the aft conning tower of von der Tann.",
+      "caption_ko": "von der Tann 함의 후방 지휘탑 뒷부분에 중포탄이 명중한 후 남겨진 잔해의 모습.",
+      "subjects": [
+        "von der Tann"
+      ],
+      "description": "von der Tann 함의 지휘탑 뒷부분이 포탄에 맞아 파괴된 잔해를 보여주는 사진입니다.\n\n**Figure 2**\n1) **Exact English caption text:** Hit number 6 on the battleship Grosser Kurfürst left a calibre sized hole in the casemate armour and killed six men of the serving crew of the II 15cm gun.\n2) **Korean translation:** 전함 Grosser Kurfürst에 가해진 6번째 피격은 포탑 장갑에 구경 크기의 구멍을 남겼으며, II 15cm 포의 승조원 6명을 사망케 했다.\n3) **Type:** photo\n4) **Subjects:** Grosser Kurfürst, II"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 241,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.41,
+    "bbox": [
+      111,
+      190,
+      1431,
+      1678
+    ],
+    "size": [
+      1320,
+      1488
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0241_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: This hit on the citadel armour of Markgraf failed to penetrate the armour.\n2) Korean translation of the caption: 마르크그라프(Markgraf)의 시타델 장갑에 가해진 이 피격은 장갑을 관통하지 못했습니다.\n3) Type: photo\n4) Subjects: Markgraf (ship)\n5) Korean description: 이 사진은 독일 전함 마르크그라프의 시타델 장갑 부위가 피격된 모습을 보여주는 두 장의 흑백 사진입니다. 사진에는 포탑과 선체 일부가 나타나 있으며, 장갑을 관통하지 못한 피격 흔적을 보여줍니다.",
+      "caption_en": "text as printed on the page: This hit on the citadel armour of Markgraf failed to penetrate the armour.",
+      "caption_ko": "of the caption: 마르크그라프(Markgraf)의 시타델 장갑에 가해진 이 피격은 장갑을 관통하지 못했습니다.",
+      "type": "photo",
+      "subjects": [
+        "Markgraf (ship)"
+      ],
+      "description": "이 사진은 독일 전함 마르크그라프의 시타델 장갑 부위가 피격된 모습을 보여주는 두 장의 흑백 사진입니다. 사진에는 포탑과 선체 일부가 나타나 있으며, 장갑을 관통하지 못한 피격 흔적을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 242,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.835,
+    "bbox": [
+      595,
+      471,
+      1412,
+      1088
+    ],
+    "size": [
+      817,
+      617
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0242_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 242,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.825,
+    "bbox": [
+      1463,
+      436,
+      2283,
+      1088
+    ],
+    "size": [
+      820,
+      652
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0242_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 243,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.837,
+    "bbox": [
+      1463,
+      472,
+      2283,
+      1087
+    ],
+    "size": [
+      820,
+      615
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0243_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 243,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.355,
+    "bbox": [
+      599,
+      426,
+      1413,
+      1541
+    ],
+    "size": [
+      814,
+      1115
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0243_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 245,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.924,
+    "bbox": [
+      1464,
+      472,
+      2283,
+      1415
+    ],
+    "size": [
+      819,
+      943
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0245_01.png",
+    "annotation": {
+      "raw": "There are three distinct figures on this page. I have provided the extracted information for each one below.\n\n### **Figure 1 (Top Left)**\n1) **Exact English caption text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.\n2) **Korean translation:** 야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.\n3) **Type:** photo\n4) **Subjects:** German battleship *Nassau*, British destroyer\n5) **Korean description:** 영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다.",
+      "caption_en": "text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.",
+      "caption_ko": "야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.",
+      "subjects": [
+        "German battleship *Nassau",
+        "British destroyer"
+      ],
+      "description": "영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 245,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.886,
+    "bbox": [
+      595,
+      550,
+      1413,
+      1034
+    ],
+    "size": [
+      818,
+      484
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0245_02.png",
+    "annotation": {
+      "raw": "There are three distinct figures on this page. I have provided the extracted information for each one below.\n\n### **Figure 1 (Top Left)**\n1) **Exact English caption text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.\n2) **Korean translation:** 야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.\n3) **Type:** photo\n4) **Subjects:** German battleship *Nassau*, British destroyer\n5) **Korean description:** 영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다.",
+      "caption_en": "text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.",
+      "caption_ko": "야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.",
+      "subjects": [
+        "German battleship *Nassau",
+        "British destroyer"
+      ],
+      "description": "영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 245,
+    "seq": 3,
+    "class": "Picture",
+    "confidence": 0.8,
+    "bbox": [
+      596,
+      1162,
+      1413,
+      1548
+    ],
+    "size": [
+      817,
+      386
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0245_03.png",
+    "annotation": {
+      "raw": "There are three distinct figures on this page. I have provided the extracted information for each one below.\n\n### **Figure 1 (Top Left)**\n1) **Exact English caption text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.\n2) **Korean translation:** 야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.\n3) **Type:** photo\n4) **Subjects:** German battleship *Nassau*, British destroyer\n5) **Korean description:** 영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다.",
+      "caption_en": "text:** Damage to the bridge of the German battleship *Nassau*, after being struck by a 4 inch shell from a British destroyer during a night encounter.",
+      "caption_ko": "야간 교전 중 영국 구축함의 4인치 포탄에 맞아 독일 전함 나사우(Nassau)호의 함교가 손상된 모습.",
+      "subjects": [
+        "German battleship *Nassau",
+        "British destroyer"
+      ],
+      "description": "영국 구축함의 포탄 공격으로 인해 독일 전함 나사우호의 함교가 파손된 상태를 보여줍니다. 야간 교전 중에 발생한 피해를 담은 사진입니다.\n\n---\n\n### **Figure 2 (Bottom Left)**\n1) **Exact English caption text:** The battleships *Westfalen* and *Nassau* on the occasion of the opening of the new III Entrance to Wilhelmshaven harbour.\n2) **Korean translation:** 빌헬름스하펜 항구의 새로운 제3 입구 개통을 기념하는 전함 베스트팔렌(Westfalen)호와 나사우(Nassau)호.\n3) **Type:** photo\n4) **Subjects:** battleships *Westfalen*, *Nassau*, Wilhelmshaven harbour\n5) **Korean description:** 빌헬름스하펜 항구의 새로운 입구 개통을 기념하는 자리에 있는 두 전함을 보여줍니다. 베스트팔렌호와 나사우호가 항구에 정박해 있는 모습입니다.\n\n---\n\n### **Figure 3 (Right)**\n1) **Exact English caption text:** Vizeadmiral Scheer, after his promotion to Admiral. He is with dachshund.\n2) **Korean translation:** 제독으로 승진한 후의 쉬어(Scheer) 부제독. 그는 닥스훈트와 함께 있습니다.\n3) **Type:** photo\n4) **Subjects:** Vizeadmiral Scheer, dachshund\n5) **Korean description:** 제독으로 승진한 쉬어 부제독의 인물 사진입니다. 그는 자신의 반려견인 닥스훈트와 함께 있는 모습입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 246,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.556,
+    "bbox": [
+      1516,
+      435,
+      2233,
+      1584
+    ],
+    "size": [
+      717,
+      1149
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0246_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**:\nAdmiral Scheer and his Staff aboard Friedrich der Große. The commander of the battleship, Kapitän zur See Fuchs, seems to have made a joke. To Admiral Scheer's left Kapitän zur See von Trotha, to his right Kapitän zur See Levetzow.\n\n2) **Korean translation of the caption**:\nFriedrich der Große 함상에 있는 쉬어 제독과 그의 참모들. 이 전함의 지휘관인 푹스 대령은 농담을 한 듯 보인다. 쉬어 제독의 왼쪽에는 폰 트로타 대령, 오른쪽에는 레베츠오 대령이 있다.\n\n3) **Type**: photo\n\n4) **Subjects**: \n*   **People**: Admiral Scheer, Kapitän zur See Fuchs, Kapitän zur See von Trotha, Kapitän zur See Levetzow\n*   **Ships**: Friedrich der Große\n\n5) **Korean description**: \n이 사진은 독일 제국의 전함 프리드리히 데어 그로세(Friedrich der Große) 함상에서 쉬어 제독과 그의 참모들이 모여 있는 모습을 보여줍니다. 사진 속 해군 장교들은 제복을 입고 있으며, 일부는 즐거운 분위기 속에서 농담을 나누는 듯한 모습입니다.",
+      "caption_en": "text as printed on the page**:",
+      "caption_ko": "of the caption**:",
+      "subjects": [
+        ":",
+        "**People**: Admiral Scheer",
+        "Kapitän zur See Fuchs",
+        "Kapitän zur See von Trotha",
+        "Kapitän zur See Levetzow",
+        "**Ships**: Friedrich der Große"
+      ],
+      "description": ": \n이 사진은 독일 제국의 전함 프리드리히 데어 그로세(Friedrich der Große) 함상에서 쉬어 제독과 그의 참모들이 모여 있는 모습을 보여줍니다. 사진 속 해군 장교들은 제복을 입고 있으며, 일부는 즐거운 분위기 속에서 농담을 나누는 듯한 모습입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 246,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.481,
+    "bbox": [
+      600,
+      451,
+      1414,
+      954
+    ],
+    "size": [
+      814,
+      503
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0246_02.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**:\nAdmiral Scheer and his Staff aboard Friedrich der Große. The commander of the battleship, Kapitän zur See Fuchs, seems to have made a joke. To Admiral Scheer's left Kapitän zur See von Trotha, to his right Kapitän zur See Levetzow.\n\n2) **Korean translation of the caption**:\nFriedrich der Große 함상에 있는 쉬어 제독과 그의 참모들. 이 전함의 지휘관인 푹스 대령은 농담을 한 듯 보인다. 쉬어 제독의 왼쪽에는 폰 트로타 대령, 오른쪽에는 레베츠오 대령이 있다.\n\n3) **Type**: photo\n\n4) **Subjects**: \n*   **People**: Admiral Scheer, Kapitän zur See Fuchs, Kapitän zur See von Trotha, Kapitän zur See Levetzow\n*   **Ships**: Friedrich der Große\n\n5) **Korean description**: \n이 사진은 독일 제국의 전함 프리드리히 데어 그로세(Friedrich der Große) 함상에서 쉬어 제독과 그의 참모들이 모여 있는 모습을 보여줍니다. 사진 속 해군 장교들은 제복을 입고 있으며, 일부는 즐거운 분위기 속에서 농담을 나누는 듯한 모습입니다.",
+      "caption_en": "text as printed on the page**:",
+      "caption_ko": "of the caption**:",
+      "subjects": [
+        ":",
+        "**People**: Admiral Scheer",
+        "Kapitän zur See Fuchs",
+        "Kapitän zur See von Trotha",
+        "Kapitän zur See Levetzow",
+        "**Ships**: Friedrich der Große"
+      ],
+      "description": ": \n이 사진은 독일 제국의 전함 프리드리히 데어 그로세(Friedrich der Große) 함상에서 쉬어 제독과 그의 참모들이 모여 있는 모습을 보여줍니다. 사진 속 해군 장교들은 제복을 입고 있으며, 일부는 즐거운 분위기 속에서 농담을 나누는 듯한 모습입니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 247,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.75,
+    "bbox": [
+      1464,
+      469,
+      2282,
+      996
+    ],
+    "size": [
+      818,
+      527
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0247_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 247,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.746,
+    "bbox": [
+      695,
+      590,
+      1314,
+      1570
+    ],
+    "size": [
+      619,
+      980
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0247_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 248,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.507,
+    "bbox": [
+      1465,
+      439,
+      2286,
+      1481
+    ],
+    "size": [
+      821,
+      1042
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0248_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page:\nKapitän zur See und Kommodore Ludwig Reuter, commander of IV Reconnaissance Group, pictured after the war.\n\n2) Korean translation of the caption:\n제4정찰단 사령관인 루트비히 로이터 해군 대령 겸 준장, 전쟁 후의 모습.\n\n3) Type: photo\n\n4) Subjects: Ludwig Reuter, IV Reconnaissance Group\n\n5) Korean description:\n두 장의 흑백 사진에는 독일 해군 장교인 루트비히 로이터의 모습이 담겨 있습니다. 그는 군복을 입고 있으며, 전쟁이 끝난 후의 모습을 보여줍니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "type": "photo",
+      "subjects": [
+        "Ludwig Reuter",
+        "IV Reconnaissance Group"
+      ],
+      "description": "두 장의 흑백 사진에는 독일 해군 장교인 루트비히 로이터의 모습이 담겨 있습니다. 그는 군복을 입고 있으며, 전쟁이 끝난 후의 모습을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 248,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.38,
+    "bbox": [
+      593,
+      443,
+      1413,
+      1443
+    ],
+    "size": [
+      820,
+      1000
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0248_02.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page:\nKapitän zur See und Kommodore Ludwig Reuter, commander of IV Reconnaissance Group, pictured after the war.\n\n2) Korean translation of the caption:\n제4정찰단 사령관인 루트비히 로이터 해군 대령 겸 준장, 전쟁 후의 모습.\n\n3) Type: photo\n\n4) Subjects: Ludwig Reuter, IV Reconnaissance Group\n\n5) Korean description:\n두 장의 흑백 사진에는 독일 해군 장교인 루트비히 로이터의 모습이 담겨 있습니다. 그는 군복을 입고 있으며, 전쟁이 끝난 후의 모습을 보여줍니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "type": "photo",
+      "subjects": [
+        "Ludwig Reuter",
+        "IV Reconnaissance Group"
+      ],
+      "description": "두 장의 흑백 사진에는 독일 해군 장교인 루트비히 로이터의 모습이 담겨 있습니다. 그는 군복을 입고 있으며, 전쟁이 끝난 후의 모습을 보여줍니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 249,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.38,
+    "bbox": [
+      1537,
+      513,
+      2216,
+      1605
+    ],
+    "size": [
+      679,
+      1092
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0249_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page:\nThe I Leader of Torpedoboote (II FdT), Kapitän zur See und Kommodore Michelsen. The II Leader of Torpedoboote (II FdT), Kapitän zur See and Kommodore Heinrich.\n\n2) Korean translation of the caption:\n제1 어뢰정 부대(II FdT) 지휘관, 미헬센 해군 대령 및 준장. 제2 어뢰정 부대(II FdT) 지휘관, 하인리히 해군 대령 및 준장.\n\n3) Type: photo\n\n4) Subjects: Michelsen, Heinrich\n\n5) Korean description: \n이 사진은 제1 및 제2 어뢰정 부대를 지휘했던 독일 해군 장교들의 초상화를 보여줍니다. 미헬센과 하인리히 두 인물이 각각 제복을 입고 정면을 응시하고 있습니다.",
+      "caption_en": "text as printed on the page:",
+      "caption_ko": "of the caption:",
+      "type": "photo",
+      "subjects": [
+        "Michelsen",
+        "Heinrich"
+      ],
+      "description": "이 사진은 제1 및 제2 어뢰정 부대를 지휘했던 독일 해군 장교들의 초상화를 보여줍니다. 미헬센과 하인리히 두 인물이 각각 제복을 입고 정면을 응시하고 있습니다."
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 250,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.87,
+    "bbox": [
+      1464,
+      438,
+      2283,
+      918
+    ],
+    "size": [
+      819,
+      480
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0250_01.png",
+    "annotation": {
+      "raw": "Based on the provided image, here is the extracted information for the primary figure on the page:\n\n1) **Exact English caption text as printed on the page**: Three Torpedoboote Flottille commanders (from left to right): Korvettenkapitän Max Schultz (VI Flottille), Korvettenkapitän von Koch (VII Flottille), and Korvettenkapitän Gohle (IX Flottille).\n2) **Korean translation of the caption**: 세 명의 어뢰정 함대 지휘관들 (왼쪽에서 오른쪽으로): 막스 슐츠 대령 (제6 어뢰정 함대), 폰 코흐 대령 (제7 어뢰정 함대), 그리고 괴흘레",
+      "caption_en": "text as printed on the page**: Three Torpedoboote Flottille commanders (from left to right): Korvettenkapitän Max Schultz (VI Flottille), Korvettenkapitän von Koch (VII Flottille), and Korvettenkapitän Gohle (IX Flottille).",
+      "caption_ko": "of the caption**: 세 명의 어뢰정 함대 지휘관들 (왼쪽에서 오른쪽으로): 막스 슐츠 대령 (제6 어뢰정 함대), 폰 코흐 대령 (제7 어뢰정 함대), 그리고 괴흘레"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 250,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.853,
+    "bbox": [
+      597,
+      510,
+      1413,
+      1350
+    ],
+    "size": [
+      816,
+      840
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0250_02.png",
+    "annotation": {
+      "raw": "Based on the provided image, here is the extracted information for the primary figure on the page:\n\n1) **Exact English caption text as printed on the page**: Three Torpedoboote Flottille commanders (from left to right): Korvettenkapitän Max Schultz (VI Flottille), Korvettenkapitän von Koch (VII Flottille), and Korvettenkapitän Gohle (IX Flottille).\n2) **Korean translation of the caption**: 세 명의 어뢰정 함대 지휘관들 (왼쪽에서 오른쪽으로): 막스 슐츠 대령 (제6 어뢰정 함대), 폰 코흐 대령 (제7 어뢰정 함대), 그리고 괴흘레",
+      "caption_en": "text as printed on the page**: Three Torpedoboote Flottille commanders (from left to right): Korvettenkapitän Max Schultz (VI Flottille), Korvettenkapitän von Koch (VII Flottille), and Korvettenkapitän Gohle (IX Flottille).",
+      "caption_ko": "of the caption**: 세 명의 어뢰정 함대 지휘관들 (왼쪽에서 오른쪽으로): 막스 슐츠 대령 (제6 어뢰정 함대), 폰 코흐 대령 (제7 어뢰정 함대), 그리고 괴흘레"
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 251,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.849,
+    "bbox": [
+      1491,
+      966,
+      2256,
+      1564
+    ],
+    "size": [
+      765,
+      598
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0251_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 251,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.788,
+    "bbox": [
+      594,
+      436,
+      1412,
+      1042
+    ],
+    "size": [
+      818,
+      606
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0251_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 251,
+    "seq": 3,
+    "class": "Picture",
+    "confidence": 0.704,
+    "bbox": [
+      1465,
+      434,
+      2283,
+      842
+    ],
+    "size": [
+      818,
+      408
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0251_03.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 252,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.924,
+    "bbox": [
+      595,
+      548,
+      1413,
+      1129
+    ],
+    "size": [
+      818,
+      581
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0252_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "Skagerrak",
+    "page": 252,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.907,
+    "bbox": [
+      1464,
+      437,
+      2287,
+      1379
+    ],
+    "size": [
+      823,
+      942
+    ],
+    "file": "wiki/assets/extracted/Skagerrak/skagerrak_0252_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 23,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.818,
+    "bbox": [
+      1515,
+      324,
+      2407,
+      1342
+    ],
+    "size": [
+      892,
+      1018
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0023_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nⓐ Meeting of battle-fleets, 31st May 1916\nⓑ Last 'night action', a.m., 1st June 1916\n\n2) **Korean translation of the caption**\nⓐ 함대 결전, 1916년 5월 31일\nⓑ 마지막 '야간 교전', 1916년 6월 1일 오전\n\n3) **Type**: map\n\n4) **Subjects**: \n- **Places**: Outmost Islands, Orkney, Scapa Flow, Inverness, Moray Firth, Edinburgh, Berwick, Northumberland, North Sea, Denmark, Jutland, Wilhelmshaven, Holland, Germany, United Kingdom, London, Portsmouth, Belgium\n\n5) **Korean description**: \n이 지도는 1916년 유틀란트 해전 당시 함대들이 만난 지점과 마지막 야간 교전이 발생한 위치를 보여줍니다. 북해와 주변 유럽 해안 지역의 지리적 위치를 나타내고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        ":",
+        "**Places**: Outmost Islands",
+        "Orkney",
+        "Scapa Flow",
+        "Inverness",
+        "Moray Firth",
+        "Edinburgh",
+        "Berwick",
+        "Northumberland",
+        "North Sea",
+        "Denmark",
+        "Jutland",
+        "Wilhelmshaven",
+        "Holland",
+        "Germany",
+        "United Kingdom",
+        "London",
+        "Portsmouth",
+        "Belgium"
+      ],
+      "description": ": \n이 지도는 1916년 유틀란트 해전 당시 함대들이 만난 지점과 마지막 야간 교전이 발생한 위치를 보여줍니다. 북해와 주변 유럽 해안 지역의 지리적 위치를 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 64,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.919,
+    "bbox": [
+      1566,
+      322,
+      2362,
+      1009
+    ],
+    "size": [
+      796,
+      687
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0064_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: Beatty's eastwards cruising formation\n2) Korean translation of the caption: 비티 제독의 동쪽 방향 순항 대형\n3) Type: diagram\n4) Subjects: Beatty, 1st BCS, 2nd BCS, 5th BS, 1st LCS, 3rd LCS, 2nd LCS, Lion\n5) Korean description: 이 도표는 비티 제독의 함대가 동쪽을 향해 이동할 때의 순항 대형을 나타냅니다. 1st BCS, 2nd BCS, 5th BS와 같은 각 함대 단위와 Lion 함선의 상대적 위치를 도식적으로 보여줍니다.",
+      "caption_en": "text as printed on the page: Beatty's eastwards cruising formation",
+      "caption_ko": "of the caption: 비티 제독의 동쪽 방향 순항 대형",
+      "type": "diagram",
+      "subjects": [
+        "Beatty",
+        "1st BCS",
+        "2nd BCS",
+        "5th BS",
+        "1st LCS",
+        "3rd LCS",
+        "2nd LCS",
+        "Lion"
+      ],
+      "description": "이 도표는 비티 제독의 함대가 동쪽을 향해 이동할 때의 순항 대형을 나타냅니다. 1st BCS, 2nd BCS, 5th BS와 같은 각 함대 단위와 Lion 함선의 상대적 위치를 도식적으로 보여줍니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 71,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.957,
+    "bbox": [
+      1527,
+      323,
+      2402,
+      1010
+    ],
+    "size": [
+      875,
+      687
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0071_01.png",
+    "annotation": {
+      "raw": "1) Beatty's 'waypoint' turn at 2.15 p.m.\n2) 오후 2시 15분의 비티의 '웨이포인트' 선회\n3) diagram\n4) Beatty, 5th BS, Buchen, 2nd BCS, New Zealand, 1st BCS, Lion, BCF, 3rd LCS, Raglan, 2nd LCS, Indefatigable, Galatea\n5) 이 다이어그램은 유틀란트 해전 중 영국 해군 함대의 이동 경로와 위치를 보여줍니다. 비티 제독의 함대가 특정 시점에 어떻게 선회했는지를 나타냅니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 78,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.499,
+    "bbox": [
+      460,
+      305,
+      1243,
+      1031
+    ],
+    "size": [
+      783,
+      726
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0078_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 79,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.933,
+    "bbox": [
+      359,
+      452,
+      1359,
+      1368
+    ],
+    "size": [
+      1000,
+      916
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0079_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 79,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.897,
+    "bbox": [
+      1656,
+      609,
+      2276,
+      1467
+    ],
+    "size": [
+      620,
+      858
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0079_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 104,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.944,
+    "bbox": [
+      1517,
+      330,
+      2409,
+      1316
+    ],
+    "size": [
+      892,
+      986
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0104_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text**: Plot of the action from 2.45 to 4.15 p.m.\n2) **Korean translation of the caption**: 오후 2시 45분부터 4시 15분까지의 교전 상황도\n3) **Type**: diagram\n4) **Subjects**: 1st LCS, 2nd LCS, 3rd LCS, 5th BS, BCF, 1st SG, 2nd SG, Indefatigable\n5) **Korean description**: 이 도표는 오후 2시 45분부터 4시 15분 사이의 해상 교전 상황을 나타냅니다. 여러 해군 부대와 함선들의 이동 경로와 위치 관계를 시각적으로 보여주고 있습니다.",
+      "caption_en": "text**: Plot of the action from 2.45 to 4.15 p.m.",
+      "caption_ko": "of the caption**: 오후 2시 45분부터 4시 15분까지의 교전 상황도",
+      "subjects": [
+        ": 1st LCS",
+        "2nd LCS",
+        "3rd LCS",
+        "5th BS",
+        "BCF",
+        "1st SG",
+        "2nd SG",
+        "Indefatigable"
+      ],
+      "description": ": 이 도표는 오후 2시 45분부터 4시 15분 사이의 해상 교전 상황을 나타냅니다. 여러 해군 부대와 함선들의 이동 경로와 위치 관계를 시각적으로 보여주고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 112,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.948,
+    "bbox": [
+      1584,
+      465,
+      2341,
+      1467
+    ],
+    "size": [
+      757,
+      1002
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0112_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 112,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.941,
+    "bbox": [
+      1579,
+      450,
+      2348,
+      1470
+    ],
+    "size": [
+      769,
+      1020
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0112_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 114,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.432,
+    "bbox": [
+      355,
+      726,
+      830,
+      881
+    ],
+    "size": [
+      475,
+      155
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0114_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 119,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.93,
+    "bbox": [
+      352,
+      317,
+      1382,
+      1404
+    ],
+    "size": [
+      1030,
+      1087
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0119_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nThe BCF's turn to the North 4.40–4.51 p.m.\n\n2) **Korean translation of the caption**\nBCF의 북쪽으로의 선회 4:40–4:51 p.m.\n\n3) **Type**\ndiagram\n\n4) **Subjects**\nBCF, 5th BS, 1st SG, 2nd LCS, HSF, 4th div S, 3rd div S, 2nd div S, 1st div S, 1st LCS, 4th div B, 6°E, 56°N\n\n5) **Korean description**\n이 도표는 1916년 유틀란트 해전 당시 BCF(전함대)가 북쪽으로 방향을 전환하는 움직임을 보여줍니다. 다양한 함대 부대들의 위치와 이동 경로를 경도와 위도 좌표와 함께 나타내고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "BCF",
+        "5th BS",
+        "1st SG",
+        "2nd LCS",
+        "HSF",
+        "4th div S",
+        "3rd div S",
+        "2nd div S",
+        "1st div S",
+        "1st LCS",
+        "4th div B",
+        "6°E",
+        "56°N"
+      ],
+      "description": "이 도표는 1916년 유틀란트 해전 당시 BCF(전함대)가 북쪽으로 방향을 전환하는 움직임을 보여줍니다. 다양한 함대 부대들의 위치와 이동 경로를 경도와 위도 좌표와 함께 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 120,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.797,
+    "bbox": [
+      1763,
+      849,
+      2171,
+      1222
+    ],
+    "size": [
+      408,
+      373
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0120_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: a) Green to Green\n\n2) **Korean translation of the caption**: a) 그린 투 그린 (또는 a) 녹색에서 녹색으로)\n\n3) **Type**: diagram\n\n4) **Subjects**: \n*   **People**: Evan-Thomas, Beatty, Seymour, Barham\n*   **Ships/Units**: 5th BS (5th Battle Squadron), BCF (Battle Cruiser Fleet)\n*   **Places**: Jutland\n\n5) **Korean description**: 이 도표는 5번 전대(5th BS)와 영국 순양전함 전대(BCF)의 기동 경로를 나타내는 다이어그램입니다. '대열을 연장하라(PROLONG THE LINE)'라는 신호가 전달되는 상황을 시각적으로 보여줍니다.",
+      "caption_en": "text as printed on the page**: a) Green to Green",
+      "caption_ko": "of the caption**: a) 그린 투 그린 (또는 a) 녹색에서 녹색으로)",
+      "subjects": [
+        ":",
+        "**People**: Evan-Thomas",
+        "Beatty",
+        "Seymour",
+        "Barham",
+        "**Ships/Units**: 5th BS (5th Battle Squadron)",
+        "BCF (Battle Cruiser Fleet)",
+        "**Places**: Jutland"
+      ],
+      "description": ": 이 도표는 5번 전대(5th BS)와 영국 순양전함 전대(BCF)의 기동 경로를 나타내는 다이어그램입니다. '대열을 연장하라(PROLONG THE LINE)'라는 신호가 전달되는 상황을 시각적으로 보여줍니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 121,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.625,
+    "bbox": [
+      675,
+      841,
+      1060,
+      1218
+    ],
+    "size": [
+      385,
+      377
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0121_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 121,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.863,
+    "bbox": [
+      668,
+      824,
+      1064,
+      1224
+    ],
+    "size": [
+      396,
+      400
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0121_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 121,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.78,
+    "bbox": [
+      639,
+      295,
+      1093,
+      696
+    ],
+    "size": [
+      454,
+      401
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0121_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 122,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.856,
+    "bbox": [
+      1463,
+      752,
+      2471,
+      936
+    ],
+    "size": [
+      1008,
+      184
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0122_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 123,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.718,
+    "bbox": [
+      389,
+      507,
+      1206,
+      670
+    ],
+    "size": [
+      817,
+      163
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0123_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 128,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.815,
+    "bbox": [
+      1449,
+      510,
+      2324,
+      891
+    ],
+    "size": [
+      875,
+      381
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0128_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 129,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.951,
+    "bbox": [
+      365,
+      517,
+      1362,
+      1184
+    ],
+    "size": [
+      997,
+      667
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0129_01.png",
+    "annotation": {
+      "raw": "1) Exact English caption text as printed on the page: Barham's belated turn at 4.54 p.m.\n2) Korean translation of the caption: 바람(Barham)함의 늦은 선회, 오후 4시 54분.\n3) Type: diagram\n4) Subjects: Barham, 5th BS, BCF, German battle-fleet\n5) Korean description: 이 다이어그램은 유틀란트 해전 중 영국 5번 전함 전대(5th BS)의 선회 과정을 보여줍니다. 독일 함대의 전방으로부터 약 20,000야드 거리에서 벌어진 상황을 묘사하고 있습니다.",
+      "caption_en": "text as printed on the page: Barham's belated turn at 4.54 p.m.",
+      "caption_ko": "of the caption: 바람(Barham)함의 늦은 선회, 오후 4시 54분.",
+      "type": "diagram",
+      "subjects": [
+        "Barham",
+        "5th BS",
+        "BCF",
+        "German battle-fleet"
+      ],
+      "description": "이 다이어그램은 유틀란트 해전 중 영국 5번 전함 전대(5th BS)의 선회 과정을 보여줍니다. 독일 함대의 전방으로부터 약 20,000야드 거리에서 벌어진 상황을 묘사하고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 132,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.894,
+    "bbox": [
+      369,
+      849,
+      1363,
+      1417
+    ],
+    "size": [
+      994,
+      568
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0132_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: Malaya puts her wheel over 20 seconds early\n\n2) **Korean translation of the caption**: 말라야호가 20초 일찍 키를 돌림\n\n3) **Type**: diagram\n\n4) **Subjects**: Barham, Valiant, Warspite, Malaya\n\n5) **Korean description**: 이 다이어그램은 유틀란트 해전 당시 영국 전함들의 이동 경로를 보여줍니다. 특히 말라야호가 예정보다 20초 일찍 방향을 전환한 기동 상황을 도식화하여 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: Malaya puts her wheel over 20 seconds early",
+      "caption_ko": "of the caption**: 말라야호가 20초 일찍 키를 돌림",
+      "subjects": [
+        ": Barham",
+        "Valiant",
+        "Warspite",
+        "Malaya"
+      ],
+      "description": ": 이 다이어그램은 유틀란트 해전 당시 영국 전함들의 이동 경로를 보여줍니다. 특히 말라야호가 예정보다 20초 일찍 방향을 전환한 기동 상황을 도식화하여 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 156,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.569,
+    "bbox": [
+      1453,
+      850,
+      2211,
+      1005
+    ],
+    "size": [
+      758,
+      155
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0156_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 188,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.836,
+    "bbox": [
+      367,
+      514,
+      1366,
+      940
+    ],
+    "size": [
+      999,
+      426
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0188_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 222,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.89,
+    "bbox": [
+      430,
+      516,
+      1302,
+      1256
+    ],
+    "size": [
+      872,
+      740
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0222_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: \nThe signal to Camperdon's division, The signal to Victoria's own division\n\n2) **Korean translation of the caption**: \n캠퍼던 분대에 대한 신호, 빅토리아 자체 분대에 대한 신호\n\n3) **Type**: diagram\n\n4) **Subjects**: Camperdon, Victoria, Gerard Noel, Arthur Moore, Abe Jenkins, Arthur Wilson, Albert Markham, Tryon, Phipps Hornby, Nile, Dreadnought, Sans Pareil, Jutland\n\n5) **Korean description**: \n이 도표는 두 개의 서로 다른 함대 분대에 전달된 회전 신호 방식을 보여줍니다. 왼쪽은 캠퍼던 분대를 위한 신호를, 오른쪽은 빅토리아 분대를 위한 신호를 나타냅니다.",
+      "caption_en": "text as printed on the page**:",
+      "caption_ko": "of the caption**:",
+      "subjects": [
+        ": Camperdon",
+        "Victoria",
+        "Gerard Noel",
+        "Arthur Moore",
+        "Abe Jenkins",
+        "Arthur Wilson",
+        "Albert Markham",
+        "Tryon",
+        "Phipps Hornby",
+        "Nile",
+        "Dreadnought",
+        "Sans Pareil",
+        "Jutland"
+      ],
+      "description": ": \n이 도표는 두 개의 서로 다른 함대 분대에 전달된 회전 신호 방식을 보여줍니다. 왼쪽은 캠퍼던 분대를 위한 신호를, 오른쪽은 빅토리아 분대를 위한 신호를 나타냅니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 223,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.417,
+    "bbox": [
+      1572,
+      345,
+      2443,
+      1422
+    ],
+    "size": [
+      871,
+      1077
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0223_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 242,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.802,
+    "bbox": [
+      634,
+      802,
+      1098,
+      1221
+    ],
+    "size": [
+      464,
+      419
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0242_01.png",
+    "annotation": {
+      "raw": "Since there are two figures on this page, I have provided the extracted information for both.\n\n**Figure 1**\n1) **Exact English caption text:** Figure 1\n2) **Korean translation of the caption:** 그림 1\n3) **Type:** diagram\n4) **Subjects:** Camperdown, Victoria\n5) **Korean description:** 이 다이어그램은 Camperdown과 Victoria라는 두 군함의 기동 경로를 보여줍니다. 두 선박이 특정 간격을 유지하며 방향을 바꾸는 모습을 나타냅니다.\n\n**Figure 2**\n1) **Exact English caption text:** Figure 2\n2) **Korean translation of the caption:** 그림 2\n3) **Type:** diagram\n4) **Subjects:** None\n5) **Korean description:** 이 다이어그램은 선박의 선회 시 발생하는 전술적 직경(tactical diameter)을 보여줍니다. 선박의 회전 경로와 그에 따른 기하학적 치수를 나타냅니다.",
+      "caption_en": "text:** Figure 1",
+      "caption_ko": "of the caption:** 그림 1",
+      "subjects": [
+        "Camperdown",
+        "Victoria"
+      ],
+      "description": "이 다이어그램은 Camperdown과 Victoria라는 두 군함의 기동 경로를 보여줍니다. 두 선박이 특정 간격을 유지하며 방향을 바꾸는 모습을 나타냅니다.\n\n**Figure 2**\n1) **Exact English caption text:** Figure 2\n2) **Korean translation of the caption:** 그림 2\n3) **Type:** diagram\n4) **Subjects:** None\n5) **Korean description:** 이 다이어그램은 선박의 선회 시 발생하는 전술적 직경(tactical diameter)을 보여줍니다. 선박의 회전 경로와 그에 따른 기하학적 치수를 나타냅니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 242,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.61,
+    "bbox": [
+      1767,
+      306,
+      2161,
+      721
+    ],
+    "size": [
+      394,
+      415
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0242_02.png",
+    "annotation": {
+      "raw": "Since there are two figures on this page, I have provided the extracted information for both.\n\n**Figure 1**\n1) **Exact English caption text:** Figure 1\n2) **Korean translation of the caption:** 그림 1\n3) **Type:** diagram\n4) **Subjects:** Camperdown, Victoria\n5) **Korean description:** 이 다이어그램은 Camperdown과 Victoria라는 두 군함의 기동 경로를 보여줍니다. 두 선박이 특정 간격을 유지하며 방향을 바꾸는 모습을 나타냅니다.\n\n**Figure 2**\n1) **Exact English caption text:** Figure 2\n2) **Korean translation of the caption:** 그림 2\n3) **Type:** diagram\n4) **Subjects:** None\n5) **Korean description:** 이 다이어그램은 선박의 선회 시 발생하는 전술적 직경(tactical diameter)을 보여줍니다. 선박의 회전 경로와 그에 따른 기하학적 치수를 나타냅니다.",
+      "caption_en": "text:** Figure 1",
+      "caption_ko": "of the caption:** 그림 1",
+      "subjects": [
+        "Camperdown",
+        "Victoria"
+      ],
+      "description": "이 다이어그램은 Camperdown과 Victoria라는 두 군함의 기동 경로를 보여줍니다. 두 선박이 특정 간격을 유지하며 방향을 바꾸는 모습을 나타냅니다.\n\n**Figure 2**\n1) **Exact English caption text:** Figure 2\n2) **Korean translation of the caption:** 그림 2\n3) **Type:** diagram\n4) **Subjects:** None\n5) **Korean description:** 이 다이어그램은 선박의 선회 시 발생하는 전술적 직경(tactical diameter)을 보여줍니다. 선박의 회전 경로와 그에 따른 기하학적 치수를 나타냅니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 270,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.918,
+    "bbox": [
+      354,
+      803,
+      1262,
+      1353
+    ],
+    "size": [
+      908,
+      550
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0270_01.png",
+    "annotation": {
+      "raw": "Based on the image provided, there is no figure (photo, map, diagram, or table) on this page. The page consists entirely of narrative text and a list of names and monetary amounts integrated into the text. Therefore, no caption or figure-related information can be extracted."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 305,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.864,
+    "bbox": [
+      1454,
+      279,
+      2489,
+      1339
+    ],
+    "size": [
+      1035,
+      1060
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0305_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 305,
+    "seq": 2,
+    "class": "Table",
+    "confidence": 0.588,
+    "bbox": [
+      368,
+      442,
+      1359,
+      1477
+    ],
+    "size": [
+      991,
+      1035
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0305_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 363,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.939,
+    "bbox": [
+      351,
+      511,
+      1381,
+      1427
+    ],
+    "size": [
+      1030,
+      916
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0363_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 364,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.559,
+    "bbox": [
+      1824,
+      752,
+      2098,
+      1166
+    ],
+    "size": [
+      274,
+      414
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0364_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 374,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.869,
+    "bbox": [
+      1588,
+      368,
+      2332,
+      1169
+    ],
+    "size": [
+      744,
+      801
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0374_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**\nA midshipman whose action-station was Benbow's foretop collected 'a battle bag' which he had prepared for such an occasion: a blue jean bag containing 'ear protectors, binoculars, a stop-watch, a pistol, a camera, a respirator, sundry scarves, a woollen helmet and so forth,' and\n\n2) **Korean translation of the caption**\nBenbow호의 상부 마스트(foretop)에 배치된 한 소위는 그러한 상황을 위해 준비해 두었던 '전투용 가방'을 챙겼습니다. 이 파란색 데님 가방 안에는 '귀 보호구, 쌍안경, 초시계, 권총, 카메라, 방독면, 여러 종류의 스카프, 울 헬멧 등'이 들어 있었습니다.\n\n3) **Type**\nphoto\n\n4) **Subjects**\nmidshipman, Benbow\n\n5) **Korean description**\n이 사진은 전투 상황에 대비해 개인 장비를 준비한 해군 소위의 모습을 담고 있습니다. 가방 안에는 쌍안경, 초시계, 권총 등 다양한 전투용 물품들이 들어 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "midshipman",
+        "Benbow"
+      ],
+      "description": "이 사진은 전투 상황에 대비해 개인 장비를 준비한 해군 소위의 모습을 담고 있습니다. 가방 안에는 쌍안경, 초시계, 권총 등 다양한 전투용 물품들이 들어 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 380,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.892,
+    "bbox": [
+      546,
+      556,
+      1189,
+      1420
+    ],
+    "size": [
+      643,
+      864
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0380_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 390,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.941,
+    "bbox": [
+      462,
+      512,
+      1271,
+      1250
+    ],
+    "size": [
+      809,
+      738
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0390_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 393,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.807,
+    "bbox": [
+      542,
+      656,
+      1194,
+      1333
+    ],
+    "size": [
+      652,
+      677
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0393_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: The potential danger in line-fonning on the 'near-side' wing,\n\n2) **Korean translation of the caption**: '근측' 날개에서의 종대 형성 시 발생할 수 있는 잠재적 위험\n\n3) **Type**: diagram\n\n4) **Subjects**: None (No specific people, ships, or places are named within the figure or its caption)\n\n5) **Korean description**: 이 도표는 함대가 종대 형태로 기동할 때 '근측' 날개 부분에서 발생할 수 있는 잠재적인 위험을 보여줍니다. 화살표와 선들을 사용하여 함대의 움직임과 그로 인해 발생할 수 있는 위협적인 상황을 시각화하고 있습니다.",
+      "caption_en": "text as printed on the page**: The potential danger in line-fonning on the 'near-side' wing,",
+      "caption_ko": "of the caption**: '근측' 날개에서의 종대 형성 시 발생할 수 있는 잠재적 위험",
+      "subjects": [
+        ": None (No specific people",
+        "ships",
+        "or places are named within the figure or its caption)"
+      ],
+      "description": ": 이 도표는 함대가 종대 형태로 기동할 때 '근측' 날개 부분에서 발생할 수 있는 잠재적인 위험을 보여줍니다. 화살표와 선들을 사용하여 함대의 움직임과 그로 인해 발생할 수 있는 위협적인 상황을 시각화하고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 394,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.934,
+    "bbox": [
+      1666,
+      714,
+      2271,
+      1471
+    ],
+    "size": [
+      605,
+      757
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0394_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 397,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.956,
+    "bbox": [
+      426,
+      318,
+      1303,
+      1003
+    ],
+    "size": [
+      877,
+      685
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0397_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 407,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.911,
+    "bbox": [
+      1465,
+      816,
+      2463,
+      1415
+    ],
+    "size": [
+      998,
+      599
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0407_01.png",
+    "annotation": {
+      "raw": "1) A LULL IN THE ACTION.\n2) 잠시 멈춘 전투 상황\n3) Illustration (Drawing)\n4) Ships\n5) 이 그림은 바다 위에 떠 있는 여러 척의 군함들을 보여줍니다. 전투가 잠시 소강상태에 접어든 평온한 장면을 묘사하고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 409,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.963,
+    "bbox": [
+      1453,
+      321,
+      2474,
+      1008
+    ],
+    "size": [
+      1021,
+      687
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0409_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 412,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.964,
+    "bbox": [
+      1461,
+      380,
+      2473,
+      1073
+    ],
+    "size": [
+      1012,
+      693
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0412_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text as printed on the page**: In Absoluten Wurstkessel!\n2) **Korean translation of the caption**: 완전한 소시지 냄비 속에서! (의역: 완전한 혼돈 속에서!)\n3) **Type**: diagram\n4) **Subjects**: 2nd LCS, Flotilla, Grand Fleet, 3rd LCS, 4th LCS, 2nd CS, 5th LCS, Wiesbaden, Friedrich der Grosse, Seydlitz, Lützow, Hipper's Fleet, High Seas Fleet, 7:20 p.m.\n5) **Korean description**: 이 다이어그램은 1916년 유틀란트 해전 당시 영국 함대와 독일 함대의 복잡한 배치와 움직임을 보여줍니다. 다양한 순양전함과 구축함 부대들이 서로 뒤엉킨 상황을 도식적으로 나타내고 있습니다.",
+      "caption_en": "text as printed on the page**: In Absoluten Wurstkessel!",
+      "caption_ko": "of the caption**: 완전한 소시지 냄비 속에서! (의역: 완전한 혼돈 속에서!)",
+      "subjects": [
+        ": 2nd LCS",
+        "Flotilla",
+        "Grand Fleet",
+        "3rd LCS",
+        "4th LCS",
+        "2nd CS",
+        "5th LCS",
+        "Wiesbaden",
+        "Friedrich der Grosse",
+        "Seydlitz",
+        "Lützow",
+        "Hipper's Fleet",
+        "High Seas Fleet",
+        "7:20 p.m."
+      ],
+      "description": ": 이 다이어그램은 1916년 유틀란트 해전 당시 영국 함대와 독일 함대의 복잡한 배치와 움직임을 보여줍니다. 다양한 순양전함과 구축함 부대들이 서로 뒤엉킨 상황을 도식적으로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 414,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.949,
+    "bbox": [
+      362,
+      331,
+      1367,
+      1008
+    ],
+    "size": [
+      1005,
+      677
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0414_01.png",
+    "annotation": {
+      "raw": "1) 7:45 p.m. The Escape\n2) 오후 7시 45분. 탈출\n3) map\n4) Wiesbaden, 2nd LCS, Grand Fleet, Friedrich der Grosse, 1st SG, 4th LCS, High Seas Fleet, 1st LCS, 2nd LCS, 3rd LCS, BCF, Lützow, Smoke Screen, Five Miles\n5) 이 도표는 유틀란트 해전 당시 영국 대함대와 독일 고해상도 함대의 위치 및 이동 경로를 나타낸 전술 지도입니다. 연막을 활용한 함대들의 탈출 과정과 주요 군함들의 배치를 시각적으로 보여줍니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 419,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.959,
+    "bbox": [
+      380,
+      323,
+      1362,
+      1061
+    ],
+    "size": [
+      982,
+      738
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0419_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 424,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.709,
+    "bbox": [
+      273,
+      223,
+      1246,
+      1286
+    ],
+    "size": [
+      973,
+      1063
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0424_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 425,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.867,
+    "bbox": [
+      413,
+      460,
+      1320,
+      855
+    ],
+    "size": [
+      907,
+      395
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0425_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 428,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.914,
+    "bbox": [
+      1719,
+      853,
+      2211,
+      1420
+    ],
+    "size": [
+      492,
+      567
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0428_01.png",
+    "annotation": {
+      "raw": "1) **Exact English caption text**: Grand Fleet's right formation with High Seas Fleet's relative position marked below\n\n2) **Korean translation**: High Seas Fleet의 상대적 위치가 아래에 표시된 Grand Fleet의 우측 대형\n\n3) **Type**: diagram\n\n4) **Subjects**: Grand Fleet, High Seas Fleet, Dreadnoughts, BCF\n\n5) **Korean description**: 이 도표는 유틀란트 해전 당시 Grand Fleet와 High Seas Fleet의 상대적인 위치와 대형을 보여줍니다. 각 함대의 전함과 순양전함 부대의 배치를 시각적으로 나타내고 있습니다.",
+      "caption_en": "text**: Grand Fleet's right formation with High Seas Fleet's relative position marked below",
+      "caption_ko": ": High Seas Fleet의 상대적 위치가 아래에 표시된 Grand Fleet의 우측 대형",
+      "subjects": [
+        ": Grand Fleet",
+        "High Seas Fleet",
+        "Dreadnoughts",
+        "BCF"
+      ],
+      "description": ": 이 도표는 유틀란트 해전 당시 Grand Fleet와 High Seas Fleet의 상대적인 위치와 대형을 보여줍니다. 각 함대의 전함과 순양전함 부대의 배치를 시각적으로 나타내고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 542,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.567,
+    "bbox": [
+      428,
+      246,
+      2391,
+      1398
+    ],
+    "size": [
+      1963,
+      1152
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0542_01.png",
+    "annotation": {
+      "raw": "I'm sorry, but there is no figure (photo, map, diagram, or table) or caption present on the page provided in the image. The page contains only text."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 544,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.95,
+    "bbox": [
+      1452,
+      653,
+      2187,
+      912
+    ],
+    "size": [
+      735,
+      259
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0544_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 545,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.47,
+    "bbox": [
+      425,
+      255,
+      2400,
+      1401
+    ],
+    "size": [
+      1975,
+      1146
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0545_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 546,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.565,
+    "bbox": [
+      1646,
+      817,
+      1992,
+      1284
+    ],
+    "size": [
+      346,
+      467
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0546_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 551,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.944,
+    "bbox": [
+      645,
+      486,
+      1380,
+      902
+    ],
+    "size": [
+      735,
+      416
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0551_01.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 551,
+    "seq": 2,
+    "class": "Picture",
+    "confidence": 0.478,
+    "bbox": [
+      1483,
+      433,
+      2151,
+      1001
+    ],
+    "size": [
+      668,
+      568
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0551_02.png",
+    "annotation": {
+      "raw": ""
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 552,
+    "seq": 1,
+    "class": "Picture",
+    "confidence": 0.793,
+    "bbox": [
+      1601,
+      821,
+      2031,
+      1242
+    ],
+    "size": [
+      430,
+      421
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0552_01.png",
+    "annotation": {
+      "raw": "Based on the image provided, here is the extracted information:\n\n**1) Exact English caption text as printed on the page**\nGerman Targeting at 'Turn to the North'\n\n**2) Korean translation of the caption**\n'북쪽으로의 선회' 시 독일군의 조준\n\n**3) Type**\nDiagram\n\n**4) Subjects**\n*   **People:** Beatty, Goodenough\n*   **Ships/Units:** 5th Battle Squadron (5th BS), 4th Division, German High Seas Fleet\n*   **Places/Events:** 'Turn to the North' (maneuver)\n\n**5) Korean description**\n이 도표는 유틀란트 해전 당시 독일 고등해군이 영국 제5전투비행단을 조준했던 상황을 나타냅니다. 화살표와 선들을 사용하여 독일군의 사격이 영국 함대의 기동과 사격 중단에 미친 영향을 시각적으로 설명하고 있습니다.",
+      "caption_en": "text as printed on the page",
+      "caption_ko": "of the caption",
+      "subjects": [
+        "",
+        "**People:** Beatty",
+        "Goodenough",
+        "**Ships/Units:** 5th Battle Squadron (5th BS)",
+        "4th Division",
+        "German High Seas Fleet",
+        "**Places/Events:** 'Turn to the North' (maneuver)"
+      ],
+      "description": "이 도표는 유틀란트 해전 당시 독일 고등해군이 영국 제5전투비행단을 조준했던 상황을 나타냅니다. 화살표와 선들을 사용하여 독일군의 사격이 영국 함대의 기동과 사격 중단에 미친 영향을 시각적으로 설명하고 있습니다."
+    }
+  },
+  {
+    "book": "RulesofGames",
+    "page": 553,
+    "seq": 1,
+    "class": "Table",
+    "confidence": 0.931,
+    "bbox": [
+      1397,
+      736,
+      1925,
+      969
+    ],
+    "size": [
+      528,
+      233
+    ],
+    "file": "wiki/assets/extracted/RulesofGames/rulesofgames_0553_01.png",
+    "annotation": {
+      "raw": "There is no figure (photo, map, diagram, or table) on the provided page. The page consists entirely of text."
+    }
+  }
+]

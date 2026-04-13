@@ -30,11 +30,13 @@ const defaultOptions: Options = {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabeticall
+    // Sort order: folders first, then files. Sort by slug (filename) for consistent ordering
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
-      return a.displayName.localeCompare(b.displayName, undefined, {
+      // Use slugSegment (filename) instead of displayName (title) for ordering
+      // This ensures files like 01_xxx, 02_xxx sort correctly
+      const aSlug = a.slugSegment ?? a.displayName
+      const bSlug = b.slugSegment ?? b.displayName
+      return aSlug.localeCompare(bSlug, undefined, {
         numeric: true,
         sensitivity: "base",
       })
