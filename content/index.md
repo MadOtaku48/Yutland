@@ -199,6 +199,7 @@ updated: 2026-04-12
 - [[topics/만약_비티가_지휘했다면|만약 비티가 지휘했다면 (What if Beatty had been in command?)]] — 마더의 반사실적 분석, 드렉스의 반론
 - [[topics/유틀란트의_유산|유틀란트의 유산 (Legacy of Jutland)]] — 함선 설계, 장갑, 탄약 안전, 지휘 교리, 미 해군, 항공모함, 워싱턴 조약
 - [[topics/사료와_역사서술|사료와 역사서술 (Sources and Historiography)]] — 시간·공간의 함정, 주요 역사서, 젤리코파 vs 비티파
+- [[topics/전술도|전술도 모음 (Tactical Charts)]] — Groos 독일 공식 전사 36장 + Harper 영국 공식 기록 18장 (총 54장)
 
 ## 원천 자료
 - [[sources/NJellicoe|Jutland: The Unfinished Battle]] — Nicholas Jellicoe (젤리코 손자, 현대 종합 분석, 양국 지휘관 대비)

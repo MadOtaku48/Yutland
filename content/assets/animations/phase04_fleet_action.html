@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주력함대 충돌 (Fleet Action) — 18:00–18:45</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#0d1b2a;color:#eee;font-family:'Noto Sans KR',-apple-system,sans-serif;overflow:hidden}
+#canvas{display:block;cursor:crosshair}
+#controls{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.92);padding:8px 16px;display:flex;align-items:center;gap:12px}
+#controls button{background:#1b3a4b;color:#fff;border:1px solid #2a5a6b;padding:5px 12px;border-radius:3px;cursor:pointer;font-size:13px}
+#controls button:hover{background:#2a5a6b}
+#event{position:absolute;bottom:46px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.92);padding:8px 24px;border-radius:6px;max-width:700px;font-size:13px;text-align:center;line-height:1.5;display:none;border:1px solid #555}
+#event.critical{border-color:#e74c3c;background:rgba(120,20,20,.95)}
+#tooltip{position:absolute;display:none;background:rgba(0,0,0,.95);padding:8px 12px;border-radius:4px;font-size:12px;pointer-events:none;border:1px solid #666;max-width:280px;line-height:1.5}
+#legend{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.85);padding:10px 14px;border-radius:6px;font-size:11px;line-height:2}
+.leg{display:flex;align-items:center;gap:6px}.ldot{width:10px;height:10px;border-radius:50%}
+#info{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.85);padding:10px 14px;border-radius:6px;font-size:12px;line-height:1.5}
+#info h2{font-size:15px;color:#f0c040;margin-bottom:4px}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div id="info"><h2>주력함대 충돌 (Fleet Action)</h2><div>1916.5.31 — 대함대 전개, T자 횡단 18:00–18:45</div></div>
+<div id="event"></div><div id="tooltip"></div>
+<div id="legend">
+  <div class="leg"><div class="ldot" style="background:#4a9eff"></div>순양전함함대 (비티)</div>
+  <div class="leg"><div class="ldot" style="background:#2ecc71"></div>제5전함전대 (에반토머스)</div>
+  <div class="leg"><div class="ldot" style="background:#1abc9c"></div>대함대 전열 (젤리코)</div>
+  <div class="leg"><div class="ldot" style="background:#9b59b6"></div>제3순양전함전대 (후드)</div>
+  <div class="leg"><div class="ldot" style="background:#95a5a6"></div>제1순양함전대 (아버스넛)</div>
+  <div class="leg"><div class="ldot" style="background:#e74c3c"></div>제1정찰군 (히퍼)</div>
+  <div class="leg"><div class="ldot" style="background:#e67e22"></div>대양함대 (셰어)</div>
+  <div style="margin-top:6px;border-top:1px solid #333;padding-top:5px;color:#888">스페이스=재생 휠=확대 드래그=이동</div>
+</div>
+<div id="controls">
+  <button id="playBtn" onclick="togglePlay()">▶ 재생</button>
+  <button onclick="changeSpeed()" id="spdBtn">4x</button>
+  <span id="timeDisplay" style="font-size:20px;font-weight:bold;color:#f0c040;min-width:55px">18:00</span>
+  <input type="range" id="timeline" min="0" max="10000" value="0" style="flex:1;min-width:150px;height:5px;-webkit-appearance:none;background:#333;border-radius:2px;cursor:pointer" oninput="seek(this.value)">
+</div>
+<script>
+const C=document.getElementById('canvas'),ctx=C.getContext('2d');
+let W,H;W=C.width=innerWidth;H=C.height=innerHeight;
+const T0=1080,T1=1125; // 18:00–18:45
+let t=T0,playing=false,speed=4,raf,lastTs=0;
+let viewX=0,viewY=8,zoom=1.0,scale=30;
+function autoScale(){scale=Math.min(W,H)/26*zoom;}autoScale();
+function toS(x,y){return{x:W/2+(x-viewX)*scale,y:H/2-(y-viewY)*scale};}
+C.addEventListener('wheel',e=>{e.preventDefault();zoom*=e.deltaY>0?.9:1.1;zoom=Math.max(.3,Math.min(3,zoom));autoScale();draw();},{passive:false});
+let dragging=false,dragX,dragY;
+C.addEventListener('mousedown',e=>{dragging=true;dragX=e.clientX;dragY=e.clientY;});
+C.addEventListener('mousemove',e=>{if(dragging){viewX-=(e.clientX-dragX)/scale;viewY+=(e.clientY-dragY)/scale;dragX=e.clientX;dragY=e.clientY;draw();}handleHover(e);});
+C.addEventListener('mouseup',()=>dragging=false);
+addEventListener('resize',()=>{W=C.width=innerWidth;H=C.height=innerHeight;autoScale();if(typeof allShips!=='undefined')draw();});
+
+function lerp(a,b,f){return a+(b-a)*f;}
+function lerpA(a,b,f){let d=b-a;if(d>180)d-=360;if(d<-180)d+=360;return a+d*f;}
+function posAt(wp,time){if(time<=wp[0].t)return wp[0];if(time>=wp[wp.length-1].t)return wp[wp.length-1];for(let i=0;i<wp.length-1;i++){if(time>=wp[i].t&&time<=wp[i+1].t){const f=(time-wp[i].t)/(wp[i+1].t-wp[i].t);return{x:lerp(wp[i].x,wp[i+1].x,f),y:lerp(wp[i].y,wp[i+1].y,f),crs:lerpA(wp[i].crs,wp[i+1].crs,f)};}}return wp[0];}
+function makeCol(lead,ships,gap){const SPD=20,DELAY=(gap/SPD)*60;return ships.map((s,i)=>({...s,delay:i*DELAY,leadWp:lead}));}
+function colShipPos(ship,time){const lt=time-ship.delay,wp=ship.leadWp;if(lt<wp[0].t){const dt=(wp[0].t-lt)/60,r=(wp[0].crs+180)*Math.PI/180;return{x:wp[0].x+Math.sin(r)*dt*20,y:wp[0].y+Math.cos(r)*dt*20,crs:wp[0].crs};}return posAt(wp,lt);}
+
+// ═══ WAYPOINTS ═══
+// Grand Fleet: 6 divisions in 6 parallel columns, then deploy left into single battle line
+// Each division (4 ships) has its own waypoints
+// Columns are ~1nm apart, heading SSE. At 18:15 deploy left = port column (Div 6) leads
+
+// 6 divisions in parallel columns ~1nm apart, all heading SSE at 160°
+// At 18:15 "deploy left" — port column (Div 6) continues, others curve left to fall in behind
+// This creates the sweeping arc that crosses the German T
+
+// Grand Fleet: 6 columns heading SSE (~160°), spaced ~1nm apart east-west
+// At 18:15 "deploy LEFT" = port column leads, heading changes to ESE (~120°)
+// This creates a long arc running roughly NW→SE that CROSSES the German approach (NNW ~345°)
+// = classic Crossing the T
+
+// 6 columns heading SSE (~155°), spaced ~1nm E-W
+// 18:00 — approaching from NW. 18:10 — deploy signal. By 18:20 — line formed heading SE (~125°)
+// Port column (Div6) leads, starboard (Div1) last
+
+// 18:00 columns at NW. Deploy starts immediately. By ~18:10 line mostly formed.
+// Port (Div6) turns first, Starboard (Div1) last. All heading SE (~125°) by 18:15.
+
+// Port (Div6) barely turns — already almost on course.
+// Each column further starboard needs a sharper turn.
+// Div1 (rightmost) must swing hard left through almost 90° more than Div6.
+
+// Div 6 — PORT, LEADS. Almost straight: 150→125 (25° turn only)
+const gfDiv6Lead=[
+  {t:1080,x:-12,y:14,crs:150},
+  {t:1083,x:-11.2,y:12.5,crs:140},
+  {t:1086,x:-10,y:11.5,crs:130},
+  {t:1090,x:-8.5,y:10.5,crs:125},
+  {t:1098,x:-5.5,y:9,crs:125},
+  {t:1108,x:-2.5,y:7.5,crs:125},
+  {t:1118,x:0.5,y:6,crs:125},
+  {t:1125,x:2.5,y:5.2,crs:125},
+];
+// Div 5 — gentle C-curve
+const gfDiv5Lead=[
+  {t:1080,x:-11,y:14,crs:150},
+  {t:1084,x:-10,y:12.5,crs:138},
+  {t:1088,x:-8.5,y:11.5,crs:128},
+  {t:1092,x:-7,y:10.8,crs:125},
+  {t:1100,x:-4,y:9.5,crs:125},
+  {t:1110,x:-1,y:8,crs:125},
+  {t:1120,x:2,y:6.5,crs:125},
+  {t:1125,x:3.5,y:5.8,crs:125},
+];
+// Div 4 — wider C-curve
+const gfDiv4Lead=[
+  {t:1080,x:-10,y:14,crs:150},
+  {t:1085,x:-9,y:12.5,crs:145},
+  {t:1089,x:-7.8,y:11.2,crs:135},
+  {t:1094,x:-6,y:10.5,crs:125},
+  {t:1102,x:-3,y:9.8,crs:125},
+  {t:1110,x:-0.5,y:8.5,crs:125},
+  {t:1120,x:2.5,y:7,crs:125},
+  {t:1125,x:4,y:6.5,crs:125},
+];
+// Div 3 (JELLICOE — Iron Duke) — distinct hook shape
+const gfDiv3Lead=[
+  {t:1080,x:-9,y:14,crs:150},
+  {t:1086,x:-8,y:12,crs:150},
+  {t:1090,x:-7.2,y:10.8,crs:155},// continues SSE past turning point
+  {t:1094,x:-6,y:10,crs:140},    // then hooks left
+  {t:1098,x:-4.5,y:9.8,crs:127},
+  {t:1104,x:-2,y:9.5,crs:125},
+  {t:1112,x:1,y:8.5,crs:125},
+  {t:1120,x:3.5,y:7.5,crs:125},
+  {t:1125,x:5,y:7,crs:125},
+];
+// Div 2 — sharp hook
+const gfDiv2Lead=[
+  {t:1080,x:-8,y:14,crs:150},
+  {t:1087,x:-7,y:12,crs:150},
+  {t:1091,x:-6,y:10.5,crs:160},  // overshoots south
+  {t:1095,x:-5.2,y:9.5,crs:170}, // swings further
+  {t:1098,x:-4.5,y:9.2,crs:145}, // sharp hook left
+  {t:1101,x:-3.2,y:9.2,crs:128},
+  {t:1106,x:-1.2,y:9,crs:125},
+  {t:1114,x:2,y:8,crs:125},
+  {t:1120,x:4,y:7.5,crs:125},
+  {t:1125,x:5.5,y:7,crs:125},
+];
+// Div 1 — STARBOARD. Full U-turn: continues SSE, then swings through S, SW, W to end up heading SE
+const gfDiv1Lead=[
+  {t:1080,x:-7,y:14,crs:150},
+  {t:1086,x:-6,y:12,crs:150},
+  {t:1090,x:-5.2,y:10.5,crs:160},// still heading SSE
+  {t:1093,x:-4.8,y:9.2,crs:180}, // turning south
+  {t:1096,x:-4.8,y:8.2,crs:210}, // swinging SW — the U-turn!
+  {t:1099,x:-4.2,y:7.8,crs:170}, // coming around
+  {t:1102,x:-3,y:8,crs:140},     // curving back east
+  {t:1106,x:-1.2,y:8.5,crs:128},
+  {t:1112,x:1.5,y:8.2,crs:125},
+  {t:1120,x:4.5,y:7.5,crs:125},
+  {t:1125,x:6,y:7,crs:125},
+];
+
+// BCF — Beatty's 4 BCs, ahead of GF line, heading SE
+const bcfLead=[
+  {t:1080,x:-8,y:10,crs:130},
+  {t:1090,x:-5.5,y:8.5,crs:128},
+  {t:1100,x:-3,y:7.5,crs:125},
+  {t:1110,x:-0.5,y:7,crs:125},
+  {t:1120,x:2,y:6,crs:125},
+  {t:1125,x:3.5,y:5.5,crs:125},
+];
+
+// 5th BS — behind BCF, parallel to GF line
+const bs5Lead=[
+  {t:1080,x:-7,y:12,crs:135},
+  {t:1090,x:-5,y:10.5,crs:130},
+  {t:1100,x:-3,y:9,crs:127},
+  {t:1110,x:-0.5,y:8,crs:125},
+  {t:1120,x:2,y:7,crs:125},
+  {t:1125,x:3.5,y:6.5,crs:125},
+];
+
+// 3rd BCS (Hood) — van of the line, heading SE, engaging SG1 head-on
+const bcs3Lead=[
+  {t:1080,x:-5,y:5,crs:130},
+  {t:1088,x:-3.5,y:4,crs:128},
+  {t:1095,x:-2,y:3.5,crs:125},
+  {t:1102,x:-0.5,y:3,crs:125},
+  {t:1108,x:0.5,y:2.5,crs:125},
+  {t:1114,x:1.5,y:2,crs:125},    // 18:34 — Invincible explodes
+  {t:1120,x:2.5,y:1.5,crs:125},
+  {t:1125,x:3.5,y:1,crs:125},
+];
+
+// 1st CS (Arbuthnot) — charges SE toward Wiesbaden between the fleets
+const cs1Lead=[
+  {t:1080,x:-6,y:8,crs:130},
+  {t:1090,x:-4,y:7.5,crs:125},
+  {t:1095,x:-2.5,y:7,crs:110},   // 18:15 — spotting Wiesbaden
+  {t:1098,x:-1,y:6.8,crs:90},    // 18:18 — charging across!
+  {t:1100,x:0.5,y:7,crs:70},     // 18:20 — Defence explodes
+  {t:1102,x:1.5,y:7.5,crs:60},
+];
+
+// SG1 — ahead and west of HSF, heading NW, engaging 3rd BCS head-on
+const sg1Lead=[
+  {t:1080,x:8,y:-2,crs:325},      // ahead of HSF
+  {t:1088,x:6,y:1,crs:320},
+  {t:1095,x:4.5,y:3.5,crs:315},   // 18:15 — engaging 3rd BCS
+  {t:1102,x:3,y:5.5,crs:310},     // trading blows
+  {t:1108,x:2,y:6.5,crs:305},     // under heavy fire from GF too
+  {t:1114,x:1,y:7,crs:295},       // 18:34 — Invincible sinks nearby
+  {t:1120,x:0.5,y:7,crs:270},     // recoiling
+  {t:1125,x:0.5,y:6.5,crs:240},
+];
+
+// HSF — III Sqn lead, heading NNW, then recoiling
+// HSF heading NW (~325°), coming from far SE
+// They should meet the SE END of the GF arc around 18:20-18:30
+const hsf3Lead=[
+  {t:1080,x:12,y:-6,crs:325},     // far SE, heading NW
+  {t:1090,x:10,y:-3,crs:325},
+  {t:1098,x:8.5,y:-0.5,crs:325},  // 18:18 — approaching GF line end
+  {t:1105,x:7,y:2,crs:325},       // 18:25 — entering kill zone
+  {t:1110,x:6,y:3.5,crs:320},     // 18:30 — caught in the T!
+  {t:1115,x:5.5,y:4.5,crs:310},   // staggering under broadside
+  {t:1120,x:5,y:5,crs:280},       // beginning Gefechtskehrtwendung
+  {t:1125,x:5.5,y:5,crs:240},     // turning away
+];
+
+const hsfKaiserLead=[
+  {t:1080,x:13.5,y:-8,crs:325},
+  {t:1090,x:11.5,y:-5,crs:325},
+  {t:1100,x:9.5,y:-2,crs:325},
+  {t:1108,x:8,y:1,crs:325},
+  {t:1115,x:6.5,y:3,crs:315},
+  {t:1122,x:6,y:4,crs:285},
+  {t:1125,x:6,y:4,crs:250},
+];
+
+// ═══ SHIPS ═══
+const bcfShips=makeCol(bcfLead,[{id:'lion',kr:'라이온',c:'#4a9eff'},{id:'proyal',kr:'프린세스 로열',c:'#4a9eff'},{id:'tiger',kr:'타이거',c:'#4a9eff'},{id:'nz',kr:'뉴질랜드',c:'#6ab8ff'}],0.8);
+
+// Grand Fleet: 6 divisions × 4 ships each, each division follows its own lead
+const gfDiv1Ships=makeCol(gfDiv1Lead,[
+  {id:'kgv',kr:'킹 조지 5세',c:'#1abc9c'},
+  {id:'ajax',kr:'에이잭스',c:'#1abc9c'},
+  {id:'centurion',kr:'센추리온',c:'#1abc9c'},
+  {id:'erin',kr:'에린',c:'#1abc9c'},
+],0.35);
+const gfDiv2Ships=makeCol(gfDiv2Lead,[
+  {id:'orion',kr:'오라이언',c:'#17a589'},
+  {id:'monarch',kr:'모나크',c:'#17a589'},
+  {id:'conqueror',kr:'컨커러',c:'#17a589'},
+  {id:'thunderer',kr:'선더러',c:'#17a589'},
+],0.35);
+const gfDiv3Ships=makeCol(gfDiv3Lead,[
+  {id:'ironduke',kr:'아이언 듀크',c:'#1dd1a1'},
+  {id:'royaloak',kr:'로열 오크',c:'#1dd1a1'},
+  {id:'superb',kr:'슈퍼브',c:'#1dd1a1'},
+  {id:'canada',kr:'캐나다',c:'#1dd1a1'},
+],0.35);
+const gfDiv4Ships=makeCol(gfDiv4Lead,[
+  {id:'benbow',kr:'벤보우',c:'#10ac84'},
+  {id:'bellerophon',kr:'벨레로폰',c:'#10ac84'},
+  {id:'temeraire',kr:'테메레르',c:'#10ac84'},
+  {id:'vanguard',kr:'뱅가드',c:'#10ac84'},
+],0.35);
+const gfDiv5Ships=makeCol(gfDiv5Lead,[
+  {id:'marlborough',kr:'말보로',c:'#148f77'},
+  {id:'revenge',kr:'리벤지',c:'#148f77'},
+  {id:'hercules',kr:'허큘리스',c:'#148f77'},
+  {id:'agincourt',kr:'애진코트',c:'#148f77'},
+],0.35);
+const gfDiv6Ships=makeCol(gfDiv6Lead,[
+  {id:'colossus',kr:'콜로서스',c:'#0e6655'},
+  {id:'collingwood',kr:'콜링우드',c:'#0e6655'},
+  {id:'neptune',kr:'넵튠',c:'#0e6655'},
+  {id:'stvincent',kr:'세인트 빈센트',c:'#0e6655'},
+],0.35);
+const gfShips=[...gfDiv1Ships,...gfDiv2Ships,...gfDiv3Ships,...gfDiv4Ships,...gfDiv5Ships,...gfDiv6Ships];
+
+const bs5Ships=makeCol(bs5Lead,[{id:'barham',kr:'버럼',c:'#2ecc71'},{id:'valiant',kr:'밸리언트',c:'#2ecc71'},{id:'warspt',kr:'워스파이트',c:'#2ecc71'},{id:'malaya',kr:'말라야',c:'#27ae60'}],0.9);
+
+const bcs3Ships=makeCol(bcs3Lead,[{id:'invincible',kr:'인빈시블',c:'#9b59b6',sunk:1114},{id:'inflexible',kr:'인플렉시블',c:'#9b59b6'},{id:'indomitable',kr:'인도미터블',c:'#8e44ad'}],0.8);
+
+const cs1Ships=makeCol(cs1Lead,[{id:'defence',kr:'디펜스',c:'#95a5a6',sunk:1100},{id:'warrior',kr:'워리어',c:'#7f8c8d'}],0.6);
+
+const sg1Ships=makeCol(sg1Lead,[{id:'lutzow',kr:'뤼초프',c:'#e74c3c'},{id:'derff',kr:'데르플링거',c:'#e74c3c'},{id:'seydl',kr:'자이들리츠',c:'#e74c3c'},{id:'moltke',kr:'몰트케',c:'#e74c3c'},{id:'vdt',kr:'폰 데어 탄',c:'#c0392b'}],0.7);
+
+const hsf3Ships=makeCol(hsf3Lead,[{id:'konig',kr:'쾨니히',c:'#e67e22'},{id:'gkurf',kr:'그로서 쿠르퓌르스트',c:'#e67e22'},{id:'mrkgf',kr:'마르크그라프',c:'#e67e22'},{id:'kronp',kr:'크론프린츠',c:'#e67e22'}],0.9);
+
+const hsfKaiserShips=makeCol(hsfKaiserLead,[{id:'kaiser',kr:'카이저',c:'#d4770a'},{id:'fdg',kr:'프리드리히',c:'#c07030'},{id:'kaiserin',kr:'카이저린',c:'#d4770a'}],0.9);
+
+const hsfShips=[...hsf3Ships,...hsfKaiserShips];
+const allShips=[...bcfShips,...gfShips,...bs5Ships,...bcs3Ships,...cs1Ships,...sg1Ships,...hsf3Ships,...hsfKaiserShips];
+
+// ═══ FIRING ═══
+const firingTable=[
+  // Grand Fleet → German lead ships (the devastating crossing-the-T)
+  {from:'ironduke',to:'konig', t0:1098,t1:1125,c:'#1abc9c'},
+  {from:'monarch',to:'konig',  t0:1100,t1:1125,c:'#1abc9c'},
+  {from:'orion',to:'mrkgf',   t0:1100,t1:1120,c:'#16a085'},
+  {from:'colossus',to:'gkurf', t0:1102,t1:1120,c:'#16a085'},
+  {from:'benbow',to:'konig',   t0:1105,t1:1120,c:'#148f77'},
+
+  // 3rd BCS → SG1
+  {from:'invincible',to:'lutzow', t0:1085,t1:1114,c:'#9b59b6'},
+  {from:'inflexible',to:'derff',  t0:1085,t1:1125,c:'#9b59b6'},
+  {from:'indomitable',to:'seydl', t0:1088,t1:1125,c:'#8e44ad'},
+
+  // SG1 → 3rd BCS (kills Invincible)
+  {from:'lutzow',to:'invincible', t0:1108,t1:1114,c:'#e74c3c'},
+  {from:'derff',to:'invincible',  t0:1110,t1:1114,c:'#e74c3c'},
+
+  // SG1 → Defence (kills Defence)
+  {from:'lutzow',to:'defence', t0:1098,t1:1100,c:'#e74c3c'},
+  {from:'derff',to:'defence',  t0:1098,t1:1100,c:'#e74c3c'},
+
+  // HSF → Warspite (steering failure)
+  {from:'konig',to:'warspt',   t0:1105,t1:1115,c:'#e67e22'},
+  {from:'gkurf',to:'warspt',   t0:1105,t1:1115,c:'#e67e22'},
+  {from:'kaiser',to:'warspt',  t0:1108,t1:1115,c:'#d4770a'},
+
+  // König ← Iron Duke
+  {from:'konig',to:'ironduke', t0:1102,t1:1118,c:'#e67e22'},
+];
+
+// ═══ TRACKS ═══
+const tracks={};function recordTrack(s,p){if(!tracks[s.id])tracks[s.id]=[];const tr=tracks[s.id];if(tr.length===0||Math.hypot(tr[tr.length-1].x-p.x,tr[tr.length-1].y-p.y)>.03)tr.push({x:p.x,y:p.y});}
+function resetTracks(){for(const k in tracks)delete tracks[k];}
+
+// ═══ DRAWING ═══
+function drawSea(){ctx.fillStyle='#0d1b2a';ctx.fillRect(0,0,W,H);ctx.strokeStyle='rgba(100,140,180,.06)';ctx.lineWidth=1;for(let x=-20;x<=30;x+=2){const a=toS(x,-20),b=toS(x,40);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}for(let y=-20;y<=40;y+=2){const a=toS(-20,y),b=toS(30,y);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}ctx.fillStyle='rgba(255,255,255,.2)';ctx.font='bold 14px sans-serif';const n=toS(viewX-W/scale/2+1.5,viewY+H/scale/2-1);ctx.fillText('N↑',n.x,n.y);}
+function drawTrack(s){const tr=tracks[s.id];if(!tr||tr.length<2)return;ctx.save();ctx.strokeStyle=s.c;ctx.globalAlpha=.2;ctx.lineWidth=1.5;ctx.beginPath();let p=toS(tr[0].x,tr[0].y);ctx.moveTo(p.x,p.y);for(let i=1;i<tr.length;i++){p=toS(tr[i].x,tr[i].y);ctx.lineTo(p.x,p.y);}ctx.stroke();ctx.restore();}
+function drawShipShape(sx,sy,crs,color,sz){const rad=(crs-90)*Math.PI/180,L=sz*2.2,B=sz*.4;ctx.save();ctx.translate(sx,sy);ctx.rotate(rad);ctx.beginPath();ctx.moveTo(L,0);ctx.bezierCurveTo(L*.6,-B*.6,L*.3,-B,0,-B);ctx.lineTo(-L*.6,-B*.85);ctx.quadraticCurveTo(-L,-B*.5,-L*.9,0);ctx.quadraticCurveTo(-L,B*.5,-L*.6,B*.85);ctx.lineTo(0,B);ctx.bezierCurveTo(L*.3,B,L*.6,B*.6,L,0);ctx.closePath();ctx.fillStyle=color;ctx.fill();ctx.strokeStyle='rgba(255,255,255,.45)';ctx.lineWidth=.6;ctx.stroke();ctx.fillStyle='rgba(0,0,0,.25)';ctx.fillRect(-L*.15,-B*.4,L*.35,B*.8);ctx.fillStyle='rgba(255,255,255,.3)';ctx.beginPath();ctx.arc(L*.45,0,B*.35,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(-L*.35,0,B*.35,0,Math.PI*2);ctx.fill();ctx.restore();}
+
+function drawShip(s,time){
+  if(s.sunk&&time>s.sunk+3){const sp=colShipPos(s,s.sunk),p=toS(sp.x,sp.y);ctx.save();ctx.fillStyle='#ff4444';ctx.font='13px serif';ctx.fillText('✕',p.x-5,p.y+4);ctx.globalAlpha=.7;ctx.font='bold 10px sans-serif';ctx.fillText(s.kr,p.x+10,p.y+3);ctx.restore();return;}
+  const pos=colShipPos(s,time);recordTrack(s,pos);const p=toS(pos.x,pos.y);
+  if(s.sunk&&time>=s.sunk&&time<=s.sunk+3){const f=(time-s.sunk)/3;ctx.save();ctx.globalAlpha=1-f*.6;drawShipShape(p.x,p.y,pos.crs,'#ff4400',10);const r=5+f*40,g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,r);g.addColorStop(0,`rgba(255,200,50,${1-f})`);g.addColorStop(.5,`rgba(255,60,0,${.7-f*.7})`);g.addColorStop(1,'rgba(80,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,r,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ff6b6b';ctx.font='bold 12px sans-serif';ctx.textAlign='center';ctx.fillText(s.kr+' 폭발!',p.x,p.y-r-8);ctx.restore();return;}
+  const sz=hsfShips.includes(s)||gfShips.includes(s)?8:10;
+  drawShipShape(p.x,p.y,pos.crs,s.c,sz);
+  ctx.save();ctx.fillStyle=s.c;ctx.font='bold 11px sans-serif';ctx.globalAlpha=.9;ctx.fillText(s.kr,p.x+14,p.y+4);ctx.restore();
+}
+
+function drawFiring(time){const now=performance.now();for(const f of firingTable){if(time<f.t0||time>f.t1)continue;const fs=allShips.find(s=>s.id===f.from),ts=allShips.find(s=>s.id===f.to);if(!fs||!ts)continue;if(fs.sunk&&time>fs.sunk)continue;if(ts.sunk&&time>ts.sunk)continue;const phase=Math.sin(now*.003+f.from.charCodeAt(0)*7);if(phase<-.3)continue;const fp=colShipPos(fs,time),tp=colShipPos(ts,time),p1=toS(fp.x,fp.y),p2=toS(tp.x,tp.y);ctx.save();ctx.globalAlpha=.12+phase*.05;ctx.strokeStyle=f.c;ctx.lineWidth=1;ctx.setLineDash([6,6]);ctx.beginPath();ctx.moveTo(p1.x,p1.y);ctx.lineTo(p2.x,p2.y);ctx.stroke();ctx.setLineDash([]);const ax=lerp(p1.x,p2.x,.75),ay=lerp(p1.y,p2.y,.75),ang=Math.atan2(p2.y-p1.y,p2.x-p1.x);ctx.globalAlpha=.25;ctx.fillStyle=f.c;ctx.beginPath();ctx.moveTo(ax+Math.cos(ang)*6,ay+Math.sin(ang)*6);ctx.lineTo(ax+Math.cos(ang+2.5)*5,ay+Math.sin(ang+2.5)*5);ctx.lineTo(ax+Math.cos(ang-2.5)*5,ay+Math.sin(ang-2.5)*5);ctx.closePath();ctx.fill();if(phase>.5){ctx.globalAlpha=.5;ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(p2.x+(Math.random()-.5)*10,p2.y+(Math.random()-.5)*10,1.5,0,Math.PI*2);ctx.fill();}ctx.restore();}}
+
+const events=[
+  {t:1080,text:'18:00 — 대함대 24척, 6열 종대에서 단일 전투대열로 전개 시작',dur:5},
+  {t:1085,text:'젤리코: "적의 주력함대는 어디에 있는가?" — 비티로부터의 정보는 극히 부실',dur:4},
+  {t:1095,text:'18:15 — 젤리코, 좌익 종대 기준 전개 명령! 나침반을 20초간 응시한 뒤 "명료하고 단호한 목소리"로',dur:5,crit:true},
+  {t:1098,text:'18:18 — 아버스넛, 비스바덴을 향해 돌진! 양 함대 사이를 가로질러 진격',dur:4},
+  {t:1100,text:'💥 18:20 — 디펜스 폭발 침몰! 뤼초프의 5회 일제사격 중 3회 협차. 903명 전원 사망',dur:5,crit:true},
+  {t:1105,text:'18:25 — 워스파이트 조타 고장! 적을 향해 두 바퀴 선회. 독일 전함 8척 이상이 집중포화',dur:5,crit:true},
+  {t:1108,text:'"북쪽에서 동쪽으로 이어지는 수평선 전체가 불바다였다" — 셰어의 기함에서',dur:4},
+  {t:1112,text:'18:32 — 뤼초프와 데르플링거, 인빈시블을 포착. "이 골칫덩어리를 눈앞에 두게 된 만족감"',dur:4},
+  {t:1114,text:'💥 18:34 — 인빈시블 Q포탑 폭발! 함체 두 동강. 1,026명 사망, 6명 생존. 후드 소장 전사',dur:5,crit:true},
+  {t:1120,text:'18:40 — 쾨니히, 아이언 듀크로부터 13.5인치 포탄 7발 피격. 좌현 4.5도 경사',dur:4,crit:true},
+  {t:1123,text:'셰어, 대함대 전체와 맞닥뜨렸음을 깨닫다. 이탈을 준비...',dur:3},
+];
+
+function showEvent(time){const el=document.getElementById('event');let a=null;for(const ev of events){if(time>=ev.t&&time<ev.t+(ev.dur||3))a=ev;}if(a){el.style.display='block';el.textContent=a.text;el.className=a.crit?'critical':'';}else el.style.display='none';}
+
+function handleHover(e){const mx=e.clientX,my=e.clientY,tip=document.getElementById('tooltip');let found=null;for(const s of allShips){if(s.sunk&&t>s.sunk+3)continue;const pos=colShipPos(s,t),p=toS(pos.x,pos.y);if(Math.hypot(p.x-mx,p.y-my)<20){found=s;break;}}if(found){const pos=colShipPos(found,t);tip.style.display='block';tip.style.left=(mx+18)+'px';tip.style.top=(my-15)+'px';let html=`<b>${found.kr}</b><br>침로: ${Math.round(pos.crs)}°`;const firing=firingTable.find(f=>f.from===found.id&&t>=f.t0&&t<=f.t1);if(firing){const tgt=allShips.find(s=>s.id===firing.to);if(tgt)html+=`<br>교전: <b style="color:${tgt.c}">${tgt.kr}</b>`;}const inc=firingTable.filter(f=>f.to===found.id&&t>=f.t0&&t<=f.t1);if(inc.length)html+=`<br>피격: ${inc.map(f=>{const a=allShips.find(s=>s.id===f.from);return a?`<b style="color:${a.c}">${a.kr}</b>`:''}).join(', ')}`;if(found.sunk)html+=`<br><span style="color:#ff6b6b">침몰: ${fmtTime(found.sunk)}</span>`;tip.innerHTML=html;}else tip.style.display='none';}
+
+function updateView(time){const bp=colShipPos(gfShips[0],time),gp=colShipPos(sg1Ships[0],time);const cx=(bp.x+gp.x)/2,cy=(bp.y+gp.y)/2;viewX+=(cx-viewX)*.04;viewY+=(cy-viewY)*.04;}
+
+function draw(){autoScale();drawSea();allShips.forEach(s=>drawTrack(s));drawFiring(t);hsfKaiserShips.forEach(s=>drawShip(s,t));hsf3Ships.forEach(s=>drawShip(s,t));sg1Ships.forEach(s=>drawShip(s,t));cs1Ships.forEach(s=>drawShip(s,t));bcs3Ships.forEach(s=>drawShip(s,t));bs5Ships.forEach(s=>drawShip(s,t));gfDiv6Ships.forEach(s=>drawShip(s,t));gfDiv5Ships.forEach(s=>drawShip(s,t));gfDiv4Ships.forEach(s=>drawShip(s,t));gfDiv3Ships.forEach(s=>drawShip(s,t));gfDiv2Ships.forEach(s=>drawShip(s,t));gfDiv1Ships.forEach(s=>drawShip(s,t));bcfShips.forEach(s=>drawShip(s,t));showEvent(t);document.getElementById('timeDisplay').textContent=fmtTime(t);document.getElementById('timeline').value=((t-T0)/(T1-T0))*10000;}
+
+function fmtTime(m){return`${Math.floor(m/60)}:${String(Math.floor(m%60)).padStart(2,'0')}`;}
+function animate(ts){if(!playing)return;if(!lastTs)lastTs=ts;const dt=(ts-lastTs)/1000;lastTs=ts;t+=dt*speed*.4;if(t>=T1){t=T1;playing=false;document.getElementById('playBtn').textContent='▶ 재생';}if(!dragging)updateView(t);draw();raf=requestAnimationFrame(animate);}
+function togglePlay(){playing=!playing;if(playing){if(t>=T1){t=T0;resetTracks();}document.getElementById('playBtn').textContent='⏸ 일시정지';lastTs=0;raf=requestAnimationFrame(animate);}else{document.getElementById('playBtn').textContent='▶ 재생';cancelAnimationFrame(raf);}}
+function seek(v){const nt=T0+(v/10000)*(T1-T0);if(nt<t)resetTracks();t=nt;for(let tt=T0;tt<=t;tt+=.3)allShips.forEach(s=>recordTrack(s,colShipPos(s,tt)));updateView(t);draw();}
+function changeSpeed(){const sp=[.5,1,2,4,8];speed=sp[(sp.indexOf(speed)+1)%sp.length];document.getElementById('spdBtn').textContent=speed+'x';}
+addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();togglePlay();}if(e.code==='ArrowRight'){t=Math.min(t+.5,T1);draw();}if(e.code==='ArrowLeft'){t=Math.max(t-.5,T0);draw();}});
+
+autoScale();updateView(T0);draw();
+</script>
+</body>
+</html>

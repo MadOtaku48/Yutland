@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>남쪽으로의 질주 (Run to the South) — 15:48–16:54</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0d1b2a; color: #eee; font-family: 'Noto Sans KR', -apple-system, sans-serif; overflow: hidden; }
+#canvas { display: block; cursor: crosshair; }
+#controls {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.92); padding: 8px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+#controls button {
+  background: #1b3a4b; color: white; border: 1px solid #2a5a6b;
+  padding: 5px 12px; border-radius: 3px; cursor: pointer; font-size: 13px;
+}
+#controls button:hover { background: #2a5a6b; }
+#event {
+  position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%);
+  background: rgba(0,0,0,0.92); padding: 8px 24px; border-radius: 6px;
+  max-width: 650px; font-size: 13px; text-align: center; line-height: 1.5;
+  display: none; border: 1px solid #555;
+}
+#event.critical { border-color: #e74c3c; background: rgba(120,20,20,0.95); }
+#tooltip {
+  position: absolute; display: none; background: rgba(0,0,0,0.95);
+  padding: 8px 12px; border-radius: 4px; font-size: 12px; pointer-events: none;
+  border: 1px solid #666; max-width: 260px; line-height: 1.5;
+}
+#legend {
+  position: absolute; top: 8px; right: 8px;
+  background: rgba(0,0,0,0.85); padding: 10px 14px; border-radius: 6px; font-size: 11px; line-height: 2;
+}
+.leg { display: flex; align-items: center; gap: 6px; }
+.ldot { width: 10px; height: 10px; border-radius: 50%; }
+#info {
+  position: absolute; top: 8px; left: 8px;
+  background: rgba(0,0,0,0.85); padding: 10px 14px; border-radius: 6px; font-size: 12px; line-height: 1.5;
+}
+#info h2 { font-size: 15px; color: #f0c040; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<div id="info">
+  <h2>남쪽으로의 질주 (Run to the South)</h2>
+  <div>1916.5.31 — 순양전함 교전 15:48–16:54</div>
+</div>
+
+<div id="event"></div>
+<div id="tooltip"></div>
+
+<div id="legend">
+  <div class="leg"><div class="ldot" style="background:#4a9eff"></div>영국 순양전함 (비티)</div>
+  <div class="leg"><div class="ldot" style="background:#2ecc71"></div>제5전함전대 (에반토머스)</div>
+  <div class="leg"><div class="ldot" style="background:#e74c3c"></div>제1정찰군 (히퍼)</div>
+  <div class="leg"><div class="ldot" style="background:#e67e22"></div>대양함대 (셰어)</div>
+  <div style="margin-top:6px;border-top:1px solid #333;padding-top:5px;">
+    <span style="color:#ff0">──→</span> 포격 방향<br>
+    <span style="color:#f44">💥</span> 침몰<br>
+    <span style="color:#888">스페이스=재생 ←→=이동<br>마우스 휠=확대/축소</span>
+  </div>
+</div>
+
+<div id="controls">
+  <button id="playBtn" onclick="togglePlay()">▶ 재생</button>
+  <button onclick="changeSpeed()" id="spdBtn">4x</button>
+  <span id="timeDisplay" style="font-size:20px;font-weight:bold;color:#f0c040;min-width:55px;">15:48</span>
+  <input type="range" id="timeline" min="0" max="10000" value="0"
+    style="flex:1;min-width:150px;height:5px;-webkit-appearance:none;background:#333;border-radius:2px;cursor:pointer;"
+    oninput="seek(this.value)">
+</div>
+
+<script>
+const C = document.getElementById('canvas');
+const ctx = C.getContext('2d');
+let W, H;
+W = C.width = innerWidth; H = C.height = innerHeight;
+
+// ── Time ──
+const T0 = 948, T1 = 1014;
+let t = T0, playing = false, speed = 4, raf, lastTs = 0;
+
+// ── View — ZOOMED IN ──
+let viewX = 4, viewY = 6;
+let zoom = 1.0;
+let scale = 30;
+function autoScale() { scale = Math.min(W, H) / 22 * zoom; }
+autoScale();
+
+function toS(x, y) {
+  return { x: W/2 + (x - viewX) * scale, y: H/2 - (y - viewY) * scale };
+}
+
+// Mouse wheel zoom
+C.addEventListener('wheel', e => {
+  e.preventDefault();
+  zoom *= e.deltaY > 0 ? 0.9 : 1.1;
+  zoom = Math.max(0.3, Math.min(3, zoom));
+  autoScale();
+  draw();
+}, { passive: false });
+
+// Pan with mouse drag
+let dragging = false, dragX, dragY;
+C.addEventListener('mousedown', e => { dragging = true; dragX = e.clientX; dragY = e.clientY; });
+C.addEventListener('mousemove', e => {
+  if (dragging) {
+    viewX -= (e.clientX - dragX) / scale;
+    viewY += (e.clientY - dragY) / scale;
+    dragX = e.clientX; dragY = e.clientY;
+    draw();
+  }
+  handleHover(e);
+});
+C.addEventListener('mouseup', () => dragging = false);
+
+addEventListener('resize', () => { W = C.width = innerWidth; H = C.height = innerHeight; autoScale(); if (typeof allShips !== 'undefined') draw(); });
+
+// ── Interpolation ──
+function lerp(a,b,f) { return a+(b-a)*f; }
+function lerpA(a,b,f) { let d=b-a; if(d>180)d-=360; if(d<-180)d+=360; return a+d*f; }
+
+function posAt(wp, time) {
+  if (time <= wp[0].t) return wp[0];
+  if (time >= wp[wp.length-1].t) return wp[wp.length-1];
+  for (let i=0; i<wp.length-1; i++) {
+    if (time >= wp[i].t && time <= wp[i+1].t) {
+      const f = (time - wp[i].t) / (wp[i+1].t - wp[i].t);
+      return { x: lerp(wp[i].x,wp[i+1].x,f), y: lerp(wp[i].y,wp[i+1].y,f), crs: lerpA(wp[i].crs,wp[i+1].crs,f) };
+    }
+  }
+  return wp[0];
+}
+
+// ── Formation column helper ──
+// Each following ship is TIME-DELAYED behind the leader.
+// At ~25kts with 0.5nm spacing, delay ≈ 0.5/25*60 ≈ 1.2 min per ship.
+// This means each ship reaches each turn point LATER, creating realistic sequential turns.
+function makeCol(lead, ships, gap) {
+  // Build a dense path from lead waypoints for smooth interpolation
+  const SPEED_KTS = 23; // average speed in knots
+  const DELAY_PER_SHIP = (gap / SPEED_KTS) * 60; // minutes delay per position in column
+
+  return ships.map((s, i) => {
+    const delay = i * DELAY_PER_SHIP;
+    // Ship i's position at time T = leader's position at time (T - delay)
+    // We store this as a function rather than pre-computed waypoints
+    return { ...s, delay, leadWp: lead };
+  });
+}
+
+// Get position for a column ship: look up leader's position at (t - delay)
+// If leaderTime < first waypoint, extrapolate backwards along initial course
+function colShipPos(ship, time) {
+  const leaderTime = time - ship.delay;
+  const wp = ship.leadWp;
+  if (leaderTime < wp[0].t) {
+    // Extrapolate backwards: place ship behind leader along initial course
+    const dt = (wp[0].t - leaderTime) / 60; // hours
+    const spdNm = 23; // knots = nm/hr
+    const dist = dt * spdNm; // nm to go back
+    const rad = (wp[0].crs + 180) * Math.PI / 180; // reverse of course
+    return {
+      x: wp[0].x + Math.sin(rad) * dist,
+      y: wp[0].y + Math.cos(rad) * dist,
+      crs: wp[0].crs
+    };
+  }
+  return posAt(wp, leaderTime);
+}
+
+// ── Formation waypoints (lead ship) ──
+const bcfLead = [
+  {t:948,x:0,y:8,crs:155},{t:953,x:0.8,y:6.5,crs:160},{t:958,x:1.5,y:4.8,crs:165},
+  {t:962,x:2,y:3.5,crs:167},{t:968,x:2.8,y:1.5,crs:167},{t:975,x:3.4,y:-0.8,crs:170},
+  {t:982,x:3.8,y:-3,crs:170},{t:986,x:4,y:-4.2,crs:170},{t:993,x:4.3,y:-6.5,crs:172},
+  {t:997,x:4.2,y:-7.2,crs:190},   // begin turn
+  {t:999,x:3.8,y:-7.6,crs:240},   // turning west
+  {t:1001,x:3.2,y:-7.7,crs:290},  // turning NW
+  {t:1003,x:2.7,y:-7.3,crs:330},  // nearly north
+  {t:1006,x:2.3,y:-6.2,crs:347},  // heading north
+  {t:1014,x:1.5,y:-2,crs:347},
+];
+const bs5Lead = [
+  {t:948,x:-4,y:14,crs:110},{t:953,x:-2.5,y:13.2,crs:130},{t:958,x:-1,y:11.8,crs:145},
+  {t:963,x:0,y:10,crs:155},{t:968,x:1,y:7.5,crs:165},{t:975,x:2,y:5,crs:167},
+  {t:982,x:2.8,y:2.5,crs:170},{t:990,x:3.5,y:-0.5,crs:170},{t:998,x:4,y:-3.5,crs:170},
+  {t:1004,x:4.5,y:-6,crs:170},{t:1008,x:4.8,y:-8,crs:170},
+  {t:1009.5,x:4.7,y:-8.3,crs:200},  // begin turn
+  {t:1010.5,x:4.3,y:-8.5,crs:250},  // turning west
+  {t:1011.5,x:3.8,y:-8.3,crs:300},  // turning NW
+  {t:1012.5,x:3.4,y:-7.8,crs:335},  // nearly north
+  {t:1014,x:3,y:-6.5,crs:347},
+];
+const sg1Lead = [
+  {t:948,x:8,y:4,crs:155},{t:953,x:8.5,y:2.5,crs:160},{t:958,x:9,y:1,crs:165},
+  {t:965,x:9.5,y:-1.5,crs:167},{t:975,x:10,y:-4.5,crs:170},{t:985,x:10.3,y:-7.5,crs:172},
+  {t:993,x:10.5,y:-10,crs:175},
+  {t:998,x:10.4,y:-11.5,crs:180},   // slow south
+  {t:1002,x:10.2,y:-12.2,crs:220},  // begin wide turn
+  {t:1005,x:9.7,y:-12.5,crs:270},   // turning west
+  {t:1008,x:9,y:-12.2,crs:320},     // turning NW
+  {t:1011,x:8.5,y:-11.5,crs:345},   // nearly north
+  {t:1014,x:8.2,y:-10,crs:347},     // heading north
+];
+const hsfLead = [
+  {t:948,x:14,y:-18,crs:340},{t:968,x:13,y:-14,crs:340},{t:985,x:12.5,y:-11,crs:340},
+  {t:993,x:12,y:-9.5,crs:340},{t:1000,x:11.5,y:-8,crs:340},{t:1008,x:11,y:-6,crs:340},{t:1014,x:10.5,y:-4,crs:340},
+];
+
+// ── Ships ──
+const bcfShips = makeCol(bcfLead, [
+  {id:'lion',   kr:'라이온',        en:'HMS Lion',           c:'#4a9eff', flag:'🇬🇧'},
+  {id:'proyal', kr:'프린세스 로열',  en:'HMS Princess Royal', c:'#4a9eff', flag:'🇬🇧'},
+  {id:'qmary',  kr:'퀸 메리',       en:'HMS Queen Mary',     c:'#4a9eff', flag:'🇬🇧', sunk:986},
+  {id:'tiger',  kr:'타이거',        en:'HMS Tiger',          c:'#4a9eff', flag:'🇬🇧'},
+  {id:'nz',     kr:'뉴질랜드',      en:'HMS New Zealand',    c:'#6ab8ff', flag:'🇬🇧'},
+  {id:'indefat',kr:'인디패티거블',   en:'HMS Indefatigable',  c:'#6ab8ff', flag:'🇬🇧', sunk:962},
+], 0.9);
+
+const bs5Ships = makeCol(bs5Lead, [
+  {id:'barham', kr:'버럼',      en:'HMS Barham',   c:'#2ecc71', flag:'🇬🇧'},
+  {id:'valiant',kr:'밸리언트',  en:'HMS Valiant',  c:'#2ecc71', flag:'🇬🇧'},
+  {id:'warspt', kr:'워스파이트',en:'HMS Warspite', c:'#2ecc71', flag:'🇬🇧'},
+  {id:'malaya', kr:'말라야',    en:'HMS Malaya',   c:'#2ecc71', flag:'🇬🇧'},
+], 0.9);
+
+const sg1Ships = makeCol(sg1Lead, [
+  {id:'lutzow',kr:'뤼초프',      en:'SMS Lützow',       c:'#e74c3c', flag:'🇩🇪'},
+  {id:'derff', kr:'데르플링거',  en:'SMS Derfflinger',  c:'#e74c3c', flag:'🇩🇪'},
+  {id:'seydl', kr:'자이들리츠',  en:'SMS Seydlitz',     c:'#e74c3c', flag:'🇩🇪'},
+  {id:'moltke',kr:'몰트케',      en:'SMS Moltke',       c:'#e74c3c', flag:'🇩🇪'},
+  {id:'vdt',   kr:'폰 데어 탄',  en:'SMS Von der Tann', c:'#e74c3c', flag:'🇩🇪'},
+], 0.8);
+
+const hsfShips = makeCol(hsfLead, [
+  {id:'konig', kr:'쾨니히',    en:'SMS König',    c:'#e67e22', flag:'🇩🇪'},
+  {id:'gkurf', kr:'그로서 쿠르퓌르스트', en:'SMS Gr. Kurfürst', c:'#e67e22', flag:'🇩🇪'},
+  {id:'mrkgf', kr:'마르크그라프',en:'SMS Markgraf',c:'#e67e22', flag:'🇩🇪'},
+  {id:'kronp', kr:'크론프린츠', en:'SMS Kronprinz',c:'#e67e22', flag:'🇩🇪'},
+  {id:'fdg',   kr:'프리드리히', en:'SMS Friedrich d.G.', c:'#c07030', flag:'🇩🇪'},
+  {id:'kaiser',kr:'카이저',    en:'SMS Kaiser',   c:'#c07030', flag:'🇩🇪'},
+], 1.2);
+
+const allShips = [...bcfShips, ...bs5Ships, ...sg1Ships, ...hsfShips];
+
+// ── Firing assignments (who shoots whom, by time) ──
+// Based on Campbell Ch.4 fire distribution
+const firingTable = [
+  // 15:48–16:08: initial engagement
+  {from:'lion',  to:'lutzow', t0:948, t1:1005, c:'#4a9eff'},
+  {from:'proyal',to:'lutzow', t0:948, t1:968,  c:'#4a9eff'},  // then switches
+  {from:'proyal',to:'derff',  t0:968, t1:1005, c:'#4a9eff'},
+  {from:'qmary', to:'seydl',  t0:948, t1:986,  c:'#4a9eff'},  // should have been Derff!
+  {from:'tiger', to:'moltke', t0:948, t1:1005, c:'#4a9eff'},  // should have been Seydlitz
+  {from:'nz',    to:'moltke', t0:948, t1:968,  c:'#6ab8ff'},  // duplicate target!
+  {from:'nz',    to:'vdt',    t0:968, t1:1005, c:'#6ab8ff'},
+  {from:'indefat',to:'vdt',   t0:948, t1:962,  c:'#6ab8ff'},
+
+  // German return fire
+  {from:'lutzow',to:'lion',   t0:948, t1:968,  c:'#e74c3c'},
+  {from:'lutzow',to:'proyal', t0:968, t1:1005, c:'#e74c3c'},  // mistook for Lion
+  {from:'derff', to:'proyal', t0:948, t1:977,  c:'#e74c3c'},  // "undisturbed"
+  {from:'derff', to:'qmary',  t0:977, t1:986,  c:'#e74c3c'},  // switches → QM dies
+  {from:'seydl', to:'qmary',  t0:960, t1:986,  c:'#e74c3c'},  // also targeting QM
+  {from:'moltke',to:'tiger',  t0:948, t1:1005, c:'#e74c3c'},
+  {from:'vdt',   to:'indefat',t0:948, t1:962,  c:'#e74c3c'},  // kills Indefatigable
+
+  // 5th BS enters (16:08+)
+  {from:'barham',to:'vdt',    t0:968, t1:1010, c:'#2ecc71'},
+  {from:'valiant',to:'moltke',t0:968, t1:1010, c:'#2ecc71'},
+  {from:'warspt',to:'seydl',  t0:970, t1:1010, c:'#2ecc71'},
+  {from:'malaya',to:'seydl',  t0:972, t1:1010, c:'#2ecc71'},
+
+  // HSF lead ships fire on 5th BS during "Windy Corner" turn (16:48–16:54+)
+  // König, Gr.Kurfürst etc. concentrate on the turning 5th BS
+  {from:'konig', to:'barham', t0:1005, t1:1014, c:'#e67e22'},
+  {from:'gkurf', to:'barham', t0:1006, t1:1014, c:'#e67e22'},
+  {from:'mrkgf', to:'malaya', t0:1006, t1:1014, c:'#e67e22'},
+  {from:'kronp', to:'malaya', t0:1007, t1:1014, c:'#e67e22'},
+  // 5th BS returns fire on HSF lead
+  {from:'barham',to:'konig',  t0:1005, t1:1014, c:'#2ecc71'},
+  {from:'valiant',to:'konig', t0:1006, t1:1014, c:'#2ecc71'},
+  {from:'warspt',to:'gkurf',  t0:1006, t1:1014, c:'#2ecc71'},
+  {from:'malaya',to:'mrkgf',  t0:1007, t1:1014, c:'#2ecc71'},
+];
+
+// ── Track history ──
+const tracks = {};
+function recordTrack(ship, pos) {
+  if (!tracks[ship.id]) tracks[ship.id] = [];
+  const tr = tracks[ship.id];
+  if (tr.length===0 || Math.hypot(tr[tr.length-1].x-pos.x, tr[tr.length-1].y-pos.y) > 0.03) {
+    tr.push({x:pos.x, y:pos.y});
+  }
+}
+function resetTracks() { for (const k in tracks) delete tracks[k]; }
+
+// ── Drawing helpers ──
+function drawSea() {
+  ctx.fillStyle = '#0d1b2a';
+  ctx.fillRect(0,0,W,H);
+  // Subtle grid
+  ctx.strokeStyle = 'rgba(100,140,180,0.06)';
+  ctx.lineWidth = 1;
+  for (let x=-20;x<=30;x+=2) { const a=toS(x,-30),b=toS(x,30); ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke(); }
+  for (let y=-30;y<=30;y+=2) { const a=toS(-20,y),b=toS(30,y); ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke(); }
+  // Compass
+  ctx.fillStyle='rgba(255,255,255,0.2)'; ctx.font='bold 14px sans-serif';
+  const n=toS(viewX-W/scale/2+1.5, viewY+H/scale/2-1);
+  ctx.fillText('N↑',n.x,n.y);
+  // Scale bar
+  const s1=toS(viewX-W/scale/2+1, viewY-H/scale/2+1.5), s2=toS(viewX-W/scale/2+6, viewY-H/scale/2+1.5);
+  ctx.strokeStyle='rgba(255,255,255,0.25)'; ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(s1.x,s1.y);ctx.lineTo(s2.x,s2.y);ctx.stroke();
+  ctx.fillStyle='rgba(255,255,255,0.25)'; ctx.font='10px sans-serif';
+  ctx.fillText('5 nm',(s1.x+s2.x)/2-12,s1.y-6);
+}
+
+function drawTrack(ship) {
+  const tr = tracks[ship.id];
+  if (!tr || tr.length < 2) return;
+  ctx.save();
+  ctx.strokeStyle = ship.c;
+  ctx.globalAlpha = 0.2;
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  let p = toS(tr[0].x, tr[0].y);
+  ctx.moveTo(p.x, p.y);
+  for (let i=1;i<tr.length;i++) { p=toS(tr[i].x,tr[i].y); ctx.lineTo(p.x,p.y); }
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawShipShape(sx, sy, crs, color, sz, highlight) {
+  const rad = (crs - 90) * Math.PI / 180;
+  const L = sz * 2.2;   // half-length
+  const B = sz * 0.4;   // half-beam
+  ctx.save();
+  ctx.translate(sx, sy);
+  ctx.rotate(rad);
+
+  // Hull outline — pointed bow, tapered stern, slight beam curve
+  ctx.beginPath();
+  ctx.moveTo(L, 0);                          // bow tip
+  ctx.bezierCurveTo(L*0.6, -B*0.6, L*0.3, -B, 0, -B);   // bow curve starboard
+  ctx.lineTo(-L*0.6, -B*0.85);              // midship → stern taper
+  ctx.quadraticCurveTo(-L, -B*0.5, -L*0.9, 0); // stern starboard
+  ctx.quadraticCurveTo(-L, B*0.5, -L*0.6, B*0.85); // stern port
+  ctx.lineTo(0, B);                          // stern taper → midship
+  ctx.bezierCurveTo(L*0.3, B, L*0.6, B*0.6, L, 0); // bow curve port
+  ctx.closePath();
+
+  ctx.fillStyle = color;
+  ctx.fill();
+
+  if (highlight) {
+    ctx.shadowColor = color;
+    ctx.shadowBlur = 10;
+  }
+  ctx.strokeStyle = 'rgba(255,255,255,0.45)';
+  ctx.lineWidth = 0.6;
+  ctx.stroke();
+
+  // Superstructure — small darker rectangle amidships
+  ctx.fillStyle = 'rgba(0,0,0,0.25)';
+  ctx.fillRect(-L*0.15, -B*0.4, L*0.35, B*0.8);
+
+  // Turrets — two dots fore and aft
+  ctx.fillStyle = 'rgba(255,255,255,0.3)';
+  ctx.beginPath(); ctx.arc(L*0.45, 0, B*0.35, 0, Math.PI*2); ctx.fill();  // fore turret
+  ctx.beginPath(); ctx.arc(-L*0.35, 0, B*0.35, 0, Math.PI*2); ctx.fill(); // aft turret
+
+  ctx.restore();
+}
+
+function drawShip(ship, time) {
+  const isHSF = hsfShips.includes(ship);
+
+  // HSF hidden before ~16:30
+  if (isHSF && time < 988) {
+    if (time > 983) {
+      const pos = colShipPos(ship, time);
+      const p = toS(pos.x, pos.y);
+      ctx.save();
+      ctx.globalAlpha = (time-983)/8 * 0.3;
+      ctx.fillStyle = '#e67e22';
+      ctx.font = '10px sans-serif';
+      ctx.fillText('?', p.x-3, p.y+3);
+      ctx.restore();
+    }
+    return;
+  }
+
+  // Sunk — show wreck marker
+  if (ship.sunk && time > ship.sunk + 3) {
+    const sp = colShipPos(ship, ship.sunk);
+    const p = toS(sp.x, sp.y);
+    ctx.save();
+    ctx.fillStyle = '#ff4444';
+    ctx.font = '13px serif';
+    ctx.fillText('✕', p.x-5, p.y+4);
+    ctx.globalAlpha = 0.7;
+    ctx.font = 'bold 10px sans-serif';
+    ctx.fillText(ship.kr, p.x+10, p.y+3);
+    ctx.restore();
+    return;
+  }
+
+  const pos = colShipPos(ship, time);
+  recordTrack(ship, pos);
+  const p = toS(pos.x, pos.y);
+  const sz = isHSF ? 8 : 10;
+
+  // Sinking animation
+  if (ship.sunk && time >= ship.sunk && time <= ship.sunk + 3) {
+    const f = (time - ship.sunk) / 3;
+    ctx.save();
+    ctx.globalAlpha = 1 - f*0.6;
+    drawShipShape(p.x, p.y, pos.crs, '#ff4400', sz * (1+f*0.5), false);
+    // Fireball
+    const r = 5 + f*35;
+    const g = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,r);
+    g.addColorStop(0,`rgba(255,200,50,${1-f})`);
+    g.addColorStop(0.5,`rgba(255,60,0,${0.7-f*0.7})`);
+    g.addColorStop(1,'rgba(80,0,0,0)');
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.arc(p.x,p.y,r,0,Math.PI*2); ctx.fill();
+    // Label
+    ctx.fillStyle = '#ff6b6b';
+    ctx.font = 'bold 12px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(ship.kr + ' 침몰', p.x, p.y - r - 8);
+    ctx.restore();
+    return;
+  }
+
+  // Normal ship
+  drawShipShape(p.x, p.y, pos.crs, ship.c, sz, false);
+
+  // ── ALWAYS show name label ──
+  ctx.save();
+  ctx.fillStyle = ship.c;
+  ctx.font = 'bold 11px sans-serif';
+  ctx.globalAlpha = 0.9;
+  ctx.fillText(ship.kr, p.x + 14, p.y + 4);
+  ctx.restore();
+}
+
+// ── Firing lines — clear labeled arrows ──
+function drawFiring(time) {
+  const now = performance.now();
+  for (const f of firingTable) {
+    if (time < f.t0 || time > f.t1) continue;
+    const fromShip = allShips.find(s => s.id === f.from);
+    const toShip = allShips.find(s => s.id === f.to);
+    if (!fromShip || !toShip) continue;
+    if (fromShip.sunk && time > fromShip.sunk) continue;
+    if (toShip.sunk && time > toShip.sunk) continue;
+
+    // Intermittent flash effect
+    const phase = Math.sin(now * 0.003 + f.from.charCodeAt(0)*7);
+    if (phase < -0.3) continue;
+
+    const fp = colShipPos(fromShip, time);
+    const tp = colShipPos(toShip, time);
+    const p1 = toS(fp.x, fp.y);
+    const p2 = toS(tp.x, tp.y);
+
+    // Line
+    ctx.save();
+    ctx.globalAlpha = 0.12 + phase * 0.05;
+    ctx.strokeStyle = f.c;
+    ctx.lineWidth = 1;
+    ctx.setLineDash([6,6]);
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y);
+    ctx.lineTo(p2.x, p2.y);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Arrowhead at ~80% of the way
+    const ax = lerp(p1.x, p2.x, 0.75);
+    const ay = lerp(p1.y, p2.y, 0.75);
+    const angle = Math.atan2(p2.y-p1.y, p2.x-p1.x);
+    ctx.globalAlpha = 0.25;
+    ctx.fillStyle = f.c;
+    ctx.beginPath();
+    ctx.moveTo(ax + Math.cos(angle)*6, ay + Math.sin(angle)*6);
+    ctx.lineTo(ax + Math.cos(angle+2.5)*5, ay + Math.sin(angle+2.5)*5);
+    ctx.lineTo(ax + Math.cos(angle-2.5)*5, ay + Math.sin(angle-2.5)*5);
+    ctx.closePath();
+    ctx.fill();
+
+    // Shell splashes near target
+    if (phase > 0.5) {
+      ctx.globalAlpha = 0.5;
+      ctx.fillStyle = '#fff';
+      const sx = p2.x + (Math.random()-0.5)*10;
+      const sy = p2.y + (Math.random()-0.5)*10;
+      ctx.beginPath(); ctx.arc(sx,sy,1.5,0,Math.PI*2); ctx.fill();
+    }
+    ctx.restore();
+  }
+}
+
+// ── Events ──
+const events = [
+  {t:948, text:'15:48 — 양측 순양전함, 약 16,000야드에서 동시 포격 개시. 화력 분배 실수로 데르플링거는 공격받지 않음', dur:4},
+  {t:955, text:'15:55 — 퀸 메리 → 자이들리츠 C포탑 명중. 도거뱅크 교훈의 화염 방지 장치가 폭발을 막음', dur:3},
+  {t:960, text:'16:00 — 뤼초프 → 라이온 Q포탑 관통. 하비 소령이 두 다리를 잃으면서도 탄약고 침수를 명령', dur:4, crit:true},
+  {t:962, text:'💥 16:02 — 인디패티거블 탄약고 폭발! 폰 데어 탄의 포격. 30초 만에 침몰. 1,017명 전사, 생존 2명', dur:5, crit:true},
+  {t:968, text:'16:08 — 제5전함전대 합류! 버럼의 15인치 포탄이 폰 데어 탄에 첫 명중', dur:3},
+  {t:977, text:'16:17 — 데르플링거, 표적을 퀸 메리로 변경. 자이들리츠와 함께 집중포화 시작', dur:3, crit:true},
+  {t:986, text:'💥 16:26 — 퀸 메리 폭발 침몰! 데르플링거+자이들리츠 집중포화. 1,266명 전사, 생존 20명', dur:5, crit:true},
+  {t:988, text:'"오늘 우리 배들에 뭔가 빌어먹을 문제가 있는 것 같군." — 비티, 채트필드에게', dur:4},
+  {t:993, text:'16:33 — 구디너프의 사우샘프턴, 대양함대 전체 발견! "이것이 경순양함 일생일대의 날입니다"', dur:4},
+  {t:1000,text:'16:40 — 비티, 즉시 북전 명령! 젤리코의 대함대를 향해 독일 함대를 유인 시작', dur:3},
+  {t:1008,text:'16:48 — 에반토머스, 신호 지연으로 여전히 남하 중! 대양함대에 접근하며 집중포화 돌입', dur:4, crit:true},
+  {t:1012,text:'16:52 — 제5전함전대 최종 회전. 말라야가 통과하는 "지옥의 모퉁이" — 독일 함대 화력 집중', dur:3, crit:true},
+];
+
+function showEvent(time) {
+  const el = document.getElementById('event');
+  let active = null;
+  for (const ev of events) { if (time >= ev.t && time < ev.t + (ev.dur||3)) active = ev; }
+  if (active) {
+    el.style.display = 'block';
+    el.textContent = active.text;
+    el.className = active.crit ? 'critical' : '';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+// ── Tooltip ──
+function handleHover(e) {
+  const mx = e.clientX, my = e.clientY;
+  const tip = document.getElementById('tooltip');
+  let found = null;
+  for (const s of allShips) {
+    if (s.sunk && t > s.sunk + 3) continue;
+    if (hsfShips.includes(s) && t < 988) continue;
+    const pos = colShipPos(s, t);
+    const p = toS(pos.x, pos.y);
+    if (Math.hypot(p.x-mx, p.y-my) < 20) { found = s; break; }
+  }
+  if (found) {
+    const pos = colShipPos(found, t);
+    tip.style.display = 'block';
+    tip.style.left = (mx+18)+'px';
+    tip.style.top = (my-15)+'px';
+    let html = `<b>${found.kr}</b> <span style="color:#aaa">${found.en}</span><br>`;
+    html += `침로: ${Math.round(pos.crs)}°`;
+    // Find what this ship is firing at
+    const firing = firingTable.find(f => f.from === found.id && t >= f.t0 && t <= f.t1);
+    if (firing) {
+      const target = allShips.find(s => s.id === firing.to);
+      if (target) html += `<br>교전 대상: <b style="color:${target.c}">${target.kr}</b>`;
+    }
+    // Find what's firing at this ship
+    const incoming = firingTable.filter(f => f.to === found.id && t >= f.t0 && t <= f.t1);
+    if (incoming.length) {
+      const attackers = incoming.map(f => allShips.find(s=>s.id===f.from)).filter(Boolean);
+      html += `<br>피격 중: ${attackers.map(a=>`<b style="color:${a.c}">${a.kr}</b>`).join(', ')}`;
+    }
+    if (found.sunk) html += `<br><span style="color:#ff6b6b">침몰: ${fmtTime(found.sunk)}</span>`;
+    tip.innerHTML = html;
+  } else {
+    tip.style.display = 'none';
+  }
+}
+
+// ── Auto-center ──
+function updateView(time) {
+  const bp = colShipPos(bcfShips[0], time);
+  const gp = colShipPos(sg1Ships[0], time);
+  const cx = (bp.x + gp.x) / 2;
+  const cy = (bp.y + gp.y) / 2;
+  viewX += (cx - viewX) * 0.04;
+  viewY += (cy - viewY) * 0.04;
+}
+
+// ── Main draw ──
+function draw() {
+  autoScale();
+  drawSea();
+
+  // Tracks
+  allShips.forEach(s => drawTrack(s));
+
+  // Firing lines (behind ships)
+  drawFiring(t);
+
+  // Ships (back to front: HSF, SG1, BS5, BCF)
+  hsfShips.forEach(s => drawShip(s, t));
+  sg1Ships.forEach(s => drawShip(s, t));
+  bs5Ships.forEach(s => drawShip(s, t));
+  bcfShips.forEach(s => drawShip(s, t));
+
+  showEvent(t);
+  document.getElementById('timeDisplay').textContent = fmtTime(t);
+  document.getElementById('timeline').value = ((t-T0)/(T1-T0))*10000;
+}
+
+function fmtTime(m) { return `${Math.floor(m/60)}:${String(Math.floor(m%60)).padStart(2,'0')}`; }
+
+// ── Animation ──
+function animate(ts) {
+  if (!playing) return;
+  if (!lastTs) lastTs = ts;
+  const dt = (ts-lastTs)/1000;
+  lastTs = ts;
+  t += dt * speed * 0.4;
+  if (t>=T1) { t=T1; playing=false; document.getElementById('playBtn').textContent='▶ 재생'; }
+  if (!dragging) updateView(t);
+  draw();
+  raf = requestAnimationFrame(animate);
+}
+
+function togglePlay() {
+  playing = !playing;
+  if (playing) {
+    if (t>=T1) { t=T0; resetTracks(); }
+    document.getElementById('playBtn').textContent='⏸ 일시정지';
+    lastTs=0;
+    raf=requestAnimationFrame(animate);
+  } else {
+    document.getElementById('playBtn').textContent='▶ 재생';
+    cancelAnimationFrame(raf);
+  }
+}
+
+function seek(v) {
+  const nt = T0+(v/10000)*(T1-T0);
+  if (nt<t) resetTracks();
+  t=nt;
+  for (let tt=T0;tt<=t;tt+=0.3) allShips.forEach(s=>recordTrack(s,colShipPos(s,tt)));
+  updateView(t);
+  draw();
+}
+
+function changeSpeed() {
+  const sp=[0.5,1,2,4,8];
+  speed=sp[(sp.indexOf(speed)+1)%sp.length];
+  document.getElementById('spdBtn').textContent=speed+'x';
+}
+
+// ── Keyboard ──
+addEventListener('keydown', e => {
+  if(e.code==='Space'){e.preventDefault();togglePlay();}
+  if(e.code==='ArrowRight'){t=Math.min(t+0.5,T1);draw();}
+  if(e.code==='ArrowLeft'){t=Math.max(t-0.5,T0);draw();}
+});
+
+// ── Init ──
+autoScale();
+updateView(T0);
+draw();
+</script>
+</body>
+</html>
